@@ -1,79 +1,41 @@
 import type { Metadata } from "next";
-import { PageHero } from "../_components/SiteChrome";
 
 export const metadata: Metadata = {
-  title: "Join RedQuadrant",
-  description:
-    "Join RedQuadrant's community of experienced freelance public service consultants and transformation practitioners.",
+  title: "Join us",
+  description: "Join RedQuadrant's selected community of experienced freelance public-service consultants.",
   alternates: { canonical: "/joinus" },
 };
-
-const skills = [
-  "Service and systems redesign",
-  "Strategy and operating models",
-  "Programme and project leadership",
-  "Digital, data and technology",
-  "Organisational development and change",
-  "Commissioning and procurement",
-  "Research, insight and evaluation",
-  "Facilitation, coaching and learning",
-  "Finance and business cases",
-  "Design and visual communication",
-] as const;
-
-const areas = [
-  "Local government",
-  "Adult and children's social care",
-  "Housing and homelessness",
-  "Health and the NHS",
-  "Criminal justice",
-  "Culture and community",
-  "Customer services",
-  "Corporate and democratic services",
-  "Central government",
-  "Charities and social purpose organisations",
-] as const;
 
 export default function JoinUsPage() {
   return (
     <>
-      <PageHero
-        eyebrow="Join us"
-        title="Do serious public service work with good people."
-        introduction="RedQuadrant works with experienced independent practitioners who bring judgement, craft and curiosity. Our model is lean: no junior leverage, no unnecessary layers, and no distance between the promise and the work."
-      />
-      <section className="content-section">
-        <div className="shell section-heading">
-          <div>
-            <p className="eyebrow">Our consultant community</p>
-            <h2>Independent, connected and close to delivery.</h2>
-          </div>
-          <div>
-            <p>Most of our consultants are freelance specialists with substantial experience inside public services, consulting or both. Teams form around a real requirement and are supported by RedQuadrant&apos;s methods, relationships and operating team.</p>
-            <p>We value people who can think systemically, work respectfully with frontline knowledge, explain complexity plainly and stay with the difficult implementation questions.</p>
-          </div>
-        </div>
-        <div className="card-grid two">
-          <article className="info-card">
-            <p className="card-number">Capabilities</p>
-            <h3>Skills we regularly need</h3>
-            <ul>{skills.map((skill) => <li key={skill}>{skill}</li>)}</ul>
-          </article>
-          <article className="info-card">
-            <p className="card-number">Experience</p>
-            <h3>Fields we work in</h3>
-            <ul>{areas.map((area) => <li key={area}>{area}</li>)}</ul>
-          </article>
+      <section className="join-hero">
+        <div className="site-frame join-hero-inner">
+          <p className="join-email">Send your CV and covering email<br />to <a href="mailto:recruitment@redquadrant.com">recruitment@redquadrant.com</a></p>
+          <h1>Join us</h1>
+          <p className="join-line">We believe in conversation and we would love to hear from you!</p>
         </div>
       </section>
-      <section className="contact-band">
-        <div className="shell contact-band-inner">
-          <div>
-            <p className="eyebrow">Introduce yourself</p>
-            <h2>Tell us what you are excellent at.</h2>
-            <p>Send a concise note with your CV or profile, location, availability and the kind of problems you are best placed to solve.</p>
-          </div>
-          <a className="button light" href="mailto:recruitment@redquadrant.com">recruitment@redquadrant.com <span aria-hidden="true">↗</span></a>
+      <section className="join-copy site-frame">
+        <div className="join-intro">
+          <h2>Expert freelance consultants</h2>
+          <p>At RedQuadrant, we practice what we preach. We operate a ‘lean’ business model and therefore directly employ only a very small team: managing partners, a director and a small administrative staff.</p>
+          <p>We deliver our projects from a strictly selected and closely supported pool of independent consultants. For clients this means that we can offer far more flexibility and lower cost than traditional consulting firms. Our consultants enjoy the stimulating team environment, feel more in control of their personal and career development, and value the support they gain during and between projects.</p>
+          <p>Our teams can offer an impressive arsenal of experience, support and resources because of the combination of independent consultants with strong project, process, team and client management — and the knowledge drawn from across our entire business.</p>
+          <p>We are always interested in talking to top-class independent consultants based in the UK about working with us on an exciting portfolio of full- and part-time transformation projects.</p>
+          <p>As one of our consultants, you would join a growing team who are passionate about delivering worthwhile and sustainable change in the public sector.</p>
+          <p>We work with freelance consultants who have public-service experience. Right now we aren&apos;t taking on any junior graduate consultants, though this may change in the future.</p>
+          <p className="join-email dark">Send your CV and covering email<br />to <a href="mailto:recruitment@redquadrant.com">recruitment@redquadrant.com</a></p>
+        </div>
+        <div className="join-lists">
+          <article>
+            <h2>Typically our consultants will have experience of:</h2>
+            <ul><li>Delivery of change projects within the public sector, preferably local public services</li><li>Project &amp; programme management</li><li>Building business cases for change</li><li>Engaging senior stakeholders throughout the transformation life-cycle</li><li>Working within local public services as an internal change agent and/or as an external consultant from one of the larger consultancies</li><li>Lean and systems thinking</li><li>Business analysis &amp; process improvement</li><li>Change management</li><li>Rapid improvement events, service design and prototyping</li><li>Facilitation</li><li>Organisational development</li><li>Skills transfer</li></ul>
+          </article>
+          <article>
+            <h2>Your experience of implementing sustainable change in these business areas is currently of particular interest:</h2>
+            <ul><li>Adult &amp; children’s services, especially commissioning</li><li>Procurement</li><li>Governance</li><li>Performance and contract management</li><li>Shared services</li><li>Housing services, including housing repairs and benefits</li></ul>
+          </article>
         </div>
       </section>
     </>

@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { SecretFeedbackDot, SiteFooter, SiteHeader } from "./_components/SiteChrome";
 import "./globals.css";
 
-const assetBase = process.env.GITHUB_PAGES_BASE_PATH ?? "";
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.redquadrant.com"),
   title: {
@@ -40,8 +38,9 @@ export const metadata: Metadata = {
     "codex-preview": "development",
   },
   icons: {
-    icon: `${assetBase}/favicon.svg`,
-    shortcut: `${assetBase}/favicon.svg`,
+    icon: "https://static.wixstatic.com/media/12b1f3_ffcb1d1d844d4c098d16fdfb3d4fef67%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/12b1f3_ffcb1d1d844d4c098d16fdfb3d4fef67%7Emv2.jpg",
+    shortcut: "https://static.wixstatic.com/media/12b1f3_ffcb1d1d844d4c098d16fdfb3d4fef67%7Emv2.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/12b1f3_ffcb1d1d844d4c098d16fdfb3d4fef67%7Emv2.jpg",
+    apple: "https://static.wixstatic.com/media/12b1f3_ffcb1d1d844d4c098d16fdfb3d4fef67%7Emv2.jpg/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/12b1f3_ffcb1d1d844d4c098d16fdfb3d4fef67%7Emv2.jpg",
   },
 };
 
