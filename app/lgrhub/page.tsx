@@ -7,6 +7,25 @@ export const metadata: Metadata = {
   alternates: { canonical: "/lgrhub" },
 };
 
+const lgrVideos = [
+  {
+    id: "YDhsdGVVBsg",
+    title: "LGR leadership with Manjeet Gill of Salisbury",
+  },
+  {
+    id: "SEUi5V5GEWE",
+    title: "Our local government reorganisation partnership with Foundations",
+  },
+  {
+    id: "LCh6cCjUaPI",
+    title: "Leading LGR with Greg Campell of Rochford and Brentwood",
+  },
+  {
+    id: "mTWVgKTmYM8",
+    title: "The sustainability pillar with Andrew Humphreys",
+  },
+] as const;
+
 function CaseStudy({ title, subtitle, partner, children }: { title: string; subtitle: string; partner: string; children: React.ReactNode }) {
   return <article className="lgr-case"><header><h3>{title}</h3><p>{subtitle}</p><span>{partner}</span></header>{children}</article>;
 }
@@ -23,7 +42,7 @@ export default function LgrHubPage() {
             <p className="lgr-lede">Vesting day is fixed in law. The window for preparation is real. And the hardest problems are not the ones most LGR programmes are currently focused on.</p>
             <p>Governance, finance, HR and ICT matter. But the deeper challenges are structural and relational: overloaded leadership systems, fragmented decision making, competing incentives, weak organisational learning, and management systems that do not change just because the boundary lines do.</p>
             <p>That is where our work contributes: building the institutional capability to operate effectively as new organisations under real-world pressure, so reorganisation leads to better outcomes for the communities and citizens these new councils will serve.</p>
-            <p>We work across four partnership configurations — from strategic advisory alongside your Chief Executive and SRO, through integrated programme delivery, targeted specialist capability, to innovation and long-term transformation. Each is designed to match where you are in the LGR journey. They can be deployed independently or combined as your programme evolves.</p>
+            <p>We work across partnership configurations that range from strategic advice alongside your Chief Executive and senior responsible owner to integrated programme delivery, targeted specialist capability, innovation and long-term transformation. Each is designed to match where you are in the reorganisation journey. They can be deployed independently or combined as your programme evolves.</p>
             <h2>What comes next</h2>
             <p>Most places are now moving beyond business-case development into the harder territory of implementation, transition and Day One readiness.</p>
             <p>The councils that will emerge strongest from LGR are not necessarily the ones with the cleanest diagrams, the biggest projected savings or the most detailed plans. They are the ones using this moment to ask the harder questions about how their new organisations will actually work and investing in the institutional and organisational capability needed to operate effectively under real-world pressure. They are actively building transformation capacity and developing the flexible working relationships, leadership behaviours and processes that will be essential for change.</p>
@@ -69,7 +88,7 @@ export default function LgrHubPage() {
           <CaseStudy title="Cambridge City Council" subtitle="Cambridgeshire & Peterborough future operating model and system convening" partner="03 Targeted Capability Partner">
             <h4>The challenge</h4><p>Cambridge was leading Option B: a two-unitary proposal for Greater Cambridgeshire and North Cambridgeshire and Peterborough. A critical question was whether the proposed authorities could deliver social care and public health safely, legally and sustainably from vesting day, without access to county-level datasets.</p>
             <h4>How we showed up</h4><p>We worked across participating councils, bringing direct experience in adults’ and children’s services, SEND, public health, finance, policy and economics. We also designed system-convening work around operational implications, dependencies and delivery risks.</p>
-            <h4>What we delivered</h4><ul><li>The published annex <em>A Future Blueprint for Social Care and Public Health</em></li><li>A detailed statutory and operational blueprint across both proposed authorities</li><li>Demand analysis, implementation planning and risk assessment using national benchmarks</li><li>Independent QA and strategic challenge across the wider business case</li><li>A whole-system working session on statutory transfers, workforce, commissioning, disaggregation risk and early collective planning</li></ul>
+            <h4>What we delivered</h4><ul><li>The published annex ‘A Future Blueprint for Social Care and Public Health’</li><li>A detailed statutory and operational blueprint across both proposed authorities</li><li>Demand analysis, implementation planning and risk assessment using national benchmarks</li><li>Independent quality assurance and strategic challenge across the wider business case</li><li>A whole-system working session on statutory transfers, workforce, commissioning, disaggregation risk and early collective planning</li></ul>
           </CaseStudy>
 
           <CaseStudy title="Westmorland and Furness Council" subtitle="Post-vesting transformation: business support baselining and future operating model" partner="03 Targeted Capability Partner · 04 Innovation and Impact Partner">
@@ -94,7 +113,7 @@ export default function LgrHubPage() {
           </div>
           <div className="lgr-stats"><div><strong>100+</strong><span>Councils</span></div><div><strong>~2,000</strong><span>Practitioners</span></div><div><strong>2009</strong><span>Founded</span></div></div>
           <div className="lgr-offer-grid">
-            <div><h3>Strategic Partner</h3><p>Senior judgement alongside your CEO and SRO. No parallel structures. For when judgement matters more than activity.</p></div>
+            <div><h3>Strategic Partner</h3><p>Senior judgement alongside your Chief Executive and senior responsible owner. No parallel structures. For when judgement matters more than activity.</p></div>
             <div><h3>Integrated Delivery Partner</h3><p>The programme spine — grip, dependency management and Day One readiness. For when the programme needs structure that holds.</p></div>
             <div><h3>Targeted Capability Partner</h3><p>Specialist depth exactly where risk concentrates. Scoped, time-bound and inside your governance.</p></div>
           </div>
@@ -104,6 +123,31 @@ export default function LgrHubPage() {
           <h3>Three outcomes, every time</h3>
           <div className="lgr-outcomes"><article><h4>Safe and legal on Day One</h4><p>Statutory roles secured. ICT cutovers rehearsed. Services tested. Residents experience continuity.</p></article><article><h4>Confidence in delivery</h4><p>One structure and one version of the truth. Leaders have visible assurance; members, officers and staff are aligned.</p></article><article><h4>Knowledge embedded — not borrowed</h4><p>Skills and institutional memory built locally. When we leave, you will not need us any more. That is the point.</p></article></div>
           <div className="lgr-milestones"><h3>Key milestones</h3><p><span>Spring 2026</span> Readiness phase begins</p><p><span>Mid 2026</span> Structural Change Order (SCO)</p><p><span>April 2027</span> Vesting Day — DPP unitaries</p><p><span>April 2028</span> Vesting Day — all others</p></div>
+
+          <section className="lgr-videos" aria-labelledby="lgr-video-heading">
+            <div className="lgr-video-heading">
+              <p className="eyebrow">Watch and listen</p>
+              <h3 id="lgr-video-heading">Perspectives from the LGR &amp; Devolution Hub</h3>
+              <p>Leaders and practitioners discuss what reorganisation asks of councils, partnerships and the people doing the work.</p>
+            </div>
+            <div className="lgr-video-grid">
+              {lgrVideos.map(video => (
+                <article key={video.id}>
+                  <div className="lgr-video-frame">
+                    <iframe
+                      src={`https://www.youtube-nocookie.com/embed/${video.id}`}
+                      title={video.title}
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    />
+                  </div>
+                  <h4>{video.title}</h4>
+                </article>
+              ))}
+            </div>
+          </section>
 
           <div className="lgr-downloads">
             <article><img src="https://static.wixstatic.com/media/12b1f3_2f7147a429374f5eb948dfc22aa63765~mv2.png/v1/fit/w_354,h_300,q_90,enc_avif,quality_auto/Screenshot%202026-03-10%20at%2008_09_41.png" alt="LGR Partnership Architecture brochure cover" /><h3>LGR Partnership Architecture</h3><p>Strategic Partner • Integrated Delivery • Targeted Capability.</p><a href="https://www.redquadrant.com/_files/ugd/12b1f3_d680b0e8ed4f4f0b84a9a0925dfe2c51.pdf" target="_blank" rel="noreferrer">Download PDF</a></article>

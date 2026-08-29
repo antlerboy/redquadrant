@@ -47,10 +47,31 @@ export default function ServicesPage() {
 
       <section className="service-modes" aria-label="Ways we work">
         <article><h2>Consulting</h2><ul><li>Reviews and strategy</li><li>Set strategic direction or solve a problem</li></ul></article>
-        <article><h2>Critical friend</h2><ul><li>Coaching and mentoring</li><li>Leading transformation</li><li>Accredited through PSTA</li></ul></article>
-        <article><h2>Transformation Interim</h2><ul><li>Turnaround or gnarly delivery</li><li>Market leading, innovative, quality assured</li><li>Quality consultancy resource to support, supplement and act as in-house transformation teams</li></ul></article>
-        <article><h2>Quadrant Resourcing</h2><img src="https://static.wixstatic.com/media/12b1f3_5c58e0e05d5f430890984f2d53fdbf8d~mv2.png/v1/fill/w_280,h_100,al_c,q_90,enc_avif,quality_auto/Screenshot%202020-10-12%20at%2012_13_25.png" alt="Quadrant Resourcing" /><ul><li>Excellent interims to deliver change and transformation</li><li>Fixed-price delivery of work packages to secure results and benefit from true delivery-focused services outside of IR35 considerations</li></ul></article>
-        <article><h2>Capability building</h2><img src={brandAssets.pstaLogo} alt="Public Service Transformation Academy" /><p>Not-for-profit social enterprise, to enable public services to transform themselves.</p></article>
+        <article><h2>Critical friend</h2><ul><li>Coaching and mentoring</li><li>Leading transformation</li><li>Independent challenge when a difficult decision needs clearer thinking</li></ul></article>
+        <article><h2>Transformation delivery</h2><ul><li>Turnaround and difficult delivery</li><li>Senior, quality-assured practitioners</li><li>Extra capability that works as part of your team</li></ul></article>
+      </section>
+
+      <section className="service-brands" aria-label="RedQuadrant partnerships">
+        <article>
+          <div className="service-logo-field">
+            <img src="https://static.wixstatic.com/media/12b1f3_5c58e0e05d5f430890984f2d53fdbf8d~mv2.png/v1/fill/w_280,h_100,al_c,q_90,enc_avif,quality_auto/Screenshot%202020-10-12%20at%2012_13_25.png" alt="Quadrant Resourcing" />
+          </div>
+          <div>
+            <h2>Quadrant Resourcing</h2>
+            <p>Experienced interim leaders and fixed-price, outcome-based work packages for change and transformation.</p>
+            <a href="https://www.quadrantresourcing.com/" target="_blank" rel="noreferrer">Visit Quadrant Resourcing</a>
+          </div>
+        </article>
+        <article>
+          <div className="service-logo-field psta-logo-field">
+            <img src={brandAssets.pstaLogo} alt="Public Service Transformation Academy" />
+          </div>
+          <div>
+            <h2>Capability building</h2>
+            <p>Training, academies, coaching and longer development programmes that help public services transform themselves.</p>
+            <Link href="/training-and-development">Explore training and development</Link>
+          </div>
+        </article>
       </section>
 
       <section className="services-overview">

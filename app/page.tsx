@@ -6,6 +6,20 @@ export default function Home() {
   return (
     <>
       <section className="home-stage" style={{ backgroundImage: `url(${homeImages.hero.src})` }}>
+        <video
+          className="home-stage-video"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          poster={homeImages.hero.src}
+          aria-hidden="true"
+          tabIndex={-1}
+        >
+          <source src={homeImages.heroVideo.src} type="video/mp4" />
+        </video>
+        <div className="home-stage-shade" aria-hidden="true" />
         <div className="site-frame home-stage-inner">
           <div className="ft-recognition">
             <strong>Every year since 2018</strong>
@@ -48,7 +62,7 @@ export default function Home() {
             <img src={homeImages.clients.src} alt="A group enjoying a beach trip" />
             <h2>Satisfied clients</h2>
             <p className="return-rate">96.8%</p>
-            <p>of our clients return to us for more. We stick around until the job is done, and deliver the value-adding outcomes as well as the initial requirement. And we build your skills and capacity, so we do ourselves out of a job.</p>
+            <p className="return-copy">of our clients return to us for more. We stick around until the job is done, and deliver the value-adding outcomes as well as the initial requirement. And we build your skills and capacity, so we do ourselves out of a job.</p>
           </article>
           <article>
             <img src={homeImages.methods.src} alt="A climber going over an edge" />
@@ -59,19 +73,21 @@ export default function Home() {
 
         <div className="home-lower-grid">
           <article className="psta-block">
-            <h2>The PSTA</h2>
-            <p>We lead and support the Public Service Transformation Academy, a not-for-profit social enterprise partnership. Our mission is to drive better outcomes for people and communities by developing the local, civil, social and health sectors’ capabilities to collaborate, innovate and lead. The PSTA delivers the Cabinet Office Commissioning Academy, Place-Based Systems Leadership Academies, and a range of Transformation Academies and other capability building.</p>
+            <h2>The Public Service Transformation Academy</h2>
+            <p>We lead and support the Public Service Transformation Academy, a not-for-profit social enterprise partnership. Its mission is to drive better outcomes for people and communities by developing the capability of local, civil, social and health services to collaborate, innovate and lead.</p>
             <a href="https://www.publicservicetransformation.org/" target="_blank" rel="noreferrer"><img src={brandAssets.pstaLogo} alt="Public Service Transformation Academy" /></a>
           </article>
-          <article className="ir35-block">
-            <img src={homeImages.academy.src} alt="Writing on sticky notes" />
-            <h2>Dealing with IR35</h2>
-            <p>We have always offered outcome-based contracts, and can offer implementation support based on your signed-off work packages of deliverables. <a href="mailto:resourcing@quadrantresourcing.com">Contact us.</a></p>
+          <article className="lgr-block">
+            <img src={homeImages.lgr.src} alt={homeImages.lgr.alt} />
+            <h2>Local government reorganisation</h2>
+            <p>From business case to Day One and beyond, we help councils turn reorganisation into stronger organisations and better outcomes for communities.</p>
+            <Link className="home-feature-link" href="/lgrhub">Explore the LGR &amp; Devolution Hub</Link>
           </article>
           <article className="training-block">
-            <h2>Dynamic training</h2>
-            <p className="training-lede">We offer a range of workshops<br />and training to empower you<br />to make the changes you need.</p>
-            <p>System leadership, expert mentoring, leading service transformation, agile change, strategy, and organisational and leadership development.</p>
+            <h2><Link href="/training-and-development">Dynamic training and development</Link></h2>
+            <p className="training-lede">Build the capability to make change work in your own organisation.</p>
+            <p>Leadership, systems thinking, commissioning, transformation, coaching, mentoring, and practical learning through live work.</p>
+            <Link className="home-feature-link" href="/training-and-development">Explore training and development</Link>
             <img src={homeImages.learning.src} alt="People holding hands" />
           </article>
         </div>

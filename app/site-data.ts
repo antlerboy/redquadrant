@@ -18,6 +18,9 @@ export const homeImages = {
     src: "https://static.wixstatic.com/media/11062b_4067e167d0a04120a48d356d5dc6b465f000.jpg/v1/fill/w_1600%2Ch_900%2Cal_c%2Cq_88%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/11062b_4067e167d0a04120a48d356d5dc6b465f000.jpg",
     alt: "People working together around a table",
   },
+  heroVideo: {
+    src: "https://video.wixstatic.com/video/11062b_4067e167d0a04120a48d356d5dc6b465/1080p/mp4/file.mp4",
+  },
   justice: {
     src: "https://static.wixstatic.com/media/2789fba4f9de4318a4fe0cbcfd39b671.jpg/v1/crop/x_0%2Cy_118%2Cw_4965%2Ch_3037/fill/w_900%2Ch_560%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/2789fba4f9de4318a4fe0cbcfd39b671.jpg",
     alt: "Green landscape representing environmental and social justice",
@@ -37,6 +40,10 @@ export const homeImages = {
   academy: {
     src: "https://static.wixstatic.com/media/11062b_1f1d31091b1546d28e8d7ffbebf23a7a~mv2.jpg/v1/crop/x_0%2Cy_29%2Cw_5500%2Ch_3609/fill/w_900%2Ch_560%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/Writing%20on%20Sticky%20Notes.jpg",
     alt: "Workshop participants writing ideas on sticky notes",
+  },
+  lgr: {
+    src: "https://static.wixstatic.com/media/8330ee707e024a12a0c4a6cd0da175f1.jpg/v1/fill/w_900,h_560,al_c,q_85,enc_avif,quality_auto/Creative%20Office%20Scene.jpg",
+    alt: "A public-service team working together",
   },
   learning: {
     src: "https://static.wixstatic.com/media/1cd9eba76a294db7befc9b890490d7f6.jpg/v1/crop/x_1124%2Cy_532%2Cw_4645%2Ch_3402/fill/w_900%2Ch_560%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/Holding%20Hands%20.jpg",
