@@ -85,6 +85,15 @@ test("footer offers the toolshed without consultancy mode", async () => {
   assert.doesNotMatch(html, /Consultancy mode/i);
 });
 
+test("origin story has one subtle, accessible route", async () => {
+  const { response, html } = await render("/");
+
+  assert.equal(response.status, 200);
+  assert.match(html, /Our unlikely beginning/i);
+  assert.match(html, /aria-label=["']Read the RedQuadrant origin story["']/i);
+  assert.doesNotMatch(html, /logo quadrant/i);
+});
+
 test("design gallery uses a consistent responsive structure", async () => {
   const { response, html } = await render("/designrichpictures");
 

@@ -46,43 +46,32 @@ const toolShedItems = [
 ] as const;
 
 export function OriginLogo({ src }: { src: string }) {
-  const [step, setStep] = useState(0);
   const [open, setOpen] = useState(false);
-  const sequence = ["top-left", "top-right", "bottom-right", "bottom-left"] as const;
-
-  const press = (quadrant: (typeof sequence)[number]) => {
-    if (quadrant === sequence[step]) {
-      const next = step + 1;
-      if (next === sequence.length) {
-        setOpen(true);
-        setStep(0);
-      } else {
-        setStep(next);
-      }
-      return;
-    }
-    setStep(quadrant === sequence[0] ? 1 : 0);
-  };
 
   return (
     <div className="logo-easter">
       <Link className="logo" href="/" aria-label="RedQuadrant home">
         <img src={src} alt="RedQuadrant" width="268" height="62" />
       </Link>
-      <div className="logo-hotspots" aria-label="RedQuadrant logo quadrants">
-        {sequence.map((quadrant, index) => (
-          <button
-            className={`logo-quadrant logo-quadrant-${quadrant}`}
-            type="button"
-            key={quadrant}
-            onClick={() => press(quadrant)}
-            aria-label={`RedQuadrant logo quadrant ${index + 1}`}
-          />
-        ))}
-      </div>
+      <button
+        className="logo-story-hint"
+        type="button"
+        onClick={() => setOpen(value => !value)}
+        aria-label="Read the RedQuadrant origin story"
+        aria-expanded={open}
+        aria-controls="redquadrant-origin-story"
+      >
+        Our unlikely beginning
+      </button>
       {open && (
-        <aside className="logo-origin-card" aria-live="polite">
+        <aside
+          className="logo-origin-card"
+          id="redquadrant-origin-story"
+          aria-label="The RedQuadrant origin story"
+          aria-live="polite"
+        >
           <button type="button" onClick={() => setOpen(false)} aria-label="Close origin story">×</button>
+          <h2>Our unlikely beginning</h2>
           <p>{originStory}</p>
         </aside>
       )}
