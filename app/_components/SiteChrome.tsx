@@ -1,7 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { brandAssets, navLinks } from "../site-data";
-import { ConsultancyModeSwitch, FooterShed, OriginLogo, SeasonalQuiz } from "./EasterEggsLive";
+import { FooterShed, OriginLogo, SeasonalQuiz } from "./EasterEggsLive";
 
 const privacyNotice =
   "https://a478cfd1-b9d7-40a8-9cb4-7b493c1cd390.filesusr.com/ugd/12b1f3_8f5ebb26ce53447ea91f598594495d96.pdf";
@@ -38,7 +37,6 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="site-frame footer-easter-row">
         <SeasonalQuiz />
-        <ConsultancyModeSwitch />
         <FooterShed />
       </div>
       <div className="site-frame footer-copy">

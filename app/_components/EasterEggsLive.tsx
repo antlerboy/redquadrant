@@ -2,8 +2,7 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useEffect, useRef, useState } from "react";
-import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const originStory =
   "RedQuadrant, 2009. Inspired by a minicab company running a self-organising allocation system above a chip shop. Uber before Uber, only less well-funded.";
@@ -46,39 +45,6 @@ const toolShedItems = [
   },
 ] as const;
 
-const consultancyReplacements: readonly [RegExp, string][] = [
-  [/public services/gi, "cross-boundary public-service stakeholder ecosystems"],
-  [/public service/gi, "public-value delivery ecosystem"],
-  [/local government/gi, "place-based local-government stakeholder landscape"],
-  [/transformation/gi, "transformational change enablement"],
-  [/transforming/gi, "enabling transformational change across"],
-  [/transform/gi, "strategically transform"],
-  [/clients/gi, "strategic delivery partners"],
-  [/client/gi, "strategic delivery partner"],
-  [/people/gi, "human-capital stakeholders"],
-  [/services/gi, "service-delivery propositions"],
-  [/service/gi, "service-delivery proposition"],
-  [/outcomes/gi, "outcome-led value realisation"],
-  [/outcome/gi, "outcome-led value realisation"],
-  [/training/gi, "capability enablement"],
-  [/learning/gi, "capability acceleration"],
-  [/change/gi, "strategic transformation"],
-  [/work/gi, "co-created delivery workstreams"],
-  [/help/gi, "partner to catalyse"],
-  [/teams/gi, "multi-disciplinary delivery pods"],
-  [/team/gi, "multi-disciplinary delivery pod"],
-  [/problems/gi, "mission-critical delivery challenges"],
-  [/problem/gi, "mission-critical delivery challenge"],
-];
-
-function consultancyText(input: string) {
-  let output = input;
-  for (const [pattern, replacement] of consultancyReplacements) {
-    output = output.replace(pattern, replacement);
-  }
-  return output;
-}
-
 export function OriginLogo({ src }: { src: string }) {
   const [step, setStep] = useState(0);
   const [open, setOpen] = useState(false);
@@ -99,7 +65,7 @@ export function OriginLogo({ src }: { src: string }) {
   };
 
   return (
-    <div className="logo-easter" data-no-consultancy>
+    <div className="logo-easter">
       <Link className="logo" href="/" aria-label="RedQuadrant home">
         <img src={src} alt="RedQuadrant" width="268" height="62" />
       </Link>
@@ -127,7 +93,7 @@ export function OriginLogo({ src }: { src: string }) {
 export function ReturnRateStat() {
   const [open, setOpen] = useState(false);
   return (
-    <span className="return-rate-wrap" data-no-consultancy>
+    <span className="return-rate-wrap">
       <button
         type="button"
         className="return-rate return-rate-button"
@@ -143,71 +109,6 @@ export function ReturnRateStat() {
   );
 }
 
-export function ConsultancyModeSwitch() {
-  const pathname = usePathname();
-  const [active, setActive] = useState(false);
-  const originals = useRef(new Map<Text, string>());
-
-  const restore = useCallback(() => {
-    originals.current.forEach((value, node) => {
-      node.nodeValue = value;
-    });
-    originals.current.clear();
-    document.body.classList.remove("consultancy-mode");
-  }, []);
-
-  const apply = useCallback(() => {
-    restore();
-    const main = document.querySelector("main");
-    if (!main) return;
-    const walker = document.createTreeWalker(main, NodeFilter.SHOW_TEXT);
-    let node = walker.nextNode();
-    while (node) {
-      const textNode = node as Text;
-      const parent = textNode.parentElement;
-      const original = textNode.nodeValue ?? "";
-      if (
-        parent &&
-        original.trim() &&
-        !parent.closest("[data-no-consultancy]") &&
-        !["SCRIPT", "STYLE", "NOSCRIPT", "BUTTON"].includes(parent.tagName)
-      ) {
-        const transformed = consultancyText(original);
-        if (transformed !== original) {
-          originals.current.set(textNode, original);
-          textNode.nodeValue = transformed;
-        }
-      }
-      node = walker.nextNode();
-    }
-    document.body.classList.add("consultancy-mode");
-  }, [restore]);
-
-  useEffect(() => {
-    if (active) apply();
-    else restore();
-    return () => restore();
-  }, [active, pathname, apply, restore]);
-
-  return (
-    <div className="consultancy-switch-wrap" data-no-consultancy>
-      {active && (
-        <div className="consultancy-mode-banner" role="status">
-          Leveraging transformational stakeholder ecosystems to unlock scalable, outcome-led public value.
-        </div>
-      )}
-      <button
-        className="consultancy-switch"
-        type="button"
-        onClick={() => setActive(value => !value)}
-        aria-pressed={active}
-      >
-        {active ? "Make it human again." : "Consultancy mode"}
-      </button>
-    </div>
-  );
-}
-
 export function FooterShed() {
   const [item, setItem] = useState<(typeof toolShedItems)[number] | null>(null);
 
@@ -217,10 +118,13 @@ export function FooterShed() {
   };
 
   return (
-    <div className="footer-shed-wrap" data-no-consultancy>
-      <button className="tiny-shed" type="button" onClick={openShed} aria-label="Open the RedQuadrant Tool Shed">
-        <span className="shed-roof" aria-hidden="true" />
-        <span className="shed-body" aria-hidden="true"><span className="shed-door" /></span>
+    <div className="footer-shed-wrap">
+      <button className="tiny-shed" type="button" onClick={openShed}>
+        <span className="shed-icon" aria-hidden="true">
+          <span className="shed-roof" />
+          <span className="shed-body"><span className="shed-door" /></span>
+        </span>
+        <span className="shed-label">sample the RedQuadrant toolshed</span>
       </button>
       {item && (
         <aside className="shed-card" aria-live="polite">
@@ -256,7 +160,6 @@ export function SeasonalQuiz() {
       href="https://antlerboy.github.io/RedQuadrantChristmasquiz/"
       target="_blank"
       rel="noreferrer"
-      data-no-consultancy
     >
       <span aria-hidden="true">✦</span>
       The nerdy local government Christmas quiz

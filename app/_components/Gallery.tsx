@@ -6,7 +6,12 @@ export function Gallery() {
     <div className="gallery-groups">
       {galleryGroups.map((group) => (
         <section className="gallery-group" key={`${group.client}-${group.project}`}>
-          <div className="gallery-grid">
+          <header className="gallery-heading">
+            <h2>{group.client}</h2>
+            <p>{group.project}</p>
+            <p>{group.format}{group.year ? ` · ${group.year}` : ""}</p>
+          </header>
+          <div className={`gallery-grid gallery-grid-${Math.min(group.images.length, 4)}`}>
             {group.images.map((image, index) => {
               const position = `${index + 1} of ${group.images.length}`;
               const description = `${group.client} — ${group.project}; ${group.format}, ${group.year}; image ${position}`;
@@ -19,11 +24,6 @@ export function Gallery() {
                 </figure>
               );
             })}
-          </div>
-          <div className="gallery-heading">
-            <h2>{group.client}</h2>
-            <p>{group.project}</p>
-            <p>{group.format}{group.year ? ` · ${group.year}` : ""}</p>
           </div>
         </section>
       ))}

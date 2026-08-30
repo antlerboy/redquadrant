@@ -76,3 +76,20 @@ test("services keeps partner logos separate from explanatory copy", async () => 
   assert.match(html, /Explore training and development/i);
   assert.doesNotMatch(html, /outside of IR35 considerations/i);
 });
+
+test("footer offers the toolshed without consultancy mode", async () => {
+  const { response, html } = await render("/");
+
+  assert.equal(response.status, 200);
+  assert.match(html, /Sample the RedQuadrant toolshed/i);
+  assert.doesNotMatch(html, /Consultancy mode/i);
+});
+
+test("design gallery uses a consistent responsive structure", async () => {
+  const { response, html } = await render("/designrichpictures");
+
+  assert.equal(response.status, 200);
+  assert.match(html, /RedQuadrant design/i);
+  assert.match(html, /class=["']gallery-heading["']/i);
+  assert.match(html, /class=["']gallery-grid gallery-grid-/i);
+});
