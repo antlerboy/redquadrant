@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SecretFeedbackDot, SiteFooter, SiteHeader } from "./_components/SiteChrome";
 import "./globals.css";
+import "./easter-eggs.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.redquadrant.com"),
