@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import { ReturnRateStat } from "./_components/EasterEggsLive";
+import { LatestPanel } from "./_components/LatestPanel";
 import { brandAssets, homeImages } from "./site-data";
 
 export default function Home() {
@@ -61,7 +63,7 @@ export default function Home() {
           <article>
             <img src={homeImages.clients.src} alt="A group enjoying a beach trip" />
             <h2>Satisfied clients</h2>
-            <p className="return-rate">96.8%</p>
+            <ReturnRateStat />
             <p className="return-copy">of our clients return to us for more. We stick around until the job is done, and deliver the value-adding outcomes as well as the initial requirement. And we build your skills and capacity, so we do ourselves out of a job.</p>
           </article>
           <article>
@@ -91,6 +93,8 @@ export default function Home() {
             <img src={homeImages.learning.src} alt="People holding hands" />
           </article>
         </div>
+
+        <LatestPanel />
       </section>
     </>
   );
