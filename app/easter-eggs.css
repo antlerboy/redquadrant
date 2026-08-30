@@ -20,15 +20,6 @@
 .return-rate-note{position:absolute;z-index:20;left:0;bottom:calc(100% + 8px);width:245px;padding:10px 12px;border:1px solid #c9c3bf;background:#fff;color:var(--brown);font-size:13px;line-height:1.35;box-shadow:0 8px 24px rgba(48,29,16,.13);opacity:0;pointer-events:none;transform:translateY(4px);transition:opacity .15s,transform .15s}
 .return-rate-wrap:hover .return-rate-note,.return-rate-wrap:focus-within .return-rate-note,.return-rate-note.is-open{opacity:1;transform:none}
 
-/* Logo origin story */
-.logo-easter{position:relative;width:268px;height:62px;flex:0 0 268px;margin-left:6px;transform:translateY(5px)}
-.logo-easter .logo{width:268px;height:62px;flex:none;margin-left:0;transform:none}
-.logo-story-hint{position:absolute;z-index:5;right:1px;bottom:-15px;padding:1px 0;border:0;border-bottom:1px dotted transparent;background:transparent;color:#817a76;font-family:"RQ Helvetica",Helvetica,Arial,sans-serif;font-size:10px;line-height:1;cursor:pointer;transition:color .15s,border-color .15s}
-.logo-story-hint:hover,.logo-story-hint:focus-visible{border-bottom-color:currentColor;color:var(--rq-red)}
-.logo-origin-card{position:absolute;z-index:120;top:68px;left:2px;width:min(340px,80vw);padding:16px 38px 14px 16px;border:1px solid #c7c1bd;background:#fff;color:var(--brown);box-shadow:0 14px 35px rgba(48,29,16,.18)}
-.logo-origin-card h2{margin:0 0 7px;font-size:17px}.logo-origin-card p{margin:0;font-size:14px;line-height:1.45}
-.logo-origin-card>button{position:absolute;top:5px;right:8px;padding:2px 5px;border:0;background:transparent;color:#6a625d;font-size:20px;cursor:pointer}
-
 /* Footer easter eggs */
 .footer-easter-row{position:relative;display:flex;min-height:34px;align-items:center;justify-content:flex-end;padding:0 8px 5px}
 .footer-shed-wrap{position:relative}
@@ -51,23 +42,8 @@
   .latest-panel{margin:38px 0 25px;padding:20px}
   .latest-panel-heading{grid-template-columns:1fr;gap:4px}.latest-panel-heading>p{text-align:left}
   .latest-grid{grid-template-columns:1fr;gap:0}.latest-grid article{padding:15px 0}.latest-grid article+article{padding-left:0;border-top:1px solid #dfdbd8;border-left:0}
-  .logo-easter{margin-left:0}
   .footer-easter-row{padding-inline:15px}
   .seasonal-quiz{font-size:11px}
 }
 
-@media(max-width:700px){
-  .logo-easter{width:215px;height:50px;flex-basis:215px;transform:none}
-  .logo-easter .logo{width:215px;height:50px}
-  .logo-story-hint{bottom:-13px;font-size:9px}
-  .logo-origin-card{top:61px}
-}
-
-@media(max-width:420px){
-  .logo-easter{width:190px;height:44px;flex-basis:190px}
-  .logo-easter .logo{width:190px;height:44px}
-  .logo-story-hint{bottom:-12px;font-size:8.5px}
-  .logo-origin-card{top:54px}
-}
-
-@media(prefers-reduced-motion:reduce){.return-rate-note,.logo-story-hint,.tiny-shed,.shed-icon,.shed-door{transition:none}}
+@media(prefers-reduced-motion:reduce){.return-rate-note,.tiny-shed,.shed-icon,.shed-door{transition:none}}

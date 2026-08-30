@@ -1,12 +1,33 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { brandAssets, navLinks } from "../site-data";
-import { FooterShed, OriginLogo, SeasonalQuiz } from "./EasterEggsLive";
+import { FooterShed, SeasonalQuiz } from "./EasterEggsLive";
 
 const privacyNotice =
   "https://a478cfd1-b9d7-40a8-9cb4-7b493c1cd390.filesusr.com/ugd/12b1f3_8f5ebb26ce53447ea91f598594495d96.pdf";
 
 export function Logo() {
-  return <OriginLogo src={brandAssets.logo} />;
+  return (
+    <Link className="logo" href="/" aria-label="RedQuadrant home">
+      <img src={brandAssets.logo} alt="RedQuadrant" width="268" height="62" />
+    </Link>
+  );
+}
+
+function OriginStoryDisclosure() {
+  return (
+    <details className="origin-story-disclosure">
+      <summary>Our story</summary>
+      <aside className="origin-story-card" aria-label="The RedQuadrant origin story">
+        <p className="origin-story-date">RedQuadrant, 2009</p>
+        <h2>Our unlikely beginning</h2>
+        <p>
+          Inspired by a minicab company running a self-organising allocation system above a chip shop.
+          Uber before Uber, only less well-funded.
+        </p>
+      </aside>
+    </details>
+  );
 }
 
 export function SiteHeader() {
@@ -18,6 +39,7 @@ export function SiteHeader() {
           {navLinks.map((link) => (
             <Link href={link.href} key={link.href}>{link.label}</Link>
           ))}
+          <OriginStoryDisclosure />
         </nav>
         <details className="mobile-nav">
           <summary aria-label="Open site menu"><span>Menu</span></summary>
@@ -25,6 +47,7 @@ export function SiteHeader() {
             {navLinks.map((link) => (
               <Link href={link.href} key={link.href}>{link.label}</Link>
             ))}
+            <OriginStoryDisclosure />
           </nav>
         </details>
       </div>

@@ -1,11 +1,7 @@
-/* eslint-disable @next/next/no-img-element, react-hooks/set-state-in-effect */
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
-
-const originStory =
-  "RedQuadrant, 2009. Inspired by a minicab company running a self-organising allocation system above a chip shop. Uber before Uber, only less well-funded.";
 
 const toolShedItems = [
   {
@@ -44,40 +40,6 @@ const toolShedItems = [
       "Change one part of the real service, observe what actually happens, and use the result to choose the next intervention.",
   },
 ] as const;
-
-export function OriginLogo({ src }: { src: string }) {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <div className="logo-easter">
-      <Link className="logo" href="/" aria-label="RedQuadrant home">
-        <img src={src} alt="RedQuadrant" width="268" height="62" />
-      </Link>
-      <button
-        className="logo-story-hint"
-        type="button"
-        onClick={() => setOpen(value => !value)}
-        aria-label="Read the RedQuadrant origin story"
-        aria-expanded={open}
-        aria-controls="redquadrant-origin-story"
-      >
-        Our unlikely beginning
-      </button>
-      {open && (
-        <aside
-          className="logo-origin-card"
-          id="redquadrant-origin-story"
-          aria-label="The RedQuadrant origin story"
-          aria-live="polite"
-        >
-          <button type="button" onClick={() => setOpen(false)} aria-label="Close origin story">×</button>
-          <h2>Our unlikely beginning</h2>
-          <p>{originStory}</p>
-        </aside>
-      )}
-    </div>
-  );
-}
 
 export function ReturnRateStat() {
   const [open, setOpen] = useState(false);
