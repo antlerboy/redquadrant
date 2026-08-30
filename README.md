@@ -13,6 +13,7 @@ A code-controlled, close copy of the current RedQuadrant Wix website, for review
 - The RedQuadrant Mailchimp signup form on `/newsletter`, posting directly to the existing RedQuadrant list.
 - No Wix login or `My Subscriptions` pages or links.
 - A GitHub Pages workflow for a free test deployment.
+- A separate pull-request quality workflow that lints and builds the static site before merge.
 
 ## Corrections made
 
@@ -24,6 +25,23 @@ A code-controlled, close copy of the current RedQuadrant Wix website, for review
 - `RedQuadrant` is used consistently on the recruitment page.
 - Gallery captions and image descriptions follow one consistent scheme.
 - Page titles and subjects have been aligned while existing URLs have been retained where practical.
+
+## Update discipline
+
+Every website iteration must include a quick stale-content review rather than simply adding the new change. Check at least:
+
+- frameworks and procurement routes, including expired framework versions;
+- named people, roles and contact details;
+- programme, academy and event dates, prices and enrolment language;
+- statistics, awards and evidence claims;
+- time-sensitive recruitment wording;
+- external links and calls to action.
+
+Remove or rewrite information that is clearly no longer current. Where current status cannot be established safely, record it in the running feedback issue rather than guessing.
+
+The home-page `Latest news and social media` panel is deliberately editorial rather than chronological. Keep exactly three strong current items in `app/latest-data.ts`, drawn as useful from Benjamin Taylor's LinkedIn, `syscoi.com`, `chosen-path.org`, RedQuadrant, Quadrant Resourcing and the Public Service Transformation Academy's social/news channels. Prefer relevance to RedQuadrant's live work over raw recency, and replace items when they stop being timely.
+
+The local-government Christmas quiz is a permanent seasonal rule in the site code. It appears automatically from 25 November through 5 January and remains hidden for the rest of the year. Do not remove that rule in later iterations.
 
 ## Local review
 

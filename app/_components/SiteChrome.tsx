@@ -1,16 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { brandAssets, navLinks } from "../site-data";
+import { ConsultancyModeSwitch, FooterShed, OriginLogo, SeasonalQuiz } from "./EasterEggsLive";
 
 const privacyNotice =
   "https://a478cfd1-b9d7-40a8-9cb4-7b493c1cd390.filesusr.com/ugd/12b1f3_8f5ebb26ce53447ea91f598594495d96.pdf";
 
 export function Logo() {
-  return (
-    <Link className="logo" href="/" aria-label="RedQuadrant home">
-      <img src={brandAssets.logo} alt="RedQuadrant" width="268" height="62" />
-    </Link>
-  );
+  return <OriginLogo src={brandAssets.logo} />;
 }
 
 export function SiteHeader() {
@@ -39,6 +36,11 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className="site-footer">
+      <div className="site-frame footer-easter-row">
+        <SeasonalQuiz />
+        <ConsultancyModeSwitch />
+        <FooterShed />
+      </div>
       <div className="site-frame footer-copy">
         <p>© RedQuadrant Ltd, a company registered in the UK number 6944005, VAT registration 975813577&nbsp; RedQuadrant, 7 Bell Yard, London WC2A 2JR</p>
         <p>

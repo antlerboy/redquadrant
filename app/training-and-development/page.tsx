@@ -107,7 +107,7 @@ export default function TrainingAndDevelopmentPage() {
           <h3>Leading Transformation</h3>
           <p>A 24-module curriculum grounded in systems thinking and practical application: shared purpose, power, complexity, system mapping, organisational design and sustainable change.</p>
           <h3>Commissioning leadership</h3>
-          <p>Through the Public Service Transformation Academy, we deliver the Cabinet Office Commissioning Academy and cross-sector programmes focused on outcomes, systems, complexity and collaborative commissioning.</p>
+          <p>Through the Public Service Transformation Academy, we deliver the National Commissioning Academy, originally developed by the Cabinet Office, and cross-sector programmes focused on outcomes, systems, complexity and collaborative commissioning.</p>
           <h3>Level 7 systems thinking practitioner apprenticeship</h3>
           <p>A route for funded, long-term development that connects advanced systems practice to genuine organisational challenges.</p>
           <h3>Designed with you</h3>
