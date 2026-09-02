@@ -4,7 +4,7 @@ import "./globals.css";
 import "./easter-eggs.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.redquadrant.com"),
+  metadataBase: new URL("https://redquadrant.com"),
   title: {
     default: "RedQuadrant | Public service transformation",
     template: "%s | RedQuadrant",
@@ -46,7 +46,7 @@ const organisationSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "RedQuadrant",
-  url: "https://www.redquadrant.com",
+  url: "https://redquadrant.com",
   email: "ops@redquadrant.com",
   address: {
     "@type": "PostalAddress",

@@ -1,6 +1,6 @@
 # RedQuadrant website
 
-A code-controlled RedQuadrant website, published through GitHub Pages at `www.redquadrant.com`. The former Wix site's layout, content, imagery, typography and desktop proportions were the original reference.
+A code-controlled RedQuadrant website, published through GitHub Pages at `redquadrant.com`. The former Wix site's layout, content, imagery, typography and desktop proportions were the original reference.
 
 ## What this version includes
 
@@ -8,7 +8,7 @@ A code-controlled RedQuadrant website, published through GitHub Pages at `www.re
 - Preserved current and legacy routes, including `/commissioning`, `/customer-focus`, `/libraries`, `/transformation-and-change`, `/digital` and `/housing`.
 - The same desktop visual frame, brand fonts, colours, imagery and content hierarchy as Wix, with responsive reflow for smaller screens.
 - Per-page titles, descriptions, canonical URLs and organisation structured data.
-- Production search metadata and a public `robots.txt` for `www.redquadrant.com`.
+- Production search metadata and a public `robots.txt` for `redquadrant.com`.
 - A very small magenta feedback dot at bottom right. Hover, focus or tap reveals its purpose; it opens the single running GitHub feedback issue.
 - The RedQuadrant Mailchimp signup form on `/newsletter`, posting directly to the existing RedQuadrant list.
 - No Wix login or `My Subscriptions` pages or links.
@@ -62,7 +62,7 @@ GITHUB_PAGES_BASE_PATH=/redquadrant npm run build:pages
 
 The repository is `antlerboy/redquadrant`. In **Settings → Pages**, choose **GitHub Actions** as the source if it is not already selected.
 
-The production address is `https://www.redquadrant.com/`. GitHub Pages also manages the repository address at `https://antlerboy.github.io/redquadrant/`.
+The production address is `https://redquadrant.com/`. GitHub Pages also manages the repository address at `https://antlerboy.github.io/redquadrant/`.
 
 Website comments belong in the single running feedback thread: `https://github.com/antlerboy/redquadrant/issues/1`. The concealed dot on every page opens that issue directly, matching the pattern used for PSTA and The Necessary Tangle.
 
