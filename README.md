@@ -1,6 +1,6 @@
-# RedQuadrant website test
+# RedQuadrant website
 
-A code-controlled, close copy of the current RedQuadrant Wix website, for review on GitHub Pages. This is not a redesign: the live Wix site's layout, content, imagery, typography and desktop proportions are the reference.
+A code-controlled RedQuadrant website, published through GitHub Pages at `www.redquadrant.com`. The former Wix site's layout, content, imagery, typography and desktop proportions were the original reference.
 
 ## What this version includes
 
@@ -8,11 +8,11 @@ A code-controlled, close copy of the current RedQuadrant Wix website, for review
 - Preserved current and legacy routes, including `/commissioning`, `/customer-focus`, `/libraries`, `/transformation-and-change`, `/digital` and `/housing`.
 - The same desktop visual frame, brand fonts, colours, imagery and content hierarchy as Wix, with responsive reflow for smaller screens.
 - Per-page titles, descriptions, canonical URLs and organisation structured data.
-- `noindex` and a restrictive `robots.txt` while the GitHub test duplicates the live website.
+- Production search metadata and a public `robots.txt` for `www.redquadrant.com`.
 - A very small magenta feedback dot at bottom right. Hover, focus or tap reveals its purpose; it opens the single running GitHub feedback issue.
 - The RedQuadrant Mailchimp signup form on `/newsletter`, posting directly to the existing RedQuadrant list.
 - No Wix login or `My Subscriptions` pages or links.
-- A GitHub Pages workflow for a free test deployment.
+- A GitHub Pages workflow that automatically uses either the configured custom domain or the repository test path.
 - A separate pull-request quality workflow that lints and builds the static site before merge.
 
 ## Corrections made
@@ -62,7 +62,7 @@ GITHUB_PAGES_BASE_PATH=/redquadrant npm run build:pages
 
 The repository is `antlerboy/redquadrant`. In **Settings → Pages**, choose **GitHub Actions** as the source if it is not already selected.
 
-The expected test address is `https://antlerboy.github.io/redquadrant/`.
+The production address is `https://www.redquadrant.com/`. GitHub Pages also manages the repository address at `https://antlerboy.github.io/redquadrant/`.
 
 Website comments belong in the single running feedback thread: `https://github.com/antlerboy/redquadrant/issues/1`. The concealed dot on every page opens that issue directly, matching the pattern used for PSTA and The Necessary Tangle.
 
@@ -74,13 +74,12 @@ The signup form in `app/newsletter/page.tsx` uses the existing RedQuadrant Mailc
 
 Natasa's principal controls are in `app/globals.css`. The shared brand variables are at the top; every major page region also has a stable semantic class. This permits one-pixel or one-property adjustments without fighting a page builder or changing unrelated pages.
 
-## Before production
+## Production checks
 
 - Replace the remote Wix image and font URLs with owned source files in the repository.
 - Submit a controlled test signup and confirm it arrives in the intended Mailchimp audience.
 - Confirm framework membership and contact details.
 - Add the current privacy notice as an owned file or stable link.
-- Remove test `noindex` metadata and update `robots.ts` only when this site replaces the live site.
-- Test redirects from every Wix URL before changing DNS.
+- Test redirects from every former Wix URL after DNS changes.
 
-This repository does not change Wix, `redquadrant.com`, `transduction.systems`, PSTA, email or DNS.
+This repository publishes the website, but DNS remains managed separately from GitHub.

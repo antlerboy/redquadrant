@@ -79,7 +79,7 @@ export function SecretFeedbackDot() {
       href="https://github.com/antlerboy/redquadrant/issues/1"
       target="_blank"
       rel="noreferrer"
-      aria-label="Suggest a change to this test website"
+      aria-label="Suggest a change to the RedQuadrant website"
       title="Website feedback"
     >
       <span>Website feedback</span>

@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   creator: "RedQuadrant",
   publisher: "RedQuadrant Ltd",
   robots: {
-    index: false,
-    follow: false,
-    googleBot: { index: false, follow: false },
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
   },
   openGraph: {
     type: "website",
@@ -34,9 +34,6 @@ export const metadata: Metadata = {
     title: "RedQuadrant | Public service transformation",
     description:
       "Senior practitioners helping public service organisations make change work in practice.",
-  },
-  other: {
-    "codex-preview": "development",
   },
   icons: {
     icon: "https://static.wixstatic.com/media/12b1f3_ffcb1d1d844d4c098d16fdfb3d4fef67%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/12b1f3_ffcb1d1d844d4c098d16fdfb3d4fef67%7Emv2.jpg",

@@ -28,7 +28,7 @@ async function render(pathname) {
   return { response, html: await response.text() };
 }
 
-test("renders development preview metadata", async () => {
+test("renders production metadata without Wix account controls", async () => {
   const { response, html } = await render("/");
 
   assert.equal(response.status, 200);
@@ -36,7 +36,9 @@ test("renders development preview metadata", async () => {
     response.headers.get("content-type") ?? "",
     /^text\/html\b/i,
   );
-  assert.match(html, developmentPreviewMeta);
+  assert.doesNotMatch(html, developmentPreviewMeta);
+  assert.match(html, /<meta(?=[^>]*\bname=["']robots["'])(?=[^>]*\bcontent=["']index, follow["'])[^>]*>/i);
+  assert.doesNotMatch(html, /Log in|My Subscriptions/i);
 });
 
 test("homepage links to LGR and training without the old IR35 feature", async () => {
