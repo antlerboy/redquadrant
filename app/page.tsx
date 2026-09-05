@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import { BuyerOffers } from "./_components/BuyerOffers";
 import { ReturnRateStat } from "./_components/EasterEggsLive";
 import { LatestPanel } from "./_components/LatestPanel";
 import { brandAssets, homeImages } from "./site-data";
@@ -39,7 +40,7 @@ export default function Home() {
             <a href="https://www.quadrantresourcing.com/" target="_blank" rel="noreferrer">Quadrant Resourcing</a>
             <div className="tool-shed">
               <span>the</span><b>RedQuadrant</b>
-              <a href="https://chosen-path.org/2020/08/28/an-invitation-to-the-redquadrant-tool-shed/" target="_blank" rel="noreferrer">Tool Shed</a>
+              <a href="/toolshed">Tool Shed</a>
               <p>Equip yourself to effectively<br />lead service transformation</p>
               <a className="tool-email" href="mailto:toolshed@redquadrant.com">toolshed@redquadrant.com</a>
             </div>
@@ -48,6 +49,7 @@ export default function Home() {
       </section>
 
       <section className="home-main site-frame">
+        <BuyerOffers />
         <div className="home-card-grid">
           <article>
             <img src={homeImages.justice.src} alt="Green landscape representing environmental and social justice" />

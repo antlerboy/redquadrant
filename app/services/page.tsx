@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { BuyerOffers } from "../_components/BuyerOffers";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import Link from "next/link";
@@ -44,6 +45,7 @@ export default function ServicesPage() {
   return (
     <div className="services-page site-frame">
       <h1>Services</h1>
+      <BuyerOffers />
 
       <section className="service-modes" aria-label="Ways we work">
         <article><h2>Consulting</h2><ul><li>Reviews and strategy</li><li>Set strategic direction or solve a problem</li></ul></article>
@@ -54,7 +56,7 @@ export default function ServicesPage() {
       <section className="service-brands" aria-label="RedQuadrant partnerships">
         <article>
           <div className="service-logo-field">
-            <img src="https://static.wixstatic.com/media/12b1f3_5c58e0e05d5f430890984f2d53fdbf8d~mv2.png/v1/fill/w_280,h_100,al_c,q_90,enc_avif,quality_auto/Screenshot%202020-10-12%20at%2012_13_25.png" alt="Quadrant Resourcing" />
+            <img src="/assets/owned/dff90c07b667260c.png" alt="Quadrant Resourcing" />
           </div>
           <div>
             <h2>Quadrant Resourcing</h2>

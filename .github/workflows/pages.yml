@@ -30,6 +30,8 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
+      - name: Restore verified owned assets
+        run: python3 scripts/fetch-owned-assets.py
       - name: Build static website
         env:
           GITHUB_PAGES: "true"

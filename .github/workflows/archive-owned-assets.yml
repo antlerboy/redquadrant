@@ -1,0 +1,30 @@
+name: Preserve owned website assets in GitHub
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/owned-assets.json
+      - scripts/fetch-owned-assets.py
+      - .github/workflows/archive-owned-assets.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: archive-owned-assets
+  cancel-in-progress: false
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Restore and verify all owned assets
+        run: python3 scripts/fetch-owned-assets.py
+      - name: Save the verified asset bytes in the repository
+        run: |
+          git add public/assets/owned public/assets/gallery
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Preserve verified owned website assets'
+          git pull --rebase origin main
+          git push origin HEAD:main

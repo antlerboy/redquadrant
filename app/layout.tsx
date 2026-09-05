@@ -36,9 +36,9 @@ export const metadata: Metadata = {
       "Senior practitioners helping public service organisations make change work in practice.",
   },
   icons: {
-    icon: "https://static.wixstatic.com/media/12b1f3_ffcb1d1d844d4c098d16fdfb3d4fef67%7Emv2.jpg/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/12b1f3_ffcb1d1d844d4c098d16fdfb3d4fef67%7Emv2.jpg",
-    shortcut: "https://static.wixstatic.com/media/12b1f3_ffcb1d1d844d4c098d16fdfb3d4fef67%7Emv2.jpg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/12b1f3_ffcb1d1d844d4c098d16fdfb3d4fef67%7Emv2.jpg",
-    apple: "https://static.wixstatic.com/media/12b1f3_ffcb1d1d844d4c098d16fdfb3d4fef67%7Emv2.jpg/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/12b1f3_ffcb1d1d844d4c098d16fdfb3d4fef67%7Emv2.jpg",
+    icon: "/assets/owned/8f63408fdd8dea51.jpg",
+    shortcut: "/assets/owned/aa07d5f7d922c14e.jpg",
+    apple: "/assets/owned/817432212425050c.jpg",
   },
 };
 
@@ -50,9 +50,9 @@ const organisationSchema = {
   email: "ops@redquadrant.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "7 Bell Yard",
+    streetAddress: "167–169 Great Portland Street, 5th Floor",
     addressLocality: "London",
-    postalCode: "WC2A 2JR",
+    postalCode: "W1W 5PF",
     addressCountry: "GB",
   },
   areaServed: "United Kingdom",

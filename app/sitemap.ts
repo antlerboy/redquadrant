@@ -1,0 +1,4 @@
+import type { MetadataRoute } from "next";
+import { buyerOffers } from "./buyer-offers";
+export const dynamic="force-static";
+export default function sitemap():MetadataRoute.Sitemap { return [...["/", "/toolshed/", "/newsletter/", "/housing/", "/libraries/", "/service-review/", "/customer-focus/", "/system-leadership/", "/commissioning/", "/making-change-happen/", "/joinus/", "/methodology/", "/organisation-design/", "/carbonreductionplan/", "/training-and-development/", "/adult-social-care/", "/frameworks/", "/childrens-social-care/", "/designrichpictures/", "/governance/", "/transformation-and-change/", "/digital/", "/customer-led-transformation/", "/place-based-public-services/", "/people/", "/services/", "/equality-diversity-inclusion/", "/lgrhub/", "/design/rich-pictures/", "/methods/culture-and-change/"],"/insights/","/insights/government-transformation/",...buyerOffers.map(o=>`/offers/${o.slug}/`)].map(path=>({url:`https://redquadrant.com${path}`})); }

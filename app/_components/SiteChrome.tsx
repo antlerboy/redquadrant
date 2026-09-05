@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import { PracticeRule } from "./PracticeRule";
 import { brandAssets, navLinks } from "../site-data";
 import { FooterShed, SeasonalQuiz } from "./EasterEggsLive";
 
@@ -58,12 +59,13 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className="site-footer">
+      <PracticeRule />
       <div className="site-frame footer-easter-row">
         <SeasonalQuiz />
         <FooterShed />
       </div>
       <div className="site-frame footer-copy">
-        <p>© RedQuadrant Ltd, a company registered in the UK number 6944005, VAT registration 975813577&nbsp; RedQuadrant, 7 Bell Yard, London WC2A 2JR</p>
+        <p>© RedQuadrant Ltd, a company registered in the UK number 6944005, VAT registration 975813577&nbsp; RedQuadrant, 167–169 Great Portland Street, 5th Floor, London, W1W 5PF</p>
         <p>
           We take your privacy seriously. Our <a href={privacyNotice} target="_blank" rel="noreferrer">privacy notice</a> explains how we collect, use, and protect your personal data, and sets out your rights under UK data protection law.
         </p>

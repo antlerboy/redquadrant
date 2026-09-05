@@ -29,7 +29,7 @@ export default function PeoplePage() {
       </div>
 
       <div className="people-operations">
-        <img src="https://static.wixstatic.com/media/12b1f3_212b6fd363b140d38ff1fc1915b084e7~mv2.jpeg/v1/fill/w_576,h_406,al_c,q_85,enc_avif,quality_auto/12b1f3_212b6fd363b140d38ff1fc1915b084e7~mv2.jpeg" alt="RedQuadrant operations team working together" />
+        <img src="/assets/owned/3f6405b9a4f5b6f3.jpg" alt="RedQuadrant operations team working together" />
         <div className="operations-column">
           <h2>All admin enquiries</h2>
           <p><a href="mailto:operations@redquadrant.com">operations@redquadrant.com</a></p>

@@ -18,7 +18,7 @@ export default function FrameworksPage() {
           <p>For more information, <Link href="/services">see our services</Link>, email <a href="mailto:frameworks@redquadrant.com">frameworks@redquadrant.com</a> or call Managing Partner Benjamin Taylor on <a href="tel:07931317230">07931 317230</a>.</p>
           <p><strong>We offer urgent response, at scale if required.</strong></p>
         </div>
-        <img src="https://static.wixstatic.com/media/6089cb4ae7f94a62b9e64693b29fbcd1.jpg/v1/crop/x_0,y_31,w_1924,h_1270/fill/w_1070,h_678,al_c,q_85,enc_avif,quality_auto/Urban%20Gardening.jpg" alt="People working together in an urban garden" />
+        <img src="/assets/owned/4e894d15d3974c5e.jpg" alt="People working together in an urban garden" />
       </section>
 
       <section className="framework-copy columns">
@@ -35,8 +35,8 @@ export default function FrameworksPage() {
         <article><h2>Matrix Milestones</h2><p>You can access our services through Matrix Milestone, a procurement vendor.</p></article>
       </section>
       <div className="frameworks-images">
-        <img src="https://static.wixstatic.com/media/1dbf63bcfa6944adaeec06c692b0e28d.jpg/v1/crop/x_0,y_919,w_5355,h_1838/fill/w_572,h_196,al_c,q_85,enc_avif,quality_auto/Working%20from%20a%20Cafe.jpg" alt="People working together at a café" />
-        <img src="https://static.wixstatic.com/media/e1f88fe1ad0f4844b50abde26bfc0a45.jpg/v1/fill/w_614,h_402,al_c,q_85,enc_avif,quality_auto/doing%20work%20together.jpg" alt="Colleagues doing work together" />
+        <img src="/assets/owned/dc9ba42f81652073.jpg" alt="People working together at a café" />
+        <img src="/assets/owned/c35bf5ffff6dc493.jpg" alt="Colleagues doing work together" />
       </div>
     </div>
   );

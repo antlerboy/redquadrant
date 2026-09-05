@@ -1,6 +1,7 @@
 export const navLinks = [
   { href: "/services", label: "Services" },
   { href: "/people", label: "People" },
+  { href: "/toolshed", label: "Tool Shed" },
   { href: "/lgrhub", label: "LGR Hub" },
   { href: "/frameworks", label: "Frameworks" },
   { href: "/joinus", label: "Join us" },
@@ -9,65 +10,65 @@ export const navLinks = [
 ] as const;
 
 export const brandAssets = {
-  logo: "https://static.wixstatic.com/media/12b1f3_47f276c6235a4d90a7d5fdcad3e2d160~mv2.png/v1/fill/w_536,h_124,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/RedQuadrant%20logo%20magenta.png",
-  pstaLogo: "https://static.wixstatic.com/media/12b1f3_f0627b7d7b044a9689be3a40f0191f0c~mv2.png/v1/fill/w_582,h_260,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/PSTA%20logo%20colour%20transparent-01.png",
+  logo: "/assets/owned/d28d2f44a4342601.png",
+  pstaLogo: "/assets/owned/2a47d761b69356b7.png",
 } as const;
 
 export const homeImages = {
   hero: {
-    src: "https://static.wixstatic.com/media/11062b_4067e167d0a04120a48d356d5dc6b465f000.jpg/v1/fill/w_1600%2Ch_900%2Cal_c%2Cq_88%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/11062b_4067e167d0a04120a48d356d5dc6b465f000.jpg",
+    src: "/assets/owned/7e0b99e57fb165f9.jpg",
     alt: "People working together around a table",
   },
   heroVideo: {
-    src: "https://video.wixstatic.com/video/11062b_4067e167d0a04120a48d356d5dc6b465/1080p/mp4/file.mp4",
+    src: "/assets/owned/819ad8a68f4e2d5e.mp4",
   },
   justice: {
-    src: "https://static.wixstatic.com/media/2789fba4f9de4318a4fe0cbcfd39b671.jpg/v1/crop/x_0%2Cy_118%2Cw_4965%2Ch_3037/fill/w_900%2Ch_560%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/2789fba4f9de4318a4fe0cbcfd39b671.jpg",
+    src: "/assets/owned/fe0586eb0c196491.jpg",
     alt: "Green landscape representing environmental and social justice",
   },
   delivery: {
-    src: "https://static.wixstatic.com/media/cdb75f7fa13b4c7db41d8b3c36b2c3ca.jpg/v1/fill/w_900%2Ch_560%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/cdb75f7fa13b4c7db41d8b3c36b2c3ca.jpg",
+    src: "/assets/owned/29c5c35a734eddd5.jpg",
     alt: "Experienced public service practitioners collaborating",
   },
   clients: {
-    src: "https://static.wixstatic.com/media/11062b_9f9c401444144cf3bbc15afaf65a43d7~mv2.jpg/v1/fill/w_900%2Ch_560%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/Happy%20Beach%20Trip.jpg",
+    src: "/assets/owned/16d1245ac38259c1.jpg",
     alt: "A group celebrating together on a beach",
   },
   methods: {
-    src: "https://static.wixstatic.com/media/66ab985899b74824855c87fffa91f885.jpg/v1/fill/w_900%2Ch_560%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/Over%20The%20Edge.jpg",
+    src: "/assets/owned/18147e313ac6e4ef.jpg",
     alt: "A climber using practical methods to navigate a challenge",
   },
   academy: {
-    src: "https://static.wixstatic.com/media/11062b_1f1d31091b1546d28e8d7ffbebf23a7a~mv2.jpg/v1/crop/x_0%2Cy_29%2Cw_5500%2Ch_3609/fill/w_900%2Ch_560%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/Writing%20on%20Sticky%20Notes.jpg",
+    src: "/assets/owned/ff8c478c2ebf9931.jpg",
     alt: "Workshop participants writing ideas on sticky notes",
   },
   lgr: {
-    src: "https://static.wixstatic.com/media/8330ee707e024a12a0c4a6cd0da175f1.jpg/v1/fill/w_900,h_560,al_c,q_85,enc_avif,quality_auto/Creative%20Office%20Scene.jpg",
+    src: "/assets/owned/23f2c83e44ee2d1f.jpg",
     alt: "A public-service team working together",
   },
   learning: {
-    src: "https://static.wixstatic.com/media/1cd9eba76a294db7befc9b890490d7f6.jpg/v1/crop/x_1124%2Cy_532%2Cw_4645%2Ch_3402/fill/w_900%2Ch_560%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/Holding%20Hands%20.jpg",
+    src: "/assets/owned/dc4947d5381e5d00.jpg",
     alt: "People supporting one another in a learning community",
   },
 } as const;
 
 export const serviceImages = {
-  culture: { src: "https://static.wixstatic.com/media/11062b_470935bdc46147f2a5912df73112bacc~mv2.jpeg/v1/crop/x_449,y_0,w_4863,h_3466/fill/w_940,h_670,al_c,q_85,enc_avif,quality_auto/Reading%20in%20a%20Bookstore.jpeg", alt: "People reading in a bookshop" },
-  housing: { src: "https://static.wixstatic.com/media/11062b_6d7cbe1940e245b185b4f954e0d144b0~mv2.jpg/v1/crop/x_897,y_0,w_3965,h_3840/fill/w_900,h_870,al_c,q_85,enc_avif,quality_auto/Narrow%20Street.jpg", alt: "A narrow residential street" },
-  care: { src: "https://static.wixstatic.com/media/11062b_cb325573ac974502b6f9bb9220c44c7d~mv2.jpg/v1/crop/x_807,y_0,w_3386,h_3333/fill/w_822,h_792,al_c,q_85,enc_avif,quality_auto/Man%20on%20Wheelchair.jpg", alt: "A wheelchair user outdoors" },
-  health: { src: "https://static.wixstatic.com/media/11062b_86a1d7b9abe74705b6731d168eb5fbca~mv2.jpg/v1/crop/x_763,y_0,w_4093,h_3745/fill/w_898,h_820,al_c,q_85,enc_avif,quality_auto/Operating%20Room.jpg", alt: "A hospital operating room" },
-  inclusion: { src: "https://static.wixstatic.com/media/11062b_90ca00cab6874653a630f776e12af8cb~mv2.jpg/v1/crop/x_1271,y_0,w_6119,h_5773/fill/w_794,h_748,al_c,q_85,enc_avif,quality_auto/Music%20festival.jpg", alt: "A diverse crowd at a music festival" },
-  ict: { src: "https://static.wixstatic.com/media/11062b_8a8ef7c376d04abead9b15371ed93d5e~mv2.jpg/v1/crop/x_1030,y_0,w_2941,h_2813/fill/w_900,h_860,al_c,q_85,enc_avif,quality_auto/Team%20Working%20in%20the%20System%20Room.jpg", alt: "A team working in a control room" },
-  justice: { src: "https://static.wixstatic.com/media/11062b_fe6dd197d5d44552b7b2ec25379b757c~mv2.jpg/v1/crop/x_1076,y_0,w_4568,h_4480/fill/w_812,h_698,al_c,q_85,enc_avif,quality_auto/Child%20Playing.jpg", alt: "A child playing outside" },
-  customer: { src: "https://static.wixstatic.com/media/8e4cdcba279c43e982032876501568fd.jpg/v1/crop/x_232,y_0,w_4451,h_3930/fill/w_750,h_572,al_c,q_85,enc_avif,quality_auto/Senior%20Woman%20Dancing.jpg", alt: "An older woman dancing" },
-  customerService: { src: "https://static.wixstatic.com/media/0908b4c858c2438db45e303fafbde49b.jpg/v1/crop/x_946,y_23,w_3229,h_3376/fill/w_748,h_718,al_c,q_85,enc_avif,quality_auto/Customer%20Service.jpg", alt: "A customer service adviser" },
-  learning: { src: "https://static.wixstatic.com/media/e2f69251cb244a16a0c1f7d6f87aba1e.jpg/v1/fill/w_816,h_620,al_c,q_85,enc_avif,quality_auto/Change.jpg", alt: "Colleagues discussing change" },
-  audience: { src: "https://static.wixstatic.com/media/16366a164cdf42c08d53b2e2f575f01e.jpg/v1/fill/w_818,h_540,al_c,q_85,enc_avif,quality_auto/Audience.jpg", alt: "An audience at a learning event" },
-  hr: { src: "https://static.wixstatic.com/media/nsplsh_ebd1266b2bd142e4bab389530229237b~mv2.jpg/v1/crop/x_829,y_0,w_3814,h_3648/fill/w_766,h_668,al_c,q_85,enc_avif,quality_auto/Image%20by%20Dylan%20Gillis.jpg", alt: "Colleagues in a workshop" },
-  commissioning: { src: "https://static.wixstatic.com/media/11062b_7e196a82c62c47fc85b14cd0268073f7~mv2.jpg/v1/crop/x_106,y_0,w_1708,h_1024/fill/w_924,h_546,al_c,q_85,enc_avif,quality_auto/Vibrant%20Team%20Meeting%20Scene.jpg", alt: "A team meeting" },
-  digitalGrid: { src: "https://static.wixstatic.com/media/f2b81bcc7b05470d8184be321707c602.jpg/v1/crop/x_7,y_0,w_1907,h_1080/fill/w_898,h_500,al_c,q_85,enc_avif,quality_auto/Blue%20Digital%20Grid.jpg", alt: "An abstract digital network" },
-  digitalInterface: { src: "https://static.wixstatic.com/media/73c818d494564f33883b5a2ffa08fb46.jpg/v1/crop/x_0,y_108,w_1920,h_862/fill/w_898,h_518,al_c,q_85,enc_avif,quality_auto/Touching%20Digital%20Interface.jpg", alt: "A person using a digital interface" },
-  delivery: { src: "https://static.wixstatic.com/media/a01493bb8ec84e25a44424b088065876.jpg/v1/crop/x_780,y_0,w_4199,h_3716/fill/w_870,h_760,al_c,q_85,enc_avif,quality_auto/Colleagues%20Working%20Together.jpg", alt: "Colleagues working together" },
+  culture: { src: "/assets/owned/89377a13d275086a.jpg", alt: "People reading in a bookshop" },
+  housing: { src: "/assets/owned/04329be1fe94b6d7.jpg", alt: "A narrow residential street" },
+  care: { src: "/assets/owned/e2f637580327822e.jpg", alt: "A wheelchair user outdoors" },
+  health: { src: "/assets/owned/8516bc7e45a3bf70.jpg", alt: "A hospital operating room" },
+  inclusion: { src: "/assets/owned/660854676c14e30b.jpg", alt: "A diverse crowd at a music festival" },
+  ict: { src: "/assets/owned/cad936ac2fa5d3a0.jpg", alt: "A team working in a control room" },
+  justice: { src: "/assets/owned/97378ff0fad18daf.jpg", alt: "A child playing outside" },
+  customer: { src: "/assets/owned/0fd69ee4da0fcbd4.jpg", alt: "An older woman dancing" },
+  customerService: { src: "/assets/owned/1ac8c97d8752d4b5.jpg", alt: "A customer service adviser" },
+  learning: { src: "/assets/owned/1aac7e30371c249b.jpg", alt: "Colleagues discussing change" },
+  audience: { src: "/assets/owned/48b350380330cd37.jpg", alt: "An audience at a learning event" },
+  hr: { src: "/assets/owned/ecb6ca606978feb6.jpg", alt: "Colleagues in a workshop" },
+  commissioning: { src: "/assets/owned/88c8ec8c2e6bb726.jpg", alt: "A team meeting" },
+  digitalGrid: { src: "/assets/owned/0ada073ac35d5981.jpg", alt: "An abstract digital network" },
+  digitalInterface: { src: "/assets/owned/514110ce26d0004f.jpg", alt: "A person using a digital interface" },
+  delivery: { src: "/assets/owned/ac5b4449f212f4a8.jpg", alt: "Colleagues working together" },
 } as const;
 
 type Person = {
@@ -366,7 +367,6 @@ export const galleryGroups: readonly GalleryGroup[] = [
       { id: "12b1f3_9bedf7d4228a46759e1bdafe2bc35153" },
       { id: "12b1f3_51fb9cb2a9a846efaa99d7d1fc750cf4" },
       { id: "12b1f3_b5e427dc0b1c42a69f9d4e8af2f7de59" },
-      { id: "12b1f3_196d1aa84aac47418993816fdfb0f209" },
       { id: "12b1f3_06122103b44a4c89b7235c898586804d" },
       { id: "12b1f3_bd62a020adff47db89041dc9268a2d05" },
     ],
@@ -374,5 +374,5 @@ export const galleryGroups: readonly GalleryGroup[] = [
 ] as const;
 
 export function galleryImageUrl(id: string, ext: "png" | "jpg" = "png") {
-  return `https://static.wixstatic.com/media/${id}~mv2.${ext}/v1/fit/w_1600%2Ch_1600%2Cq_90%2Cenc_avif%2Cquality_auto/${id}~mv2.${ext}`;
+  return `/assets/gallery/${id}.${ext}`;
 }
