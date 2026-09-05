@@ -1,3 +1,4 @@
+import { StartWithTheWork } from "./_components/StartWithTheWork";
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { BuyerOffers } from "./_components/BuyerOffers";
@@ -50,6 +51,7 @@ export default function Home() {
 
       <section className="home-main site-frame">
         <BuyerOffers />
+<StartWithTheWork />
         <div className="home-card-grid">
           <article>
             <img src={homeImages.justice.src} alt="Green landscape representing environmental and social justice" />

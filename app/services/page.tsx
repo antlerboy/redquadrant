@@ -1,3 +1,4 @@
+import { StartWithTheWork } from "../_components/StartWithTheWork";
 /* eslint-disable @next/next/no-img-element */
 import { BuyerOffers } from "../_components/BuyerOffers";
 import type { Metadata } from "next";
@@ -46,6 +47,7 @@ export default function ServicesPage() {
     <div className="services-page site-frame">
       <h1>Services</h1>
       <BuyerOffers />
+<StartWithTheWork />
 
       <section className="service-modes" aria-label="Ways we work">
         <article><h2>Consulting</h2><ul><li>Reviews and strategy</li><li>Set strategic direction or solve a problem</li></ul></article>

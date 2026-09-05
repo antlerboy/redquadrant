@@ -15,21 +15,6 @@ export function Logo() {
   );
 }
 
-function OriginStoryDisclosure() {
-  return (
-    <details className="origin-story-disclosure">
-      <summary>Our story</summary>
-      <aside className="origin-story-card" aria-label="The RedQuadrant origin story">
-        <p className="origin-story-date">RedQuadrant, 2009</p>
-        <h2>Our unlikely beginning</h2>
-        <p>
-          Inspired by a minicab company running a self-organising allocation system above a chip shop.
-          Uber before Uber, only less well-funded.
-        </p>
-      </aside>
-    </details>
-  );
-}
 
 export function SiteHeader() {
   return (
@@ -40,7 +25,7 @@ export function SiteHeader() {
           {navLinks.map((link) => (
             <Link href={link.href} key={link.href}>{link.label}</Link>
           ))}
-          <OriginStoryDisclosure />
+
         </nav>
         <details className="mobile-nav">
           <summary aria-label="Open site menu"><span>Menu</span></summary>
@@ -48,7 +33,7 @@ export function SiteHeader() {
             {navLinks.map((link) => (
               <Link href={link.href} key={link.href}>{link.label}</Link>
             ))}
-            <OriginStoryDisclosure />
+  
           </nav>
         </details>
       </div>
@@ -59,13 +44,13 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className="site-footer">
-      <PracticeRule />
+      <div className="site-frame footer-practice-row"><PracticeRule /><FooterShed /></div>
       <div className="site-frame footer-easter-row">
         <SeasonalQuiz />
-        <FooterShed />
+
       </div>
-      <div className="site-frame footer-copy">
-        <p>© RedQuadrant Ltd, a company registered in the UK number 6944005, VAT registration 975813577&nbsp; RedQuadrant, 167–169 Great Portland Street, 5th Floor, London, W1W 5PF</p>
+      <div className="site-frame footer-copy"><p><Link href="/our-story/">Our story</Link> · <Link href="/insights/">Insights</Link> · <Link href="/newsletter/">Newsletter</Link></p>
+        <p>© RedQuadrant Ltd, a company registered in the UK number 6944005, VAT registration 975813577.<br /> 167–169 Great Portland Street, 5th Floor, London, W1W 5PF</p>
         <p>
           We take your privacy seriously. Our <a href={privacyNotice} target="_blank" rel="noreferrer">privacy notice</a> explains how we collect, use, and protect your personal data, and sets out your rights under UK data protection law.
         </p>

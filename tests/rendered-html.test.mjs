@@ -48,7 +48,7 @@ test("homepage links to LGR and training without the old IR35 feature", async ()
   assert.match(html, /href=["']\/lgrhub["']/i);
   assert.match(html, /href=["']\/training-and-development["']/i);
   assert.match(html, /Local government reorganisation/i);
-  assert.match(html, /video\.wixstatic\.com\/video\/11062b_4067e167d0a04120a48d356d5dc6b465\/1080p\/mp4\/file\.mp4/i);
+  assert.match(html, /\/assets\/owned\/819ad8a68f4e2d5e\.mp4/i);
   assert.doesNotMatch(html, /Dealing with IR35/i);
 });
 
@@ -91,9 +91,11 @@ test("origin story has one subtle, accessible route", async () => {
   const { response, html } = await render("/");
 
   assert.equal(response.status, 200);
-  assert.match(html, /<summary>Our story<\/summary>/i);
-  assert.match(html, /Our unlikely beginning/i);
-  assert.match(html, /Inspired by a minicab company/i);
+  assert.match(html, /<footer[\s\S]*href=["']\/our-story\/["']/i);
+  assert.doesNotMatch(html.split("</header>")[0], /Our story/i);
+  const story = await render("/our-story");
+  assert.equal(story.response.status, 200);
+  assert.match(story.html, /minicab/i);
   assert.doesNotMatch(html, /logo-story-hint/i);
   assert.doesNotMatch(html, /logo quadrant/i);
 });
