@@ -3,6 +3,7 @@ on:
   push:
     branches: [main]
     paths:
+      - public/assets/owned/**
       - scripts/owned-assets.json
       - scripts/fetch-owned-assets.py
       - .github/workflows/archive-owned-assets.yml
