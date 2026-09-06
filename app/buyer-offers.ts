@@ -26,8 +26,16 @@ export const buyerOffers = [
       [
         "https://www.publicservicetransformation.org/commissioning-academy/",
         "Develop your commissioning capability"
+      ],
+      [
+        "/relational-commissioning/",
+        "Reset a live commissioning relationship"
       ]
-    ]
+    ],
+    "entryTitle": "Commissioning starting-point review",
+    "entryFee": "From £4,500 excluding VAT",
+    "entryScope": "One live commissioning challenge: a scoping call, review of up to five supplied documents, up to four interviews, a half-day working session, and a concise decision note. Delivered over two to three weeks. This first step establishes what to investigate and change; a wider market review or service redesign is scoped separately.",
+    "entryUrl": "/relational-commissioning/"
   },
   {
     "slug": "governance-and-judgement",
@@ -57,7 +65,11 @@ export const buyerOffers = [
         "/training-and-development",
         "Board and leadership development"
       ]
-    ]
+    ],
+    "entryTitle": "Board or partnership working session",
+    "entryFee": "From £3,500 excluding VAT",
+    "entryScope": "One consequential decision: a scoping call, up to four preparatory interviews, a half-day facilitated session, and a written decision and action record. Sustained governance review, individual coaching, and additional sessions are scoped separately.",
+    "entryUrl": "/system-leadership/"
   },
   {
     "slug": "transformation-under-pressure",
@@ -76,7 +88,7 @@ export const buyerOffers = [
     ],
     "links": [
       [
-        "https://resourceoptimisation.com/",
+        "/resource-optimisation/",
         "Resource Optimisation"
       ],
       [
@@ -86,7 +98,15 @@ export const buyerOffers = [
       [
         "/transformation-and-change",
         "Transformation and change experience"
+      ],
+      [
+        "/systems-change/",
+        "Make progress on a problem across a system"
       ]
-    ]
+    ],
+    "entryTitle": "Work and capacity diagnostic",
+    "entryFee": "From £6,500 excluding VAT",
+    "entryScope": "An initial Resource Optimisation assessment covering up to two teams and 40 work packages, with preparation, facilitated analysis, and an agreed action report. Wider implementation and repeat measurement are scoped separately.",
+    "entryUrl": "/resource-optimisation/"
   }
 ] as const;

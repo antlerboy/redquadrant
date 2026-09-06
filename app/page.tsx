@@ -6,6 +6,8 @@ import { ReturnRateStat } from "./_components/EasterEggsLive";
 import { LatestPanel } from "./_components/LatestPanel";
 import { brandAssets, homeImages } from "./site-data";
 
+export const metadata = { alternates: { canonical: "/" } };
+
 export default function Home() {
   return (
     <>
