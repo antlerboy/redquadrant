@@ -8,10 +8,10 @@ export const latestItems = [
   },
   {
     source: "Public Service Transformation Academy",
-    title: "National Commissioning Academy: September 2026",
+    title: "National Commissioning Academy: November 2026",
     summary:
       "The next flagship cohort is forming now, for commissioners and change-makers working on live public-service challenges across whole systems.",
-    href: "https://www.linkedin.com/posts/the-public-service-transformation-academy_flyer-activity-7467115339848269826-UZ7_",
+    href: "https://www.publicservicetransformation.org/programmes/national-commissioning-academy/",
   },
   {
     source: "chosen path",

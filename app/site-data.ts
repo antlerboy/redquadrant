@@ -180,7 +180,7 @@ export const serviceAreas = [
 
 export const frameworkGroups = [
   {
-    name: "A&AS2 — Audit & Assurance Services 2",
+    name: "A&AS2; Audit & Assurance Services 2",
     items: [
       "Operated by GCA (the new CCS)",
       "Lot 4",
@@ -199,12 +199,12 @@ export const frameworkGroups = [
     name: "Other public sector frameworks",
     items: [
       "Digital Outcomes and Specialists",
-      "HealthTrust Europe — Consultancy and advisory services, Lot 1",
+      "HealthTrust Europe; Consultancy and advisory services, Lot 1",
       "Bloom / NEPRO consultancy framework",
       "ESPO 664 consultancy services",
       "G-Cloud",
       "Constellia neutral vendor frameworks",
-      "NHS SBS10197 — Lots 1, 2 and 3",
+      "NHS SBS10197; Lots 1, 2 and 3",
       "Low Value Purchase System RM6237",
       "Matrix Milestones",
     ],

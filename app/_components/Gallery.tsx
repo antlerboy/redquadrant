@@ -14,7 +14,7 @@ export function Gallery() {
           <div className={`gallery-grid gallery-grid-${Math.min(group.images.length, 4)}`}>
             {group.images.map((image, index) => {
               const position = `${index + 1} of ${group.images.length}`;
-              const description = `${group.client} — ${group.project}; ${group.format}, ${group.year}; image ${position}`;
+              const description = `${group.client}; ${group.project}; ${group.format}, ${group.year}; image ${position}`;
               const src = galleryImageUrl(image.id, image.ext);
               return (
                 <figure key={image.id}>

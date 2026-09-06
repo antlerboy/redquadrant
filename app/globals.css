@@ -1628,3 +1628,11 @@ h1,h2,h3,figure,figcaption{text-align:left;font-style:normal}h1,h2,h3{font-famil
 .feedback-dot{right:0;bottom:0;width:44px;height:44px;background:transparent;opacity:1;border-radius:0}.feedback-dot::after{content:"";position:absolute;right:8px;bottom:8px;width:5px;height:5px;border-radius:50%;background:#7c7773;opacity:.5}.feedback-dot:hover,.feedback-dot:focus-visible{transform:none;opacity:1}.feedback-dot:focus-visible{outline:3px solid #b98736;outline-offset:-3px}.feedback-dot:hover::after{opacity:1}
 
 .curriculum-2026{padding-left:1.6rem;max-width:58rem}.curriculum-2026 li{padding:.5rem 0 1rem .5rem;border-bottom:1px solid #ddd}.curriculum-2026 h3{margin-bottom:.3rem}.curriculum-world{font-size:1rem;font-weight:700}.curriculum-2026 p{margin:.35rem 0}
+
+/* Reader review: compact, coherent footer and text-led procurement page. */
+.frameworks-intro{grid-template-columns:minmax(0,1fr);max-width:900px}.frameworks-intro>div{max-width:80ch}
+.site-footer{padding:0 0 28px;border-top:1px solid #dedede}.footer-practice-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:24px;padding-block:22px;border-bottom:1px solid #dedede}.footer-practice-row .practice-rule{width:auto;margin:0;padding:0;border:0;font-size:16px}.footer-practice-row .practice-rule p{margin:0 0 10px}.footer-easter-row:empty{display:none}.footer-easter-row{min-height:0}.footer-copy{padding-top:22px}.footer-links,.footer-contact{display:flex;flex-wrap:wrap;gap:12px 24px;margin:0 0 16px}.footer-links a,.footer-contact a{font-size:15px}.footer-legal p{font-size:14px;line-height:1.6;margin:2px 0}.footer-copy .footer-legal{padding:0}.site-footer .footer-easter-row:not(:has(*)){display:none}@media(max-width:650px){.footer-practice-row{grid-template-columns:1fr;gap:14px}.footer-links,.footer-contact{gap:10px 18px}.footer-practice-row .tiny-shed{justify-self:start}}
+
+.service-panel-text{display:block}.service-panel-text .service-panel-copy{max-width:85ch}
+
+.hero-motion-control{position:absolute;bottom:16px;right:18px;z-index:5;border:1px solid currentColor;background:#fff;color:#8a0018;border-radius:4px;padding:8px 12px;font-size:14px;cursor:pointer}.hero-motion-control:focus-visible{outline:3px solid #ffbf47;outline-offset:3px}

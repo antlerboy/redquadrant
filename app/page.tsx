@@ -1,3 +1,4 @@
+import { HeroMotion } from "./_components/HeroMotion";
 import { StartWithTheWork } from "./_components/StartWithTheWork";
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
@@ -12,19 +13,7 @@ export default function Home() {
   return (
     <>
       <section className="home-stage" style={{ backgroundImage: `url(${homeImages.hero.src})` }}>
-        <video
-          className="home-stage-video"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster={homeImages.hero.src}
-          aria-hidden="true"
-          tabIndex={-1}
-        >
-          <source src={homeImages.heroVideo.src} type="video/mp4" />
-        </video>
+        <HeroMotion />
         <div className="home-stage-shade" aria-hidden="true" />
         <div className="site-frame home-stage-inner">
           <div className="ft-recognition">

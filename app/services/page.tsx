@@ -83,7 +83,7 @@ export default function ServicesPage() {
           <h2>We offer expertise in a wide range of relevant areas:</h2>
           <h3>Thematic</h3>
           <ul>{serviceThemes.map(item => <li key={item}>{item}</li>)}</ul>
-          <p>Always underpinned by our experience that the key to making change real is the virtuous triangle of strategy, leader and organisational development, and sustainable delivery. Don’t just take our word for it – since 2018 we have been recognised amongst the <a href="https://www.ft.com/content/35f8087a-3bb3-4a49-a969-e1f537a5af27" target="_blank" rel="noreferrer">Financial Times UK’s Leading Management Consultants</a> across a range of sectors.</p>
+          <p>Always underpinned by our experience that the key to making change real is the virtuous triangle of strategy, leader and organisational development, and sustainable delivery. Don’t just take our word for it; since 2018 we have been recognised amongst the <a href="https://www.ft.com/content/35f8087a-3bb3-4a49-a969-e1f537a5af27" target="_blank" rel="noreferrer">Financial Times UK’s Leading Management Consultants</a> across a range of sectors.</p>
         </div>
         <div>
           <h3>Service specific</h3>
@@ -105,7 +105,7 @@ export default function ServicesPage() {
           <ul>
             <li>~2,000 experienced consultants covering all areas of public services and central government</li>
             <li>Core team of around 50, with experienced specialists covering all key disciplines and services</li>
-            <li>Nationwide coverage – 65% of our consultants are based outside London</li>
+            <li>Nationwide coverage; 65% of our consultants are based outside London</li>
             <li>15+ former local government CEOs</li>
             <li>Heads of service for all local government areas</li>
             <li>600+ with central government experience</li>
@@ -132,6 +132,8 @@ export default function ServicesPage() {
         <ul><li>Reviewing the entirety of housing management and operations, bringing together demand management and capacity planning to restructure a department around improvements identified by customers and employees, and identifying over 20 per cent realisable savings.</li><li>Tenant and resident panel work, identifying how customers can help services drive improvement.</li><li>Procurement, design and delivery of cross-organisation core business systems, including CRM, content and document management.</li></ul>
       </ServicePanel>
 
+      <section className="service-panel service-panel-text" id="childrens-services"><div className="service-panel-copy"><h2>Children’s services</h2><p>We help councils and partners improve support for children, young people, and families. Our work brings together children’s social care, education, SEND, health, and the voluntary sector, with children’s lived experience at the centre.</p><ul><li>Children’s services commissioning reviews and improvement plans</li><li>Sufficiency strategies, placement markets, and support for children in care and care leavers</li><li>SEND commissioning, short breaks, early help, and prevention</li><li>Co-production with children, young people, parents, and carers</li><li>Joint commissioning, partnership development, and practical learning for commissioning teams</li></ul><p>Fiona Fleming brings over twenty years of commissioning experience, including senior leadership in children’s services and work with councils on commissioning, sufficiency, and market development.</p><Contact name="Fiona Fleming" email="fiona.fleming@redquadrant.com" /></div></section>
+
       <ServicePanel id="adult-social-care" title="Adult social care" image={serviceImages.care} contact={<Contact name="Frank Curran" email="frank.curran@redquadrant.com" />}>
         <p>We work with local authorities to help improve adult social care services. This might be through better demand management, improved care pathways, cultural change and transformation programmes, market management or the development of new service models.</p>
         <p>Examples of our work:</p>
@@ -145,7 +147,7 @@ export default function ServicesPage() {
       </ServicePanel>
 
       <ServicePanel id="equality-diversity-inclusion" title="Equality, diversity and inclusion" image={serviceImages.inclusion} contact={<Contact name="Janice Prentice" phone="07946 498 195" email="janice.prentice@redquadrant.com" />}>
-        <p>We are increasingly working directly on projects that relate to equality, diversity and inclusion (ED&I). Through our work in this area, we aim to transform ED&I practice in public services by doing what we do: bringing together teams of experienced people to bring change about in public services — in this instance, people with wide and deep experience in ED&I in public services and the private sector.</p>
+        <p>We are increasingly working directly on projects that relate to equality, diversity and inclusion (ED&I). Through our work in this area, we aim to transform ED&I practice in public services by doing what we do: bringing together teams of experienced people to bring change about in public services; in this instance, people with wide and deep experience in ED&I in public services and the private sector.</p>
         <p>Examples of our work:</p>
         <ul><li>Diversity impact assessment for a Civil Service assessment centre, focused on eliminating unconscious bias and applying good practice</li><li>Development of diversity and inclusion strategies for a UK regulator and an arm’s-length body</li><li>EDI input to a Covid-19 economic recovery strategy and further support for a local enterprise partnership</li><li>Design and delivery of ‘Leadership in Diversity’ training for a police force and a council senior leadership team</li><li>Review of HR practice from an ED&I perspective for the Local Government Association</li></ul>
       </ServicePanel>

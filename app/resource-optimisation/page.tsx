@@ -4,7 +4,7 @@ const stages = [
   {
     number: "01",
     title: "Agree the test",
-    text: "Name and weight five to seven organisational priorities before the inventory begins. They become the shared test for value – and can be revisited once the work is visible.",
+    text: "Name and weight five to seven organisational priorities before the inventory begins. They become the shared test for value; and can be revisited once the work is visible.",
   },
   {
     number: "02",
@@ -18,7 +18,7 @@ const stages = [
   },
   {
     number: "04",
-    title: "Choose – then keep managing",
+    title: "Choose; then keep managing",
     text: "Make explicit choices package by package, aggregate the implications, assign owners, and turn the analysis into an ongoing way to manage workload, handovers, cover, capability, and benefits.",
   },
 ];
@@ -57,12 +57,12 @@ const interventions = [
   },
   {
     title: "Flow, process, and capacity",
-    text: "Expose queues, failure demand, hand-offs, rework, and workarounds – then test a better flow in practice.",
+    text: "Expose queues, failure demand, hand-offs, rework, and workarounds; then test a better flow in practice.",
     href: "https://www.redquadrant.com/transformation-and-change",
   },
   {
     title: "Organisation and operating models",
-    text: "Derive roles, governance, capabilities, technology, and data from purpose and work – not from the current chart.",
+    text: "Derive roles, governance, capabilities, technology, and data from purpose and work; not from the current chart.",
     href: "https://www.redquadrant.com/services",
   },
   {
@@ -77,7 +77,7 @@ const interventions = [
   },
   {
     title: "Digital and data-enabled change",
-    text: "Use technology and evidence in service of a better operating model and experience – never as the transformation by itself.",
+    text: "Use technology and evidence in service of a better operating model and experience; never as the transformation by itself.",
     href: "https://www.redquadrant.com/digital",
   },
   {
@@ -173,7 +173,7 @@ export default function ResourceOptimisation(){return <article className="ro-nat
               work, its resource, cost, value, dependencies, and capability. It
               tests that picture against purpose, demand, outcomes, and the
               experience of people who use the service. It complements our
-              outside-in work – and corrects the habit of starting with the
+              outside-in work; and corrects the habit of starting with the
               structure.
             </p>
           </div>
@@ -229,7 +229,7 @@ export default function ResourceOptimisation(){return <article className="ro-nat
                 A work package is narrower than a programme and wider than a
                 task: a recognisable piece of work with a purpose, owner,
                 resource requirement, and consequence. The right level emerges
-                through comparison and discussion – roughly right is more
+                through comparison and discussion; roughly right is more
                 useful than precisely wrong.
               </p>
             </div>
@@ -421,7 +421,7 @@ export default function ResourceOptimisation(){return <article className="ro-nat
               </ul>
               <p>
                 Decisions are tested against citizen outcomes, service quality,
-                risk, and the capacity of the receiving system – not just a
+                risk, and the capacity of the receiving system; not just a
                 spreadsheet total.
               </p>
             </aside>
@@ -452,7 +452,7 @@ export default function ResourceOptimisation(){return <article className="ro-nat
               From 2010 to 2015, Resource Optimisation formed part of the wider
               RedQuadrant transformation operating system used across more than
               40 services at the London Borough of Hillingdon. We cite that as
-              evidence of integrated, organisation-wide use – not as proof that
+              evidence of integrated, organisation-wide use; not as proof that
               one method caused every reported result. Each engagement
               baselines its own benefits, risks, and service effects.
             </p>
@@ -493,7 +493,7 @@ export default function ResourceOptimisation(){return <article className="ro-nat
         <section className="contact-section" aria-labelledby="contact-title">
           <div>
             <p className="eyebrow eyebrow-light">Start with the pressure</p>
-            <h2 id="contact-title">Before you cut, absorb, or reorganise – see the work.</h2>
+            <h2 id="contact-title">Before you cut, absorb, or reorganise; see the work.</h2>
           </div>
           <div className="contact-copy">
             <p>

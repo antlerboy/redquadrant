@@ -8,7 +8,6 @@ export function LatestPanel() {
           <p className="eyebrow">Latest news and social media</p>
           <h2 id="latest-heading">Three things worth a look</h2>
         </div>
-        <p>Selected for relevance, not simply whatever was posted last.</p>
       </div>
       <div className="latest-grid">
         {latestItems.map(item => (

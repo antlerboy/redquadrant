@@ -45,15 +45,11 @@ export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="site-frame footer-practice-row"><PracticeRule /><FooterShed /></div>
-      <div className="site-frame footer-easter-row">
-        <SeasonalQuiz />
-
-      </div>
-      <div className="site-frame footer-copy"><p><Link href="/our-story/">Our story</Link> · <Link href="/insights/">Insights</Link> · <Link href="/newsletter/">Newsletter</Link></p>
-        <p>© RedQuadrant Ltd, a company registered in the UK number 6944005, VAT registration 975813577.<br /> 167–169 Great Portland Street, 5th Floor, London, W1W 5PF</p>
-        <p>
-          We take your privacy seriously. Our <a href={privacyNotice} target="_blank" rel="noreferrer">privacy notice</a> explains how we collect, use, and protect your personal data, and sets out your rights under UK data protection law.
-        </p>
+      <div className="site-frame footer-easter-row"><SeasonalQuiz /></div>
+      <div className="site-frame footer-copy">
+        <nav className="footer-links" aria-label="Footer navigation"><Link href="/services/">Services</Link><Link href="/methodology/">How we work</Link><Link href="/our-story/">Our story</Link><Link href="/insights/">Insights</Link><Link href="/newsletter/">Newsletter</Link><a href={privacyNotice} target="_blank" rel="noreferrer">Privacy notice</a></nav>
+        <p className="footer-contact"><a href="mailto:operations@redquadrant.com">operations@redquadrant.com</a><a href="tel:+442036646712">020 3664 6712</a></p>
+        <div className="footer-legal"><p>© RedQuadrant Ltd. Registered in the UK: 6944005. VAT: 975813577.</p><p>167-169 Great Portland Street, 5th Floor, London, W1W 5PF</p></div>
       </div>
     </footer>
   );

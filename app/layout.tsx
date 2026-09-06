@@ -50,7 +50,7 @@ const organisationSchema = {
   email: "ops@redquadrant.com",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "167–169 Great Portland Street, 5th Floor",
+    streetAddress: "167-169 Great Portland Street, 5th Floor",
     addressLocality: "London",
     postalCode: "W1W 5PF",
     addressCountry: "GB",
