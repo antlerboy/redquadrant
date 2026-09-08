@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { buyerOffers } from "../buyer-offers";
+export function BuyerOffers(){ return <section className="buyer-offers" aria-labelledby="buyer-heading"><h2 id="buyer-heading">What do you need to change?</h2><div className="buyer-grid">{buyerOffers.map(o=><article key={o.slug}><h3><Link href={`/offers/${o.slug}`}>{o.title}</Link></h3><p>{o.summary}</p><Link href={`/offers/${o.slug}`}>Explore the work</Link></article>)}</div><p className="buyer-next"><Link href="/frameworks">Buying through a framework</Link><Link href="/toolshed">Explore the Tool Shed</Link></p></section> }
