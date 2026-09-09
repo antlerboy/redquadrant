@@ -1,23 +1,20 @@
 export const latestItems = [
   {
-    source: "Benjamin on LinkedIn",
-    title: "LGR success depends on day-two planning",
-    summary:
-      "Simon Higgins on why getting safely to vesting day is only the start: capacity, operating model, culture, and what the new council must be able to do next.",
-    href: "https://www.linkedin.com/posts/antlerboy_localgovernment-lgr-publicservicetransformation-activity-7485626198312693762-87-P",
+    "source": "Benjamin Taylor in The MJ",
+    "title": "One-way only won’t work",
+    "summary": "Turn civil service secondments into a reciprocal public service talent exchange, with learning and capability moving in both directions.",
+    "href": "https://antlerboy.com/library/one-way-only-wont-work/"
   },
   {
-    source: "Public Service Transformation Academy",
-    title: "National Commissioning Academy: November 2026",
-    summary:
-      "The next flagship cohort is forming now, for commissioners and change-makers working on live public-service challenges across whole systems.",
-    href: "https://www.publicservicetransformation.org/programmes/national-commissioning-academy/",
+    "source": "Learning to Transform",
+    "title": "The revised 24-module curriculum",
+    "summary": "A structured route through systems thinking, public-service transformation and applied change, connecting leadership, citizens, services, management, and learning.",
+    "href": "https://www.publicservicetransformation.org/programmes/leading-transformation/"
   },
   {
-    source: "chosen path",
-    title: "The walls come back: why relational public services fail after they work",
-    summary:
-      "What relational pilots reveal, and why the host system must change what it funds, counts, authorises, and protects if the new pattern is to survive.",
-    href: "https://chosen-path.org/2026/08/12/the-walls-come-back-why-relational-public-services-fail-after-they-work/",
-  },
+    "source": "The Necessary Tangle",
+    "title": "Try the systems practice collection",
+    "summary": "Explore methods through worked cases and interactive exercises. This alpha collection is open for use, testing and correction.",
+    "href": "https://transduction.systems/systems-thinking/practice/"
+  }
 ] as const;
