@@ -6,7 +6,7 @@ export const latestItems = [
     "href": "https://antlerboy.com/library/one-way-only-wont-work/"
   },
   {
-    "source": "Learning to Transform",
+    "source": "Leading Transformation",
     "title": "The revised 24-module curriculum",
     "summary": "A structured route through systems thinking, public-service transformation and applied change, connecting leadership, citizens, services, management, and learning.",
     "href": "https://www.publicservicetransformation.org/programmes/leading-transformation/"
