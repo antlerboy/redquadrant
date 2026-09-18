@@ -292,7 +292,6 @@ export const galleryGroups: readonly GalleryGroup[] = [
     images: [
       { id: "12b1f3_d34b5c850c4f4260bf1f00a191ae9212", ext: "jpg" },
       { id: "12b1f3_7271de66269849739abe971dc2e2453a", ext: "jpg" },
-      { id: "12b1f3_6435270adc604a78b5cd3aca3cbe5d11", ext: "jpg" },
     ],
   },
   {
@@ -301,8 +300,8 @@ export const galleryGroups: readonly GalleryGroup[] = [
     year: "2021",
     format: "Rich pictures",
     images: [
+      { id: "12b1f3_6435270adc604a78b5cd3aca3cbe5d11", ext: "jpg" },
       { id: "12b1f3_10d79876dcae4f53a16150e7968f1a67", ext: "jpg" },
-      { id: "12b1f3_cf59256ed2c74c1fb6673e5cd1a5141a", ext: "jpg" },
     ],
   },
   {
@@ -315,6 +314,7 @@ export const galleryGroups: readonly GalleryGroup[] = [
       { id: "12b1f3_dcb43a20470442bfa23c0e60d9a83fb0", ext: "jpg" },
       { id: "12b1f3_27c14c0799c04eb490160b7df5dc678b", ext: "jpg" },
       { id: "12b1f3_2c9397bb2a144982bf43626df3c25e4f", ext: "jpg" },
+      { id: "12b1f3_cf59256ed2c74c1fb6673e5cd1a5141a", ext: "jpg" },
     ],
   },
   {
