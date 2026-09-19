@@ -27,7 +27,7 @@ export function HeroMotion() {
     };
   }, []);
 
-  return <video ref={video} className="home-stage-video" muted playsInline
+  return <video ref={video} className="home-stage-video" muted loop playsInline
     preload="metadata" poster={homeImages.hero.src} aria-hidden="true" tabIndex={-1}>
     <source src={homeImages.heroVideo.src} type="video/mp4" />
   </video>;
