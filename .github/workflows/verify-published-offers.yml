@@ -1,0 +1,59 @@
+name: Verify published RedQuadrant offers
+
+on:
+  workflow_run:
+    workflows: ["Publish RedQuadrant website to GitHub Pages"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check live pages and enquiry links
+        env:
+          RELEASE_SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: |
+          python3 - <<'PY'
+          import os
+          import time
+          import urllib.request
+          checks = {
+              '/': ['Four ways into practical service change', '/service-change/'],
+              '/service-change/': ['Public service change that works in practice', 'AI-enabled service change', 'mailto:benjamin.taylor@redquadrant.com'],
+              '/service-change/service-pressure-diagnostic/': ['Service pressure diagnostic', 'Discuss a first step', 'mailto:benjamin.taylor@redquadrant.com'],
+              '/service-change/joined-up-service-redesign/': ['Joined-up service redesign', 'Discuss a first step', 'mailto:benjamin.taylor@redquadrant.com'],
+              '/service-change/ai-enabled-service-change/': ['AI-enabled service change', 'Discuss a first step', 'mailto:benjamin.taylor@redquadrant.com'],
+              '/service-change/learning-and-capability-partner/': ['Learning and capability partner', 'mailto:david.mason@publicservicetransformation.org'],
+              '/sitemap.xml': ['/service-change/service-pressure-diagnostic/', '/service-change/learning-and-capability-partner/']
+          }
+          failures = []
+          for path, required in checks.items():
+              url = 'https://redquadrant.com' + path
+              for attempt in range(6):
+                  try:
+                      request = urllib.request.Request(url + '?release=' + os.environ['RELEASE_SHA'], headers={'Cache-Control': 'no-cache', 'User-Agent': 'RedQuadrant-release-check'})
+                      with urllib.request.urlopen(request, timeout=20) as response:
+                          text = response.read().decode('utf-8')
+                          if response.status != 200:
+                              raise ValueError('HTTP ' + str(response.status))
+                      missing = [value for value in required if value not in text]
+                      if missing:
+                          raise ValueError('Expected launch content not found: ' + ', '.join(missing))
+                      print('PASS', url)
+                      break
+                  except Exception as exc:
+                      if attempt == 5:
+                          failures.append(url + ': ' + str(exc))
+                      else:
+                          time.sleep(10)
+          if failures:
+              raise SystemExit('\n'.join(failures))
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('All seven live RedQuadrant offer, home-page, enquiry-link, and sitemap checks passed.\n')
+          PY
