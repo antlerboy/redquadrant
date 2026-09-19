@@ -37,7 +37,7 @@ export default async function ServiceChangeOfferPage({ params }: OfferPageProps)
       <section>
         <h2>Discuss a first step</h2>
         <p>{offer.invitation}.</p>
-        <p><a className="rq-button" href={`mailto:${offer.contact}?subject=${encodeURIComponent(offer.title)}`}>Email {offer.contact}</a></p>
+        <p><a className="rq-button" href={`mailto:${offer.contact}?subject=${encodeURIComponent(offer.title)}`}>Email us about this offer</a></p>
         <p><a href={offer.related}>{offer.relatedLabel}</a></p>
         <p><Link href="/service-change/">Compare all four offers</Link></p>
         <p><Link href="/frameworks/">Find a procurement route</Link></p>
