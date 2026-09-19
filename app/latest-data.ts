@@ -1,9 +1,9 @@
 export const latestItems = [
   {
-    "source": "Benjamin Taylor in The MJ",
-    "title": "One-way only won’t work",
-    "summary": "Turn civil service secondments into a reciprocal public service talent exchange, with learning and capability moving in both directions.",
-    "href": "https://antlerboy.com/library/one-way-only-wont-work/"
+    "source": "RedQuadrant and the Public Service Transformation Academy",
+    "title": "Four ways into practical service change",
+    "summary": "Service pressure, joined-up redesign, AI-enabled change, and team capability: choose a scoped first step around the work you need to change.",
+    "href": "/service-change/"
   },
   {
     "source": "Leading Transformation",
