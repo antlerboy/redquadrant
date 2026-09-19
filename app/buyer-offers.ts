@@ -15,22 +15,11 @@ export const buyerOffers = [
       "A delivery plan, clear decisions, and a way to learn from what changes."
     ],
     "links": [
-      [
-        "/services#adult-social-care",
-        "Adult social care experience"
-      ],
-      [
-        "/services#commissioning",
-        "Commissioning experience"
-      ],
-      [
-        "https://www.publicservicetransformation.org/commissioning-academy/",
-        "Develop your commissioning capability"
-      ],
-      [
-        "/relational-commissioning/",
-        "Reset a live commissioning relationship"
-      ]
+      ["/services#adult-social-care", "Adult social care experience"],
+      ["/services#commissioning", "Commissioning experience"],
+      ["https://www.publicservicetransformation.org/commissioning-academy/", "Develop your commissioning capability"],
+      ["/relational-commissioning/", "Reset a live commissioning relationship"],
+      ["/service-change/joined-up-service-redesign/", "Test a joined-up service pathway"]
     ],
     "entryTitle": "Commissioning starting-point review",
     "entryFee": "From £4,500 excluding VAT",
@@ -53,18 +42,10 @@ export const buyerOffers = [
       "An agreed next step and a means of reviewing its effects."
     ],
     "links": [
-      [
-        "/system-leadership",
-        "Live system leadership support"
-      ],
-      [
-        "/lgrhub",
-        "Local government reorganisation"
-      ],
-      [
-        "/training-and-development",
-        "Board and leadership development"
-      ]
+      ["/system-leadership", "Live system leadership support"],
+      ["/lgrhub", "Local government reorganisation"],
+      ["/training-and-development", "Board and leadership development"],
+      ["/service-change/learning-and-capability-partner/", "Develop a sponsored team through live work"]
     ],
     "entryTitle": "Board or partnership working session",
     "entryFee": "From £3,500 excluding VAT",
@@ -87,22 +68,11 @@ export const buyerOffers = [
       "Changes put into practice, with your people able to sustain the work."
     ],
     "links": [
-      [
-        "/resource-optimisation/",
-        "Resource Optimisation"
-      ],
-      [
-        "/customer-led-transformation",
-        "Customer-led transformation"
-      ],
-      [
-        "/transformation-and-change",
-        "Transformation and change experience"
-      ],
-      [
-        "/systems-change/",
-        "Make progress on a problem across a system"
-      ]
+      ["/resource-optimisation/", "Resource Optimisation"],
+      ["/customer-led-transformation", "Customer-led transformation"],
+      ["/transformation-and-change", "Transformation and change experience"],
+      ["/systems-change/", "Make progress on a problem across a system"],
+      ["/service-change/", "Four scoped ways into service change"]
     ],
     "entryTitle": "Work and capacity diagnostic",
     "entryFee": "From £6,500 excluding VAT",
