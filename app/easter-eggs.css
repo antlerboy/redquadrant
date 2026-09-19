@@ -8,8 +8,6 @@
 .latest-grid article+article{padding-left:26px;border-left:1px solid #dfdbd8}
 .latest-source{margin-bottom:5px;color:var(--rq-red);font-family:"RQ Helvetica",Helvetica,Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
 .latest-grid h3{margin:0 0 8px;font-size:17px;line-height:1.25}
-.latest-grid h3 a{text-decoration:none}
-.latest-grid h3 a:hover,.latest-grid h3 a:focus-visible{text-decoration:underline}
 .latest-grid p:not(.latest-source){margin-bottom:10px;font-size:14px;line-height:1.4}
 .latest-read{color:var(--rq-red);font-family:"RQ Helvetica",Helvetica,Arial,sans-serif;font-size:13px;font-weight:700;text-decoration:none}
 .latest-read:hover,.latest-read:focus-visible{text-decoration:underline}

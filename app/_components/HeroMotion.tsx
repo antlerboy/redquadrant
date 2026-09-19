@@ -10,18 +10,11 @@ export function HeroMotion() {
     const element = video.current;
     if (!element) return;
     const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    let stopTimer: ReturnType<typeof setTimeout> | undefined;
-
-    // Keep the decorative introduction brief without needing a visible control.
     const stop = () => element.pause();
-    const onPlaying = () => {
-      if (stopTimer === undefined) stopTimer = setTimeout(stop, 5000);
-    };
     const onPreferenceChange = () => {
       if (motion.matches) stop();
     };
 
-    element.addEventListener('playing', onPlaying);
     motion.addEventListener('change', onPreferenceChange);
     if (!motion.matches) {
       element.muted = true;
@@ -29,9 +22,7 @@ export function HeroMotion() {
     }
 
     return () => {
-      if (stopTimer !== undefined) clearTimeout(stopTimer);
       stop();
-      element.removeEventListener('playing', onPlaying);
       motion.removeEventListener('change', onPreferenceChange);
     };
   }, []);
