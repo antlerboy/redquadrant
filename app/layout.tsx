@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { SecretFeedbackDot, SiteFooter, SiteHeader } from "./_components/SiteChrome";
 import "./globals.css";
 import "./easter-eggs.css";
@@ -74,6 +75,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <main id="main-content">{children}</main>
         <SiteFooter />
         <SecretFeedbackDot />
+        <Script src="https://transduction.systems/events/analytics.js" strategy="afterInteractive" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organisationSchema) }}
