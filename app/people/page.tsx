@@ -36,7 +36,7 @@ export default function PeoplePage() {
           <h2>Legal and financial queries</h2>
           <p><a href="mailto:accounts@redquadrant.com">accounts@redquadrant.com</a></p>
           <article className="person operation-person">
-            <h2>{operationsPeople[0].name}</h2><p>{operationsPeople[0].role}</p><a href={`mailto:${operationsPeople[0].email}`}>{operationsPeople[0].email}</a>
+            <h2>{operationsPeople[0].name}</h2><p>{operationsPeople[0].role}</p><a href="tel:+442071395195">{operationsPeople[0].phone}</a><a href={`mailto:${operationsPeople[0].email}`}>{operationsPeople[0].email}</a>
           </article>
         </div>
         <div className="operations-column">

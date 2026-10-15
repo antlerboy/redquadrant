@@ -48,7 +48,7 @@ export function SiteFooter() {
       <div className="site-frame footer-easter-row"><SeasonalQuiz /></div>
       <div className="site-frame footer-copy">
         <nav className="footer-links" aria-label="Footer navigation"><Link href="/services/">Services</Link><Link href="/methodology/">How we work</Link><Link href="/our-story/">Our story</Link><Link href="/insights/">Insights</Link><Link href="/newsletter/">Newsletter</Link><a href={privacyNotice} target="_blank" rel="noreferrer">Privacy notice</a></nav>
-        <p className="footer-contact"><a href="mailto:operations@redquadrant.com">operations@redquadrant.com</a><a href="tel:+442072239850">Office: 020 7223 9850</a><a href="tel:+445603875365">Nikola Malimarkov: 056 0387 5365</a></p>
+        <p className="footer-contact"><a href="mailto:operations@redquadrant.com">operations@redquadrant.com</a><a href="tel:+442072239850">Office: 020 7223 9850</a><a href="tel:+442071395195">Lucas Yeghiaian: 020 7139 5195</a><a href="tel:+445603875365">Nikola Malimarkov: 056 0387 5365</a></p>
         <div className="footer-legal"><p>© RedQuadrant Ltd. Registered in the UK: 6944005. VAT: 975813577.</p><p>167-169 Great Portland Street, 5th Floor, London, W1W 5PF</p></div>
       </div>
     </footer>
