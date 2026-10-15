@@ -151,7 +151,7 @@ export const people: readonly Person[] = [
 
 export const operationsPeople = [
   { name: "Lucas Yeghiaian", role: "Bid & operations manager", email: "lucas.yeghiaian@redquadrant.com" },
-  { name: "Nikola Malimarkov", role: "Operations support", email: "nikola.malimarkov@redquadrant.com" },
+  { name: "Nikola Malimarkov", role: "Operations support", phone: "056 0387 5365", email: "nikola.malimarkov@redquadrant.com" },
 ] as const;
 
 export const serviceThemes = [

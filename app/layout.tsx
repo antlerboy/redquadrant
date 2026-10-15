@@ -49,6 +49,7 @@ const organisationSchema = {
   name: "RedQuadrant",
   url: "https://redquadrant.com",
   email: "ops@redquadrant.com",
+  telephone: "+442071395195",
   address: {
     "@type": "PostalAddress",
     streetAddress: "167-169 Great Portland Street, 5th Floor",

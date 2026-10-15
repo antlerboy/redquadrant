@@ -45,7 +45,7 @@ export default function PeoplePage() {
           <h2>Resourcing</h2>
           <p><a href="mailto:resourcing.requirements@redquadrant.com">resourcing.requirements@redquadrant.com</a></p>
           <article className="person operation-person">
-            <h2>{operationsPeople[1].name}</h2><p>{operationsPeople[1].role}</p><a href={`mailto:${operationsPeople[1].email}`}>{operationsPeople[1].email}</a>
+            <h2>{operationsPeople[1].name}</h2><p>{operationsPeople[1].role}</p><a href="tel:+445603875365">{operationsPeople[1].phone}</a><a href={`mailto:${operationsPeople[1].email}`}>{operationsPeople[1].email}</a>
           </article>
         </div>
       </div>
