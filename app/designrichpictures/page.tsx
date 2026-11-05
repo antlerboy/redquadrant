@@ -23,7 +23,7 @@ export default function DesignPage() {
             <a className="design-email" href="mailto:natasa.sears@redquadrant.com">natasa.sears@redquadrant.com</a>
           </address>
         </section>
-        <Gallery />
+        <p><a href="/design/visual-inquiry/">Work with the picture: three visual commissions and questions for inquiry</a></p><Gallery />
       </div>
     </div>
   );

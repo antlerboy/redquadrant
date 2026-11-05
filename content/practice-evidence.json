@@ -1,0 +1,90 @@
+{
+  "version": "2026-11-05",
+  "records": [
+    {
+      "slug": "birmingham-coproduction",
+      "title": "Birmingham: sustaining a group of co-producers",
+      "status": "Published practitioner account with named client testimony",
+      "period": "2022–2025",
+      "situation": "Birmingham commissioned a co-produced review of day opportunities following the pandemic.",
+      "intervention": "RedQuadrant recruited and supported people with lived experience and carers to co-lead the review. The published account describes a second phase and a 23-member Empowering People Team.",
+      "result": "The account reports that findings informed commissioning and improvement plans, and that members continued into other co-production work. The client describes growing confidence and further involvement.",
+      "limit": "These are practitioner and client accounts, rather than an independent impact evaluation. The published evidence does not isolate effects on all day-opportunity users.",
+      "artefact": "Public case account, pp. 1–4: engagement, reports, and subsequent work",
+      "source": "https://www.councils.coop/wp-content/uploads/2025/04/CCIN-Case-Studies-2025-RedQuadrant-Birmingham-Council-web.pdf",
+      "followup": "What decisions changed, whose views were missed, and what resources now sustain the group?",
+      "related": "/relational-commissioning/"
+    },
+    {
+      "slug": "gateshead-commissioning",
+      "title": "Gateshead: reviewing commissioning across directorates",
+      "status": "Published practitioner account with client testimony",
+      "period": "Published in 2024",
+      "situation": "Adult and children’s social care commissioned a review of commissioning practice.",
+      "intervention": "RedQuadrant used a workshop-based assessment drawing on PSTA’s commissioning approach and developed recommendations with council officers.",
+      "result": "The published case reports acceptance of recommendations and development of a commissioning strategy, with a subsequent invitation to review progress.",
+      "limit": "Acceptance and a return commission establish decisions and continued engagement. They do not by themselves establish improved resident outcomes or sustained financial benefits.",
+      "artefact": "CCIN case-studies pack, printed pp. 95–96",
+      "source": "https://www.councils.coop/wp-content/uploads/2024/11/Case-Studies-Pack-2024-digital.pdf",
+      "followup": "Which recommendations were implemented, what changed in commissioning decisions, and what evidence do residents and providers offer?",
+      "related": "/commissioning/"
+    },
+    {
+      "slug": "hillingdon-resource-optimisation",
+      "title": "Hillingdon: Resource Optimisation within wider transformation",
+      "status": "RedQuadrant practitioner account",
+      "period": "2010–2015",
+      "situation": "The organisation needed a consistent way to examine work and choices across services.",
+      "intervention": "Resource Optimisation formed part of a wider RedQuadrant transformation operating system used across more than 40 services.",
+      "result": "The existing public account establishes reported organisation-wide use of an integrated approach.",
+      "limit": "The public account does not establish that Resource Optimisation alone caused all reported programme results. A method’s contribution needs to be distinguished from the wider programme.",
+      "artefact": "Published method account and Seven Ts decision framework",
+      "source": "https://redquadrant.com/resource-optimisation/",
+      "followup": "Which work packages changed, what happened to displaced work, and which benefits remained after implementation?",
+      "related": "/resource-optimisation/"
+    },
+    {
+      "slug": "bristol-learning-and-benefits",
+      "title": "Bristol: separating identified savings from realised benefits",
+      "status": "RedQuadrant practitioner account; benefits require follow-through",
+      "period": "Programme history; publication reviewed 5 November 2026",
+      "situation": "Bristol used applied learning, leadership development, and coaching in transformation work.",
+      "intervention": "RedQuadrant’s public service account describes the Applied Programme, Bristol Leads, and development for senior directors.",
+      "result": "The account says the first four cohorts identified savings of more than £11 million.",
+      "limit": "Identified savings are opportunities. This record does not relabel them as implemented or sustained savings, and the public source does not establish a net financial return attributable to training.",
+      "artefact": "Published service account; Bristol learning-set cards in the design portfolio",
+      "source": "https://redquadrant.com/services/",
+      "followup": "For each proposal, what was agreed, implemented, and sustained, and what happened to service quality and costs elsewhere?",
+      "related": "/service-change/learning-and-capability-partner/"
+    },
+    {
+      "slug": "savvi-learning-about-scale",
+      "title": "SAVVI: useful outputs do not establish adoption at scale",
+      "status": "Public programme record plus independent evaluation",
+      "period": "Programme history; evaluation published June 2026",
+      "situation": "SAVVI addresses the cross-agency use of data to identify and support people at risk of poor outcomes.",
+      "intervention": "The Local Digital project record identifies RedQuadrant coaching alongside the council-led programme and describes a playbook, standards, and case work.",
+      "result": "The independent evaluation places SAVVI among projects still being developed and tested during its evaluation period, rather than projects that had achieved cross-sector adoption at scale.",
+      "limit": "This qualifies any inference from producing a reusable standard to achieving widespread use. It is a programme-level finding for the period studied, not an evaluation of an individual coach or a finding about every later deployment.",
+      "artefact": "Local Digital evaluation, section 1.12.6, and the public SAVVI project record",
+      "source": "https://assets.publishing.service.gov.uk/media/6a353c400bea238415c9a323/Local_Digital_programme_monitoring_and_evaluation_final_report.pdf",
+      "additionalSource": "https://www.localdigital.gov.uk/funded-project/savvi/",
+      "followup": "Which organisations now use the standard in live work, under what ownership and maintenance arrangements, and with what consequences?",
+      "related": "/service-change/ai-enabled-service-change/"
+    },
+    {
+      "slug": "westminster-channel-change",
+      "title": "Westminster: changing access and examining whole cost",
+      "status": "RedQuadrant practitioner account; contemporary follow-up not established",
+      "period": "Historic engagement",
+      "situation": "Westminster changed its mix of face-to-face and digital access.",
+      "intervention": "RedQuadrant’s public account describes support for closing one-stop shops while developing online and assisted self-service.",
+      "result": "That account reports annual savings of more than £1.2 million and improved online and assisted access.",
+      "limit": "This is a provider-reported historic result. The current public account does not include a dated baseline, independent benefits calculation, distributional effects, or long-term follow-up.",
+      "artefact": "Published service account",
+      "source": "https://redquadrant.com/services/",
+      "followup": "Who found access easier or harder, which costs moved to residents or other teams, and how were the claimed annual benefits calculated?",
+      "related": "/customer-led-transformation/"
+    }
+  ]
+}

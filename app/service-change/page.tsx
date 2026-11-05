@@ -28,7 +28,7 @@ export default function ServiceChangePage() {
         </section>
       ))}
       <section>
-        <h2>Start where you are</h2>
+        <h2>Start where you are</h2><p><Link href="/practice-evidence/">Read evidence from practice</Link>, including what the published accounts can establish and the questions they leave open.</p>
         <p>These are ways into the work, not four compulsory stages. You may need an inquiry, practical delivery, a team programme, or a different mix. Existing work and evidence should be used, not repeated.</p>
         <p>We agree scope, responsibilities, access, timing, and a fixed fee before starting. Buying routes depend on your organisation and the work: we will help check an appropriate route rather than assume a funding announcement is an open procurement.</p>
         <p><a className="rq-button" href="mailto:benjamin.taylor@redquadrant.com?subject=Public%20service%20change">Discuss the work with Benjamin</a></p>
