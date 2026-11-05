@@ -35,7 +35,7 @@ export default async function ServiceChangeOfferPage({ params }: OfferPageProps)
       {offer.sections.map(([title, text]) => (
         <section key={title}><h2>{title}</h2><p>{text}</p></section>
       ))}
-      <section><h2>See the shape of an output</h2><p><a href={`/downloads/${offer.slug}-sample-outline.txt`} download>Download a sample output outline</a>. This is a reusable outline, rather than a completed client report.</p><p><Link href="/practice-evidence/">Read sourced accounts of related work</Link></p><p>Current availability is confirmed in response to your brief; no delivery slot is reserved by this page.</p></section>
+      <section><h2>See the shape of an output</h2><p><a href={`/downloads/${offer.slug}-sample-outline.txt`} download>Download a sample output outline</a>. This is a reusable outline, rather than a completed client report.</p><p><Link href="/practice-evidence/" prefetch={false}>Read sourced accounts of related work</Link></p><p>Current availability is confirmed in response to your brief; no delivery slot is reserved by this page.</p></section>
       <EnquiryBrief title={offer.title} contact={offer.contact} />
       <section>
         <h2>Discuss a first step</h2>
