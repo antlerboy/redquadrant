@@ -6,15 +6,15 @@ export const latestItems = [
     "href": "/service-change/"
   },
   {
-    "source": "Leading Transformation",
-    "title": "The revised 24-module curriculum",
-    "summary": "A structured route through systems thinking, public-service transformation and applied change, connecting leadership, citizens, services, management, and learning.",
-    "href": "https://www.publicservicetransformation.org/programmes/leading-transformation/"
+    "source": "Free guide · Benjamin P Taylor · November 2026",
+    "title": "Making things change: a guide for young people",
+    "summary": "Two illustrated working drafts on systems change, power, and practical action. A resource for young people and for practitioners supporting participation and learning.",
+    "href": "https://antlerboy.com/library/making-things-change/"
   },
   {
-    "source": "The Necessary Tangle",
-    "title": "Try the systems practice collection",
-    "summary": "Explore methods through worked cases and interactive exercises. This alpha collection is open for use, testing and correction.",
-    "href": "https://transduction.systems/systems-thinking/practice/"
+    "source": "Benjamin P Taylor · Chosen Path · 3 November 2026",
+    "title": "Who carries the unpaid work of neighbourhood change?",
+    "summary": "A successful project can pass costs to households and volunteers. Six decisions about resources, evidence, and accountability before committing neighbourhood investment.",
+    "href": "https://chosen-path.org/2026/11/03/how-much-of-your-successful-project-is-being-held-together-by-somebody-elses-unpaid-work/"
   }
 ] as const;
