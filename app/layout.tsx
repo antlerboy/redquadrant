@@ -73,13 +73,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <a className="skip-link" href="#main-content">Skip to content</a>
         <SiteHeader />
-        <aside aria-label="Service update" style={{ background: "#fff3cd", color: "#332600", borderBottom: "1px solid #e6c35a", padding: "14px 24px", fontSize: "16px", lineHeight: 1.5 }}>
-          <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-            <strong>Global Microsoft outage:</strong> access is improving, but email delays may continue.{" "}
-            <a href="/email-disruption/" style={{ color: "#5b154e", textDecoration: "underline", fontWeight: 700 }}>Contact arrangements and latest statement</a>
-            {" "}<span style={{ whiteSpace: "nowrap" }}>(13 November 2026, 13:49 GMT)</span>
-          </div>
-        </aside>
         <main id="main-content">{children}</main>
         <SiteFooter />
         <SecretFeedbackDot />
