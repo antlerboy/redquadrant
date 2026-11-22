@@ -4,20 +4,20 @@ import { galleryGroups, galleryImageUrl } from '../../site-data';
 
 export const metadata = {
   title: 'Using rich pictures',
-  description: 'Three commissions by Nataša Sears for Birmingham City Council, Natural England, and the Local Government Association.',
+  description: 'Three commissions by Nataša Sears for Natural England, Birmingham City Council, and the Local Government Association.',
   alternates: { canonical: '/design/visual-inquiry/' },
 };
 
 const examples = [
   {
-    client: 'Birmingham City Council', project: 'Prevention in adult social care pathways',
-    alt: 'Five illustrated routes through community and adult social care support in Birmingham.',
-    prompt: 'Choose one route and follow the person who needs help. Where would they turn next? Ask somebody who knows that service to point to a link they recognise or one the drawing misses.',
-  },
-  {
     client: 'Natural England', project: 'Environmental Collaborative Leadership',
     alt: 'Illustrated account of collaborative environmental leadership for Natural England.',
     prompt: 'Pick a decision in the picture. Who has the authority to make it? A participant who sees the same decision from another organisation may draw the relationship differently.',
+  },
+  {
+    client: 'Birmingham City Council', project: 'Prevention in adult social care pathways',
+    alt: 'Five illustrated routes through community and adult social care support in Birmingham.',
+    prompt: 'Choose one route and follow the person who needs help. Where would they turn next? Ask somebody who knows that service to point to a link they recognise or one the drawing misses.',
   },
   {
     client: 'Local Government Association', project: 'Cultural devolution research',

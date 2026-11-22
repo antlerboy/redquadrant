@@ -14,7 +14,6 @@ export default function Page() {
       <p>A housing officer may see a tenancy problem while a carer sees someone struggling to stay at home. We help partners follow a situation across their different responsibilities, hear the people affected, and agree who can make a change.</p>
       <ul>
         <li><Link href="/system-leadership">Working across a partnership</Link></li>
-        <li><Link href="/design/visual-inquiry/">Community support in Birmingham</Link></li>
       </ul>
       <p><a href="mailto:benjamin.taylor@redquadrant.com">Email Benjamin Taylor</a> about this work.</p>
       <p><Link href="/frameworks/">Procurement frameworks</Link> · <Link href="/toolshed/">RedQuadrant Tool Shed</Link></p>

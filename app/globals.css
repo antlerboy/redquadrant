@@ -217,20 +217,15 @@ li+li{margin-top:.35em}
 .service-panel-text{display:block}.service-panel-text .service-panel-copy{max-width:85ch}
 .evidence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}.evidence-grid section{border-top:3px solid #d72c5b;padding:1rem 0}.evidence-grid h2{font-size:1.45rem}.evidence-status,.programme-record{font-size:.95rem;color:#555}.enquiry-brief{margin:2rem 0;padding:1.5rem;border:1px solid #ccc;background:#f8f8f8}.enquiry-brief label{display:block;font-weight:600;margin:1rem 0}.enquiry-brief textarea{display:block;width:100%;min-height:6rem;resize:vertical;margin-top:.5rem;padding:.75rem;border:1px solid #999;font:inherit;box-sizing:border-box;background:white;color:#222}.enquiry-actions{display:flex;flex-wrap:wrap;align-items:center;gap:1rem}.enquiry-actions button{font:inherit;padding:.7rem 1rem;border:1px solid #555;background:white;color:#222;cursor:pointer}.enquiry-brief :focus-visible{outline:3px solid #d72c5b;outline-offset:3px}.inquiry-artwork{display:block;max-width:100%;max-height:50rem;object-fit:contain;margin:1rem 0}@media(max-width:650px){.evidence-grid{grid-template-columns:1fr}.enquiry-brief{padding:1rem}.enquiry-actions{align-items:stretch;flex-direction:column}}
 
-.home-commission,.home-directory{display:grid;align-items:start;gap:clamp(1.25rem,4vw,3.75rem);padding:clamp(2rem,5vw,4.5rem) 0;border-bottom:1px solid #b5a99e}
-.home-commission{grid-template-columns:minmax(0,1.65fr) minmax(15rem,1fr)}
+.home-directory{display:grid;align-items:start;gap:clamp(1.25rem,4vw,3.75rem);padding:clamp(2rem,5vw,4.5rem) 0;border-bottom:1px solid #b5a99e}
 .home-directory{grid-template-columns:minmax(0,1.3fr) minmax(15rem,1fr)}
-.home-commission figure{margin:0}
-.home-commission img{width:100%;height:auto;display:block}
-.home-commission figcaption{margin-top:.65rem;color:#534744;font-size:.94rem}
-.home-commission h2,.home-directory h2{font-size:clamp(1.55rem,3.2vw,2.7rem);line-height:1.1;letter-spacing:-.025em}
-.home-commission p,.home-directory p,.home-directory li{font-size:1.05rem;line-height:1.55}
-.home-commission a,.home-directory a{color:#78252a;text-underline-offset:.16em}
+.home-directory h2{font-size:clamp(1.55rem,3.2vw,2.7rem);line-height:1.1;letter-spacing:-.025em}
+.home-directory p,.home-directory li{font-size:1.05rem;line-height:1.55}
+.home-directory a{color:#78252a;text-underline-offset:.16em}
 .home-directory ul{margin:0;padding:0;list-style:none}
 .home-directory li{padding:.45rem 0;border-bottom:1px solid #ddd4cc}
 .home-return{display:flex;align-items:center;gap:1rem;padding:1.25rem 0;flex-wrap:wrap}
-.home-mission{max-width:19ch;text-wrap:balance;color:white;background:#381d1b;padding:.28em .4em;line-height:1.14;text-shadow:none}
-@media(max-width:740px){.home-commission,.home-directory{grid-template-columns:1fr}.home-commission>div{order:-1}}
+@media(max-width:740px){.home-directory{grid-template-columns:1fr}}
 
 .rq-method{max-width:58rem;padding-block:clamp(1.5rem,5vw,4rem);color:#302322}
 .rq-method header{margin-bottom:2rem;padding:clamp(1.25rem,5vw,3.5rem);background:#412325;color:#fff}
@@ -263,7 +258,7 @@ li+li{margin-top:.35em}
 .home-return .return-rate-button{font:700 1.45rem/1.1 "RQ Helvetica",Helvetica,Arial,sans-serif;color:#78252a;text-decoration:underline;text-underline-offset:.12em}
 .home-return .return-rate-wrap{margin:0}
 
-.home-stage{height:clamp(29rem,62vh,37rem)}.home-mission{left:1.8rem;top:13%;max-width:24ch}
+.home-stage{height:clamp(29rem,62vh,37rem)}.home-mission{top:18%}
 .home-paths{bottom:2rem}
 .home-record{padding:1.25rem 0;color:#4d4240}.home-record p{margin:0}.home-record .home-return{padding:0 0 .45rem}
-@media(max-width:760px){.home-stage{height:auto;min-height:0}.home-stage-inner{min-height:0;padding:2.25rem 0 1.5rem;gap:1.75rem}.home-mission,.home-paths{position:static}.home-mission{width:fit-content;max-width:19ch;margin:0}.home-paths{margin:0;align-items:start;gap:1.2rem}.home-paths .tool-shed p{margin-top:.4rem}.home-paths .tool-email{overflow-wrap:anywhere}}
+@media(max-width:760px){.home-stage{height:auto;min-height:0}.home-stage-inner{min-height:0;padding:2.25rem 0 1.5rem;gap:1.75rem}.home-mission,.home-paths{position:static}.home-mission{width:auto;max-width:100%;margin:0}.home-paths{margin:0;align-items:start;gap:1.2rem}.home-paths .tool-shed p{margin-top:.4rem}.home-paths .tool-email{overflow-wrap:anywhere}}

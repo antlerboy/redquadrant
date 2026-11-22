@@ -24,7 +24,7 @@ jobs:
           import time
           import urllib.request
           checks = {
-              '/': ['What does prevention look like in Birmingham?', '/service-change/'],
+              '/': ['We help you find insights', 'to transform public services.', 'We work to improve lives.', 'home-stage-video', '/service-change/'],
               '/service-change/': ['Public service change projects', 'AI-enabled service change', 'mailto:benjamin.taylor@redquadrant.com'],
               '/service-change/service-pressure-diagnostic/': ['Service pressure diagnostic', 'Email us about this offer', 'mailto:benjamin.taylor@redquadrant.com'],
               '/service-change/joined-up-service-redesign/': ['Joined-up service redesign', 'Email us about this offer', 'mailto:benjamin.taylor@redquadrant.com'],

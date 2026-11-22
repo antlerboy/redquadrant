@@ -1,13 +1,10 @@
 import { HeroMotion } from "./_components/HeroMotion";
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import { ReturnRateStat } from "./_components/EasterEggsLive";
 import { LatestPanel } from "./_components/LatestPanel";
 import { homeImages } from "./site-data";
 
 export const metadata = { description: "RedQuadrant works with councils, the NHS, and their partners on how public services are run, funded, and experienced by the people who use them.", alternates: { canonical: "/" } };
-
-const birminghamDrawing = "/assets/gallery/12b1f3_6435270adc604a78b5cd3aca3cbe5d11.jpg";
 
 export default function Home() {
   return (
@@ -17,7 +14,9 @@ export default function Home() {
         <div className="home-stage-shade" aria-hidden="true" />
         <div className="site-frame home-stage-inner">
           <h1 className="home-mission">
-            RedQuadrant works with the people who run and use public services.
+            We help you find insights<br />
+            to transform public services.<br />
+            <strong>We work to improve lives.</strong>
           </h1>
           <div className="home-paths">
             <Link href="/frameworks">Buy our services through frameworks</Link>
@@ -34,19 +33,6 @@ export default function Home() {
       </section>
 
       <section className="home-main site-frame">
-        <section className="home-commission">
-          <figure>
-            <a href={birminghamDrawing}><img src={birminghamDrawing} alt="Five illustrated routes through prevention services in Birmingham, covering homelessness, domestic abuse, neighbourhood networks, disability and mental health, and support after prison." loading="lazy" /></a>
-            <figcaption>Nataša Sears for Birmingham City Council, 2021. <a href={birminghamDrawing}>Open the full-size drawing</a></figcaption>
-          </figure>
-          <div>
-            <h2>What does prevention look like in Birmingham?</h2>
-            <p>Find the domestic abuse hub near the middle of this drawing. Follow the blue line up to the refuge. Who helps someone live safely in their own home after they leave?</p>
-            <p>Nataša Sears drew five routes through adult social care and community support for Birmingham City Council. People looking at the same picture can point to a missing connection, or disagree about what happens next.</p>
-            <Link href="/design/visual-inquiry/">Work with this picture</Link>
-          </div>
-        </section>
-
         <section className="home-directory">
           <div><h2>Consultancy for public services</h2>
             <p>We help councils, the NHS, and their partners find out where a service is falling short. We work with staff and residents on what to change, and stay involved while teams try it.</p>
