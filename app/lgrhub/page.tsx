@@ -134,7 +134,7 @@ export default function LgrHubPage() {
             <article><img src="/assets/owned/1522d86cfad61dcb.png" alt="LGR and Devolution Hub brochure cover" /><h3>LGR &amp; Devolution Hub</h3><p>How the Hub works with officers and members during the transfer.</p><a href="/_files/ugd/12b1f3_f75b796f3782412cbd42c770507c861d.pdf" target="_blank" rel="noreferrer">Download the Hub brochure (PDF)</a></article>
             <article><img src="/assets/owned/282d1b900c8fb35c.png" alt="Readiness Workshops brochure cover" /><h3>Making the waiting time count</h3><p>Workshops to prepare staff for the transfer.</p><a href="/_files/ugd/12b1f3_1e8d17187dbf49b98c27c163ba0f8f19.pdf" target="_blank" rel="noreferrer">Download the workshop guide (PDF)</a></article>
           </div>
-          <div className="lgr-contact"><h2>Let’s start a conversation</h2><p><strong>Benjamin Taylor</strong><br />Managing Partner<br /><a href="tel:07931317230">07931 317230</a><br /><a href="mailto:benjamin.taylor@redquadrant.com">benjamin.taylor@redquadrant.com</a></p><p><strong>Naseema Khan</strong><br />Managing Consultant<br /><a href="tel:07879896855">07879 896855</a><br /><a href="mailto:naseema.khan@redquadrant.com">naseema.khan@redquadrant.com</a></p></div>
+          <div className="lgr-contact"><h2>Contact the reorganisation team</h2><p><strong>Benjamin Taylor</strong><br />Managing Partner<br /><a href="tel:07931317230">07931 317230</a><br /><a href="mailto:benjamin.taylor@redquadrant.com">benjamin.taylor@redquadrant.com</a></p><p><strong>Naseema Khan</strong><br />Managing Consultant<br /><a href="tel:07879896855">07879 896855</a><br /><a href="mailto:naseema.khan@redquadrant.com">naseema.khan@redquadrant.com</a></p></div>
         </div>
       </section>
     </div>

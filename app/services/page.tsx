@@ -121,13 +121,13 @@ export default function ServicesPage() {
       <h2 className="services-list-heading">Services</h2>
 
       <ServicePanel id="culture-community" title="Culture, consultation and community engagement" image={serviceImages.culture} contact={<Contact name="Benjamin Taylor" phone="07931 317230" email="benjamin.taylor@redquadrant.com" />}>
-        <p>We recognise the role of culture in enhancing quality of life in our communities and we work in a way that ensures that communities are heard.</p>
-        <p>Examples of our recent work:</p>
+        <p>A council may need to decide which arts groups to fund, what to do with a library building, or how residents can take part in that decision. We help it gather evidence, hear from the people affected, and compare the options.</p>
+        <p>Examples of our work:</p>
         <ul><li>Exeter City Council: review of community and arts grants</li><li>London Borough of Croydon: review and options appraisal for the future library service</li><li>London Borough of Sutton: review of the archives service</li><li>Abu Dhabi Public Libraries: 2020 Public Library Strategy</li><li>Chelmsford City Council: evaluation of museum redevelopment project</li><li>The National Archives: project evaluations and guidance for volunteers</li><li>London Borough of Lambeth: options for a new location for the borough’s archives</li></ul>
       </ServicePanel>
 
       <ServicePanel id="housing" title="Housing" image={serviceImages.housing} reverse contact={<Contact name="Benjamin Taylor" phone="07931 317230" email="benjamin.taylor@redquadrant.com" />}>
-        <p>Housing services cross the boundary between logistics and community-shaping, with strict legislative requirements and great political variation. Housing policy and management runs from multi-million-pound transactions to graffiti removal, from critical gas safety to customer insight and communications. More than any other service area, it is local government in a nutshell.</p>
+        <p>Housing teams commission repairs, manage homes, and answer residents when the work goes wrong. We review how these parts of the service work together, including the contracts and information systems they depend on.</p>
         <p>Examples of our work:</p>
         <ul><li>Reviewing the entirety of housing management and operations, bringing together demand management and capacity planning to restructure a department around improvements identified by customers and employees, and identifying over 20 per cent realisable savings.</li><li>Tenant and resident panel work, identifying how customers can help services drive improvement.</li><li>Procurement, design and delivery of cross-organisation core business systems, including CRM, content and document management.</li></ul>
       </ServicePanel>
@@ -135,13 +135,13 @@ export default function ServicesPage() {
       <section className="service-panel service-panel-text" id="childrens-services"><div className="service-panel-copy"><h2>Children’s services</h2><p>We help councils and partners improve support for children, young people, and families. Our work brings together children’s social care, education, SEND, health, and the voluntary sector, with children’s lived experience at the centre.</p><ul><li>Children’s services commissioning reviews and improvement plans</li><li>Sufficiency strategies, placement markets, and support for children in care and care leavers</li><li>SEND commissioning, short breaks, early help, and prevention</li><li>Co-production with children, young people, parents, and carers</li><li>Joint commissioning, partnership development, and practical learning for commissioning teams</li></ul><p>Fiona Fleming brings over twenty years of commissioning experience, including senior leadership in children’s services and work with councils on commissioning, sufficiency, and market development.</p><Contact name="Fiona Fleming" email="fiona.fleming@redquadrant.com" /></div></section>
 
       <ServicePanel id="adult-social-care" title="Adult social care" image={serviceImages.care} contact={<Contact name="Frank Curran" email="frank.curran@redquadrant.com" />}>
-        <p>We work with local authorities to help improve adult social care services. This might be through better demand management, improved care pathways, cultural change and transformation programmes, market management or the development of new service models.</p>
+        <p>We work with councils on how people get support, what providers are paid, and what social workers have the time and authority to do. Our assignments range from redesigning day opportunities to costing care and comparing ways of providing it.</p>
         <p>Examples of our work:</p>
         <ul><li>Co-production of a new day-opportunities offer for people with disabilities in Barnsley</li><li>Review of technology offers and digital opportunity assessment within social care for Rotherham and Kirklees</li><li>Business cases for pathway redesign and outsourcing of assessment and review functions for Bexley</li><li>Development and implementation of an all-age disability service for Dudley</li><li>Savings diagnostic and opportunity assessment for Dorset</li><li>Improving social-work practice projects for Dorset and Bexley</li><li>Fee frameworks and cost-of-care exercises for Sefton, Halton and Cheshire East</li><li>Options appraisal for outsourcing of in-house services for Durham</li></ul>
       </ServicePanel>
 
       <ServicePanel id="health" title="Health" image={serviceImages.health} reverse contact={<Contact name="Benjamin Taylor" phone="07931 317230" email="benjamin.taylor@redquadrant.com" />}>
-        <p>The NHS faces increasing demands from the public but without the increased funding to meet this demand. We work with all parts of the NHS on demand management, process redesign, developing new models of service provision and the interface between the NHS and the wider public sector.</p>
+        <p>We help NHS teams and councils organise work they share, including commissioning care, reviewing pooled budgets, and improving what happens when a patient moves between services.</p>
         <p>Examples of our work:</p>
         <ul><li>Review of Section 75 and Better Care Fund arrangements with a local authority for a London CCG</li><li>Commissioning and procurement of the first multi-speciality community provider in the UK for Scarborough and Ryedale CCG</li><li>Lean process review for Sussex Partnership NHS FT</li><li>Transformation partner for CLCH NHS FT</li><li>Strategic review of the Parliamentary and Health Service Ombudsman service</li><li>Strategic advice to the Board of the Nursing and Midwifery Council</li></ul>
       </ServicePanel>
@@ -153,27 +153,27 @@ export default function ServicesPage() {
       </ServicePanel>
 
       <ServicePanel id="ict" title="ICT strategy and operations" image={serviceImages.ict} reverse contact={<Contact name="James Wickham" phone="07973 143303" email="james.wickham@redquadrant.com" />}>
-        <p>We possess a wide range of services including project, programme and portfolio management to support strategic IT. Our highly experienced team includes ICT and systems consultants from across the sector, including specialists in:</p>
+        <p>We help public bodies choose, procure, and implement IT systems, and manage the programmes that bring them into use. Our work includes:</p>
         <ul><li>IT applications that support local government services such as housing, children’s services, asset management, planning and environment, and their integration</li><li>Organisation-wide applications, including CRM, case management and document management</li><li>Assessing current systems and presenting options for change covering software, hardware, channel functionality and operations</li></ul>
         <p>Examples of our work:</p>
         <ul><li>South Lanarkshire: review of customer contact programme</li><li>Bolton at Home: Paving the Way Transformation Programme</li><li>Plymouth City Council: customer transformation</li><li>Nottingham City Homes: procurement of a CRM system and mobile-working strategic support</li></ul>
       </ServicePanel>
 
       <ServicePanel id="criminal-justice" title="Criminal justice" image={serviceImages.justice} contact={<Contact name="Benjamin Taylor" phone="07931 317230" email="benjamin.taylor@redquadrant.com" />}>
-        <p>We have experts in both adult and juvenile justice. Just as importantly, we have experts in local authority housing and care, and health. We can help local partners join up services to make sure that money and services are targeted as effectively as possible. We also know a lot about mutualisation and outsourcing, and can help criminal justice agencies think about these approaches. We’ve also worked overseas and can bring the best international practice to bear.</p>
+        <p>People in contact with the justice system may also depend on housing, health, and care services. We work with justice agencies and their local partners on what happens between those services, and on decisions about which work to provide directly or commission.</p>
         <p>Examples of our work:</p>
         <ul><li>Working with the Danish prison service to outline transformation plans for savings and service improvements, using Positive Deviance to identify real opportunities within the population for improved outcomes</li><li>Supplying surge capacity to the Metropolitan Police Service transformation programme, and leadership development for MPS and communications strategy for Leicestershire Police</li><li>MOPAC projects including a feasibility study for social investment in a gang-exit programme and a sustainability strategy for Child House</li></ul>
       </ServicePanel>
 
       <ServicePanel id="customer-service" title="Customer service and customer focus" image={serviceImages.customer} reverse contact={<Contact name="Benjamin Taylor" phone="07931 317230" email="benjamin.taylor@redquadrant.com" />}>
-        <p>Designing service delivery models and operating models around the needs, perceptions and behaviours of service users is increasingly recognised as critical to an efficient and effective business model. Organisations also need to ensure that their purpose is clear and aligned with what they deliver and how they deliver it.</p>
+        <p>A council changing how residents contact it needs to know who will still need help in person. We follow what happens to a request across the counter, the telephone, and the website before advising on which arrangements to change.</p>
         <ul><li>Can your organisation clearly state its purpose and map this onto how it engages service users?</li><li>Have you explored customer insight to simplify what you offer and focus on what matters?</li><li>Are customer experience and perceptions built into performance assessment and service management?</li><li>Can customer data, demographic profiling, personas and open-source data help?</li><li>Can deeper insight help you navigate automation and self-service?</li></ul>
-        <p>Our approach is one of partnership and customer-centred change, focusing on the insights and issues that will provide useful, actionable learning.</p>
+
         <p>Examples include expert advice to the digital transformation of HM Courts and Tribunals Service over about 18 months; channel, technology and business-case reviews for social landlords; and helping Westminster close its one-stop shops while improving online and assisted self-service and saving over £1.2m a year.</p>
       </ServicePanel>
 
       <ServicePanel id="learning-organisational-development" title="Learning and organisational development" image={serviceImages.learning} contact={<Contact name="Benjamin Taylor" phone="07931 317230" email="benjamin.taylor@redquadrant.com" />}>
-        <p>Learning and organisational development is at the heart of the RedQuadrant offering.</p>
+        <p>We teach and coach people who are changing how their own organisations work. In Devon, that included individual and team coaching for the council’s Doing What Matters programme.</p>
         <ul><li>Strategic consultancy, training, development, and individual and team coaching for Devon County Council’s ‘Doing What Matters’ programme</li><li>An ongoing partnership with Bristol City Council for leadership development, training and coaching through the Applied Programme, Bristol Leads and development for senior directors. The first four cohorts identified savings of over £11 million.</li><li>A blended transformational-change programme for the States of Guernsey, with online modules, face-to-face workshops and coaching</li><li>Leadership development and coaching for directors and heads of service at Leicester City Council</li><li>A cultural diagnostic and strategic cultural-change assignment with the Office for National Statistics Crime Statistics team</li><li>Ongoing coaching and support to senior leaders across a number of councils</li></ul>
       </ServicePanel>
 
@@ -182,13 +182,13 @@ export default function ServicesPage() {
       </ServicePanel>
 
       <ServicePanel id="commissioning" title="Commissioning" image={serviceImages.commissioning} contact={<Contact name="Benjamin Taylor" phone="07931 317230" email="benjamin.taylor@redquadrant.com" />}>
-        <p>We are leading-edge practitioners and thinkers on commissioning, from exploring and making accessible what place-based, complexity-informed and outcome-focused commissioning means, to supporting real co-design and a community-development focus. We convene place-based senior leaders to understand and engage with their place as a system, and offer practical skill-building for commissioners.</p>
+        <p>We help commissioners decide what a service is for, whose experience should inform it, and how to commission and review the work. We also teach the National Commissioning Academy through the Public Service Transformation Academy.</p>
         <p>Examples of our work:</p>
         <ul><li>Delivery of the Cabinet Office Commissioning Academy through the Public Service Transformation Academy</li><li>Development and capability-building of commissioning skills and behaviours for Kent</li><li>Outcomes-based commissioning review for Sutton</li><li>Whole-council commissioning approaches for Sefton and Knowsley</li><li>Review and restructure of Maidstone’s commissioning approach with a transformational focus</li></ul>
       </ServicePanel>
 
       <ServicePanel id="digital-change" title="Digital change and digital delivery" image={serviceImages.digitalGrid} reverse contact={<Contact name="James Wickham" phone="07973 143303" email="james.wickham@redquadrant.com" />}>
-        <p>We help public services make digital change a service transformation, not simply a technology project. Our senior practitioners work with users, frontline teams, leaders and suppliers to redesign whole journeys and put the right delivery, data and technology arrangements behind them.</p>
+        <p>When a council moves a service online, the resident, the person answering the phone, and the team processing the request all experience the change. We work with them and their suppliers to decide how the service should operate and what technology it needs.</p>
         <ul><li>Digital strategy and operating models tied to organisational purpose and measurable service outcomes</li><li>User research, inclusive service design and end-to-end journey redesign across online, phone and face-to-face channels</li><li>Product, programme and portfolio leadership, including recovery of complex digital delivery</li><li>Data, architecture, integration and technology choices that improve rather than fragment the service</li><li>Supplier selection, procurement and assurance, with practical transfer of skills to in-house teams</li><li>Automation and self-service designed around real needs, accessibility and assisted-digital support</li></ul>
         <p>Our experience includes digital justice work with HM Courts and Tribunals Service; technology and channel transformation for councils and social housing providers; and assessment of digital opportunities in adult social care.</p>
         <img className="service-inline-image" src={serviceImages.digitalInterface.src} alt={serviceImages.digitalInterface.alt} loading="lazy" />
@@ -196,7 +196,7 @@ export default function ServicesPage() {
 
       <ServicePanel id="alternative-delivery-models" title="Alternative delivery models" image={serviceImages.delivery} contact={<Contact name="Benjamin Taylor" phone="07931 317230" email="benjamin.taylor@redquadrant.com" />}>
         <ul><li>Setting up mutuals, spin-outs and trading companies instead of outsourcing</li><li>Using social investment to solve long-standing problems</li><li>Using social marketing to nudge behaviour change</li><li>Developing tools to measure how effective preventative services really are</li><li>Using strengths-based approaches to solve local problems by finding answers within communities</li></ul>
-        <p>Recent work includes developing and delivering the incubator process for the London Borough of Newham: helping services identify opportunities to trade and innovate, develop and negotiate business cases, and choose the appropriate legal form.</p>
+        <p>For the London Borough of Newham, we ran an incubator for council services, helping services identify opportunities to trade and innovate, develop and negotiate business cases, and choose the appropriate legal form.</p>
       </ServicePanel>
     </div>
   );
