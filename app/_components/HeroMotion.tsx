@@ -1,34 +1,54 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { homeImages } from "../site-data";
 
 export function HeroMotion() {
   const video = useRef<HTMLVideoElement>(null);
+  const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
     const element = video.current;
     if (!element) return;
-    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const stop = () => element.pause();
-    const onPreferenceChange = () => {
-      if (motion.matches) stop();
+    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const followPreference = () => {
+      if (motion.matches) {
+        element.pause();
+      } else {
+        element.muted = true;
+        void element.play().catch(() => {});
+      }
     };
 
-    motion.addEventListener('change', onPreferenceChange);
-    if (!motion.matches) {
-      element.muted = true;
-      element.play().catch(() => {});
-    }
-
+    followPreference();
+    motion.addEventListener("change", followPreference);
     return () => {
-      stop();
-      motion.removeEventListener('change', onPreferenceChange);
+      motion.removeEventListener("change", followPreference);
+      element.pause();
     };
   }, []);
 
-  return <video ref={video} className="home-stage-video" muted loop playsInline
-    preload="metadata" poster={homeImages.hero.src} aria-hidden="true" tabIndex={-1}>
-    <source src={homeImages.heroVideo.src} type="video/mp4" />
-  </video>;
+  function togglePlayback() {
+    const element = video.current;
+    if (!element) return;
+    if (element.paused) {
+      element.muted = true;
+      void element.play().catch(() => {});
+    } else {
+      element.pause();
+    }
+  }
+
+  return (
+    <>
+      <video ref={video} id="home-landscape" className={playing ? "home-stage-video is-playing" : "home-stage-video"}
+        muted loop playsInline preload="metadata" poster={homeImages.hero.src} aria-hidden="true" tabIndex={-1}
+        onPlaying={() => setPlaying(true)} onPause={() => setPlaying(false)}>
+        <source src={homeImages.heroVideo.src} type="video/mp4" />
+      </video>
+      <button className="home-motion-toggle" type="button" aria-controls="home-landscape" onClick={togglePlayback}>
+        {playing ? "Pause background" : "Play background"}
+      </button>
+    </>
+  );
 }
