@@ -1,3 +1,23 @@
 import Link from "next/link";
-export const metadata={"title": "Service review", "description": "Understand what a service does before deciding what to change.", "alternates": {"canonical": "/service-review/"}};
-export default function Page(){return <article className="site-frame offer-page"><h1>Service review</h1><p className="offer-lead">Understand what a service does before deciding what to change.</p><p>Bring together purpose, demand, people’s experience, work, effort, and cost. Use the findings to agree and test changes, with the frontline involved throughout.</p><p><Link href="/customer-led-transformation">Explore the work and experience</Link></p><p><a className="rq-button" href="mailto:benjamin.taylor@redquadrant.com">Discuss your situation</a></p><p><Link href="/frameworks">Procurement routes</Link> · <Link href="/toolshed">Tool Shed</Link></p></article>}
+
+export const metadata = {
+  title: "Service review",
+  description: "A service review follows what happens when someone asks for help, and what it costs to respond.",
+  alternates: { canonical: "/service-review/" },
+};
+
+export default function Page() {
+  return (
+    <article className="site-frame offer-page">
+      <h1>Service review</h1>
+      <p className="offer-lead">A service review follows what happens when someone asks for help, and what it costs to respond.</p>
+      <p>Staff can show us where cases wait, which questions residents have to answer twice, and what happens to a referral. We compare those accounts with service records and follow up the discrepancies before proposing changes.</p>
+      <ul>
+        <li><Link href="/customer-led-transformation">How we follow a case through a service</Link></li>
+        <li><Link href="/resource-optimisation/">How we examine staff time</Link></li>
+      </ul>
+      <p><a href="mailto:benjamin.taylor@redquadrant.com">Email Benjamin Taylor</a> about this work.</p>
+      <p><Link href="/frameworks/">Procurement frameworks</Link> · <Link href="/toolshed/">RedQuadrant Tool Shed</Link></p>
+    </article>
+  );
+}

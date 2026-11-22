@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -13,10 +12,10 @@ export default function FrameworksPage() {
     <div className="frameworks-page site-frame">
       <section className="frameworks-intro">
         <div>
-          <h1>Frameworks</h1>
-          <p>The whole range of our expert consultancy is available through public-sector framework agreements and other compliant procurement routes, with direct award or further competition where the route permits.</p>
+          <h1>Procurement frameworks</h1>
+          <p>Public bodies can commission RedQuadrant through the agreements listed here. Each agreement sets out which organisations can use it, which services it covers, and whether it permits direct award or requires competition.</p>
           <p>For more information, <Link href="/services">see our services</Link>, email <a href="mailto:frameworks@redquadrant.com">frameworks@redquadrant.com</a> or call Managing Partner Benjamin Taylor on <a href="tel:07931317230">07931 317230</a>.</p>
-          <p><strong>We offer urgent response, at scale if required.</strong></p>
+
         </div>
       </section>
 

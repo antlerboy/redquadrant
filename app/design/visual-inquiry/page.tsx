@@ -1,12 +1,59 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
-import {galleryGroups,galleryImageUrl} from '../../site-data';
+import { galleryGroups, galleryImageUrl } from '../../site-data';
 
-export const metadata={title:'Visual inquiry in practice',description:'Three published visual commissions by Natasa Sears, with working questions for using and challenging a rich picture.',alternates:{canonical:'/design/visual-inquiry/'}};
-const examples=[
- {client:'Natural England',project:'Environmental Collaborative Leadership',question:'Who can make or block a decision in this picture? Which relationships would other participants add?',use:'Compare what participants see in the picture: whose purposes count, who is responsible, and what they can change together.'},
- {client:'Birmingham City Council',project:'Prevention in adult social care pathways',question:'Where does the account start: the service pathway or the person’s life? Which work, delay, or support becomes invisible at the edge of the picture?',use:'Follow one actual experience through the representation. Mark missing relationships, disputed links, and the decisions needed to investigate them.'},
- {client:'Local Government Association',project:'Cultural devolution research',question:'What do you need to know about the research to interpret the infographic? Which decisions or local conditions need further explanation?',use:'Put the visual account beside the underlying evidence. Separate what the image establishes from what it invites you to ask.'},
+export const metadata = {
+  title: 'Using rich pictures',
+  description: 'Three commissions by Nataša Sears for Birmingham City Council, Natural England, and the Local Government Association.',
+  alternates: { canonical: '/design/visual-inquiry/' },
+};
+
+const examples = [
+  {
+    client: 'Birmingham City Council', project: 'Prevention in adult social care pathways',
+    alt: 'Five illustrated routes through community and adult social care support in Birmingham.',
+    prompt: 'Choose one route and follow the person who needs help. Where would they turn next? Ask somebody who knows that service to point to a link they recognise or one the drawing misses.',
+  },
+  {
+    client: 'Natural England', project: 'Environmental Collaborative Leadership',
+    alt: 'Illustrated account of collaborative environmental leadership for Natural England.',
+    prompt: 'Pick a decision in the picture. Who has the authority to make it? A participant who sees the same decision from another organisation may draw the relationship differently.',
+  },
+  {
+    client: 'Local Government Association', project: 'Cultural devolution research',
+    alt: 'Infographic presenting research on cultural devolution for the Local Government Association.',
+    prompt: 'Choose a finding and ask where it would hold locally. Which part of the research would a council need to return to before making a decision about culture in its area?',
+  },
 ];
 
-export default function VisualInquiry(){return <article className="site-frame offer-page"><p><Link href="/designrichpictures/">Natasa Sears: design and visual practice</Link></p><h1>Work with the picture</h1><p className="offer-lead">Natasa’s visual work helps people examine a situation together. These examples show work for Natural England, Birmingham City Council, and the Local Government Association.</p><p>Project information comes from the published design portfolio. The questions below are guidance for discussing and using the images.</p>{examples.map(example=>{const group=galleryGroups.find(item=>item.client===example.client&&item.project===example.project);if(!group)return null;const image=group.images[0];return <section key={example.project}><h2>{example.client}: {example.project}</h2><p>Natasa Sears · {group.format} · {group.year}</p><a href={galleryImageUrl(image.id,image.ext)}><img className="inquiry-artwork" src={galleryImageUrl(image.id,image.ext)} alt={`${example.client}: ${example.project}, by Natasa Sears`} loading="lazy" /></a><h3>Using the image</h3><p>{example.use}</p><h3>Questions for discussion</h3><p>{example.question}</p><p><a href="/downloads/visual-inquiry-working-note.txt" download>Download the working note</a></p></section>;})}<section><h2>Running a discussion with a rich picture</h2><ol><li>Name the situation and the people who need to recognise it.</li><li>Draw what different people see, including uncertainty and contradiction.</li><li>Invite additions, corrections, and alternative boundaries.</li><li>Record what changed in the picture and why.</li><li>Choose an action or inquiry, with responsibility and a review date.</li><li>Return to the picture and inspect what actually happened.</li></ol><p>Keep the earlier version where participants agree: it can show a change in understanding more clearly than the finished image alone.</p><p><a className="rq-button" href="mailto:natasa.sears@redquadrant.com?subject=Visual%20inquiry%20around%20live%20work">Discuss visual inquiry with Natasa</a></p><p><Link href="/service-change/">Service change support</Link> · <Link href="/practice-evidence/">Read evidence from practice</Link></p></section></article>;}
+export default function VisualInquiry() {
+  return (
+    <article className="site-frame offer-page">
+      <h1>Using rich pictures</h1>
+      <p className="offer-lead">A rich picture puts different accounts of a situation onto one sheet. Nataša Sears makes these drawings with public service teams. A person can point to anything they recognise, move a boundary, or add someone whose work is missing.</p>
+      {examples.map(example => {
+        const group = galleryGroups.find(item => item.client === example.client && item.project === example.project);
+        if (!group) return null;
+        const { id, ext } = group.images[0];
+        const url = galleryImageUrl(id, ext);
+        return (
+          <section key={example.project}>
+            <h2>{example.project}</h2>
+            <figure>
+              <a href={url}><img className="inquiry-artwork" src={url} alt={example.alt} loading="lazy" /></a>
+              <figcaption>Nataša Sears for {group.client}, {group.year}. <a href={url}>View the full-size image</a></figcaption>
+            </figure>
+            <p>{example.prompt}</p>
+          </section>
+        );
+      })}
+      <section>
+        <h2>Taking a picture back to the people in it</h2>
+        <p>Ask participants to mark what they would change in the drawing. Keep an earlier version, with their agreement. Comparing the two can show where accounts differ, and give the group something specific to investigate before the next meeting.</p>
+        <p><a href="/downloads/visual-inquiry-working-note.txt" download>Download the discussion worksheet (text)</a></p>
+        <p><a href="mailto:natasa.sears@redquadrant.com?subject=Rich%20pictures">Email Nataša Sears about a commission</a></p>
+        <p><Link href="/designrichpictures/">Nataša’s design portfolio</Link> · <Link href="/service-change/">Service change support</Link> · <Link href="/practice-evidence/">Evidence from practice</Link></p>
+      </section>
+    </article>
+  );
+}

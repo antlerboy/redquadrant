@@ -11,6 +11,7 @@ const related = [
   ["/customer-focus", "Customer focus"],
   ["/digital", "Digital"],
   ["/housing", "Housing"],
+  ["/libraries", "Libraries and archives"],
   ["/services#ict", "ICT"],
   ["/services#human-resources", "People and organisational development"],
   ["/transformation-and-change", "Transformation and change"],

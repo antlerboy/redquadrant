@@ -5,8 +5,8 @@ export function LatestPanel() {
     <section className="latest-panel" aria-labelledby="latest-heading">
       <div className="latest-panel-heading">
         <div>
-          <p className="eyebrow">Latest news and social media</p>
-          <h2 id="latest-heading">Three things worth a look</h2>
+
+          <h2 id="latest-heading">News and reading</h2>
         </div>
       </div>
       <div className="latest-grid">
@@ -15,7 +15,6 @@ export function LatestPanel() {
             <p className="latest-source">{item.source}</p>
             <h3><a href={item.href} target="_blank" rel="noreferrer">{item.title}</a></h3>
             <p>{item.summary}</p>
-            <a className="latest-read" href={item.href} target="_blank" rel="noreferrer">Read it <span aria-hidden="true">↗</span></a>
           </article>
         ))}
       </div>

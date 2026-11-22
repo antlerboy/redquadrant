@@ -10,9 +10,8 @@ export default function NewsletterPage() {
   return (
     <div className="newsletter-page site-frame">
       <section className="newsletter-copy">
-        <p className="eyebrow">Newsletter</p>
         <h1>Sign up for news from RedQuadrant</h1>
-        <p>Occasional ideas, events, tools and practical examples for people working to transform public services.</p>
+        <p>Our occasional newsletter includes public service projects, tools you can try at work, and dates for events and training.</p>
       </section>
       <form className="newsletter-form" action="https://redquadrant.us1.list-manage.com/subscribe/post" method="post" target="_blank">
         <input type="hidden" name="u" value="8774d3d6e67dca6e9d347ea25" />

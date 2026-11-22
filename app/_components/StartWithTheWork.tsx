@@ -1,2 +1,16 @@
 import Link from "next/link";
-export function StartWithTheWork(){return <section className="start-with-work" aria-labelledby="start-work-title"><h2 id="start-work-title">Where does the work need to start?</h2><div className="work-doors"><article><h3><Link href="/customer-led-transformation/">With the people using services</Link></h3><p>Understand demand, follow the whole service experience, and change the work that creates avoidable difficulty.</p></article><article><h3><Link href="/system-leadership/">Across organisations and partnerships</Link></h3><p>Make progress on a shared problem when authority, resources, and responsibilities sit in different places.</p></article><article><h3><Link href="/resource-optimisation/">With work, cost, and capacity</Link></h3><p>Use the knowledge of your teams to understand effort and release capacity for work that matters.</p></article></div><p><Link href="/systems-change/">Explore systems change</Link> · <Link href="/relational-commissioning/">Reset a commissioning relationship</Link></p></section>}
+
+export function StartWithTheWork() {
+  return (
+    <section className="start-with-work" aria-labelledby="start-work-title">
+      <h2 id="start-work-title">Five approaches to service change</h2>
+      <ul>
+        <li><Link href="/customer-led-transformation/">Follow a resident’s experience of a service</Link></li>
+        <li><Link href="/system-leadership/">Work through a decision shared by several organisations</Link></li>
+        <li><Link href="/resource-optimisation/">Review where staff time goes</Link></li>
+        <li><Link href="/systems-change/">Investigate a recurring problem across services</Link></li>
+        <li><Link href="/relational-commissioning/">Review how a commissioner and provider work together</Link></li>
+      </ul>
+    </section>
+  );
+}

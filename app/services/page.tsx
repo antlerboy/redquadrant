@@ -1,4 +1,3 @@
-import { StartWithTheWork } from "../_components/StartWithTheWork";
 /* eslint-disable @next/next/no-img-element */
 import { BuyerOffers } from "../_components/BuyerOffers";
 import type { Metadata } from "next";
@@ -17,7 +16,7 @@ function Contact({ name, phone, email }: { name: string; phone?: string; email: 
     <p className="service-contact">
       <strong>{name}{phone ? `  ${phone}` : ""}</strong><br />
       <a href={`mailto:${email}`}>{email}</a><br />
-      <span>Contact</span>
+
     </p>
   );
 }
@@ -45,9 +44,10 @@ function ServicePanel({ id, title, image, reverse = false, children, contact }: 
 export default function ServicesPage() {
   return (
     <div className="services-page site-frame">
-      <h1>Services</h1>
+      <h1>Public service consultancy</h1>
+      <p className="offer-lead">RedQuadrant works with councils, the NHS, civil servants, and voluntary organisations. Some commissions start with a decision about a service. Others need a team to carry out a change or someone independent to review a proposal.</p>
       <BuyerOffers />
-<StartWithTheWork />
+
 
       <section className="service-modes" aria-label="Ways we work">
         <article><h2>Consulting</h2><ul><li>Reviews and strategy</li><li>Set strategic direction or solve a problem</li></ul></article>
@@ -80,17 +80,17 @@ export default function ServicesPage() {
 
       <section className="services-overview">
         <div>
-          <h2>We offer expertise in a wide range of relevant areas:</h2>
-          <h3>Thematic</h3>
+          <h2>Areas of work</h2>
+          <h3>Methods and skills</h3>
           <ul>{serviceThemes.map(item => <li key={item}>{item}</li>)}</ul>
-          <p>Always underpinned by our experience that the key to making change real is the virtuous triangle of strategy, leader and organisational development, and sustainable delivery. Don’t just take our word for it; since 2018 we have been recognised amongst the <a href="https://www.ft.com/content/35f8087a-3bb3-4a49-a969-e1f537a5af27" target="_blank" rel="noreferrer">Financial Times UK’s Leading Management Consultants</a> across a range of sectors.</p>
+          <p>Since 2018 RedQuadrant has appeared in the <a href="https://www.ft.com/content/35f8087a-3bb3-4a49-a969-e1f537a5af27" target="_blank" rel="noreferrer">Financial Times UK’s Leading Management Consultants</a> rankings.</p>
         </div>
         <div>
-          <h3>Service specific</h3>
+          <h3>Public services</h3>
           <ul>{serviceAreas.map(item => <li key={item}>{item}</li>)}</ul>
         </div>
         <div>
-          <h3>A trusted part of the scene</h3>
+          <h3>RedQuadrant’s experience</h3>
           <ul>
             <li>Over ten years in public service transformation</li>
             <li>Over 96.8% of clients come back for more</li>
@@ -101,7 +101,7 @@ export default function ServicesPage() {
           </ul>
         </div>
         <div>
-          <h3>Our capacity</h3>
+          <h3>The people we can bring in</h3>
           <ul>
             <li>~2,000 experienced consultants covering all areas of public services and central government</li>
             <li>Core team of around 50, with experienced specialists covering all key disciplines and services</li>
@@ -147,7 +147,7 @@ export default function ServicesPage() {
       </ServicePanel>
 
       <ServicePanel id="equality-diversity-inclusion" title="Equality, diversity and inclusion" image={serviceImages.inclusion} contact={<Contact name="Janice Prentice" phone="07946 498 195" email="janice.prentice@redquadrant.com" />}>
-        <p>We are increasingly working directly on projects that relate to equality, diversity and inclusion (ED&I). Through our work in this area, we aim to transform ED&I practice in public services by doing what we do: bringing together teams of experienced people to bring change about in public services; in this instance, people with wide and deep experience in ED&I in public services and the private sector.</p>
+        <p>We review the effect of employment and service decisions on different groups, and work with leadership teams on what they can change.</p>
         <p>Examples of our work:</p>
         <ul><li>Diversity impact assessment for a Civil Service assessment centre, focused on eliminating unconscious bias and applying good practice</li><li>Development of diversity and inclusion strategies for a UK regulator and an arm’s-length body</li><li>EDI input to a Covid-19 economic recovery strategy and further support for a local enterprise partnership</li><li>Design and delivery of ‘Leadership in Diversity’ training for a police force and a council senior leadership team</li><li>Review of HR practice from an ED&I perspective for the Local Government Association</li></ul>
       </ServicePanel>

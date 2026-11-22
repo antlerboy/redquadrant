@@ -4,5 +4,5 @@ import { ServiceIndex } from "../_components/ServiceIndex";
 export const metadata: Metadata = { title: "Commissioning", description: "RedQuadrant commissioning strategy, review, procurement, contract management and market development.", alternates: { canonical: "/commissioning" } };
 
 export default function CommissioningPage() {
-  return <ServiceIndex title="Commissioning" items={["Commissioning strategy", "Functional and diagnostic review", "Procurement training and development", "Procurement", "Contract management", "Options analysis", "Commissioning skills", "Commercial, contract and performance review and insourcing", "Researching the market", "Soft market testing", "Market management and market development"]} />;
+  return <ServiceIndex title="Commissioning" introduction="We work with public bodies on what to commission, who can provide it, and how to tell whether it meets local needs. Projects include commissioning reviews for Sutton and work on commissioning across the councils in Sefton and Knowsley." items={["Commissioning strategy", "Functional and diagnostic review", "Procurement training and development", "Procurement", "Contract management", "Options analysis", "Commissioning skills", "Commercial, contract and performance review and insourcing", "Researching the market", "Soft market testing", "Market management and market development"]} />;
 }

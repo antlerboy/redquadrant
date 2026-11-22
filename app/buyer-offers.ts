@@ -2,7 +2,7 @@ export const buyerOffers = [
   {
     "slug": "commissioning-and-public-value",
     "title": "Commissioning, social care, and public value",
-    "pressure": "Services are under pressure, demand is rising, and the arrangements for buying and delivering support are getting in the way.",
+    "pressure": "RedQuadrant helps public bodies investigate gaps between the support they buy and what people receive. We work with service users, frontline staff, and providers on changes to commissioning.",
     "summary": "Make better commissioning decisions, understand demand, and organise support around people’s lives.",
     "work": [
       "Establish what people need and what the current service actually does.",
@@ -24,12 +24,13 @@ export const buyerOffers = [
     "entryTitle": "Commissioning starting-point review",
     "entryFee": "From £4,500 excluding VAT",
     "entryScope": "One live commissioning challenge: a scoping call, review of up to five supplied documents, up to four interviews, a half-day working session, and a concise decision note. Delivered over two to three weeks. This first step establishes what to investigate and change; a wider market review or service redesign is scoped separately.",
+    "entryLabel": "How we work with commissioners and providers",
     "entryUrl": "/relational-commissioning/"
   },
   {
     "slug": "governance-and-judgement",
     "title": "Governance, boards, and difficult judgement",
-    "pressure": "A board or partnership has decisions to make, but authority is fragmented, disagreement is hard to surface, or formal reporting misses what matters.",
+    "pressure": "We help boards and partnerships work through a decision when members disagree, responsibility is split, or the reports in front of them leave an important question unanswered.",
     "summary": "Clarify purpose, responsibilities, and choices, and improve how people work through difficult decisions.",
     "work": [
       "Examine where decisions are made, what informs them, and who is affected.",
@@ -50,12 +51,13 @@ export const buyerOffers = [
     "entryTitle": "Board or partnership working session",
     "entryFee": "From £3,500 excluding VAT",
     "entryScope": "One consequential decision: a scoping call, up to four preparatory interviews, a half-day facilitated session, and a written decision and action record. Sustained governance review, individual coaching, and additional sessions are scoped separately.",
+    "entryLabel": "How we work with partnerships",
     "entryUrl": "/system-leadership/"
   },
   {
     "slug": "transformation-under-pressure",
     "title": "Transformation under pressure",
-    "pressure": "Savings are needed, delivery is slipping, or the organisation has more change activity than it can carry through.",
+    "pressure": "RedQuadrant helps public service teams make choices about staffing and spending when demand rises or a change programme falls behind.",
     "summary": "Understand the work, decide what to change, and build the capacity to deliver it.",
     "work": [
       "Work alongside services to understand demand, effort, cost, and obstacles.",
@@ -77,6 +79,7 @@ export const buyerOffers = [
     "entryTitle": "Work and capacity diagnostic",
     "entryFee": "From £6,500 excluding VAT",
     "entryScope": "An initial Resource Optimisation assessment covering up to two teams and 40 work packages, with preparation, facilitated analysis, and an agreed action report. Wider implementation and repeat measurement are scoped separately.",
+    "entryLabel": "How a Resource Optimisation review works",
     "entryUrl": "/resource-optimisation/"
   }
 ] as const;

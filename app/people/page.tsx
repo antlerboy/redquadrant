@@ -12,7 +12,7 @@ export default function PeoplePage() {
   const columns = [people.slice(0, 4), people.slice(4, 8), people.slice(8, 12)];
   return (
     <section className="people-page site-frame">
-      <h1 className="visually-hidden">People at RedQuadrant</h1>
+      <h1>People at RedQuadrant</h1>
       <div className="people-list">
         {columns.map((column, index) => (
           <div className="person-column" key={index}>

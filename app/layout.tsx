@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | RedQuadrant",
   },
   description:
-    "Senior public service practitioners helping organisations turn difficult problems into practical, sustainable change.",
+    "RedQuadrant works with councils, the NHS, and other public bodies on service reviews, commissioning, and organisation design.",
   applicationName: "RedQuadrant",
   keywords: [
     "public service transformation",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     siteName: "RedQuadrant",
     title: "RedQuadrant | Public service transformation",
     description:
-      "Senior practitioners helping public service organisations make change work in practice.",
+      "Consultancy and training for people who run and use public services.",
   },
   icons: {
     icon: "/assets/owned/8f63408fdd8dea51.jpg",

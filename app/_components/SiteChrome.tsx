@@ -33,7 +33,7 @@ export function SiteHeader() {
             {navLinks.map((link) => (
               <Link href={link.href} key={link.href}>{link.label}</Link>
             ))}
-  
+
           </nav>
         </details>
       </div>
@@ -92,8 +92,8 @@ export function PageHero({
 }
 
 export function ContactBand({
-  title = "Let’s start a conversation",
-  text = "Tell us what you are working on and where you need help.",
+  title = "Contact RedQuadrant",
+  text = "The operations team handles general enquiries and can put you in touch with a specialist.",
 }: {
   title?: string;
   text?: string;

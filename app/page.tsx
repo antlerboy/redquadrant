@@ -1,13 +1,13 @@
 import { HeroMotion } from "./_components/HeroMotion";
-import { StartWithTheWork } from "./_components/StartWithTheWork";
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { BuyerOffers } from "./_components/BuyerOffers";
 import { ReturnRateStat } from "./_components/EasterEggsLive";
 import { LatestPanel } from "./_components/LatestPanel";
-import { brandAssets, homeImages } from "./site-data";
+import { homeImages } from "./site-data";
 
-export const metadata = { alternates: { canonical: "/" } };
+export const metadata = { description: "RedQuadrant works with councils, the NHS, and their partners on how public services are run, funded, and experienced by the people who use them.", alternates: { canonical: "/" } };
+
+const birminghamDrawing = "/assets/gallery/12b1f3_6435270adc604a78b5cd3aca3cbe5d11.jpg";
 
 export default function Home() {
   return (
@@ -16,15 +16,8 @@ export default function Home() {
         <HeroMotion />
         <div className="home-stage-shade" aria-hidden="true" />
         <div className="site-frame home-stage-inner">
-          <div className="ft-recognition">
-            <strong>Every year since 2018</strong>
-            <span><b>RedQuadrant</b> has been named by the Financial Times and Statista in the UK&apos;s Leading Management Consultants</span>
-          </div>
-          <a className="carbon-link" href="https://app.seedling.earth/client_page/1691141651896x280340039414579200?report=ppn-report" target="_blank" rel="noreferrer">Carbon Reduction plan</a>
           <h1 className="home-mission">
-            We help you find insights<br />
-            to transform public services.<br />
-            <strong>We work to improve lives.</strong>
+            RedQuadrant works with the people who run and use public services.
           </h1>
           <div className="home-paths">
             <Link href="/frameworks">Buy our services through frameworks</Link>
@@ -33,7 +26,7 @@ export default function Home() {
             <div className="tool-shed">
               <span>the</span><b>RedQuadrant</b>
               <a href="/toolshed">Tool Shed</a>
-              <p>Equip yourself to effectively<br />lead service transformation</p>
+              <p>A learning group for people changing public services</p>
               <a className="tool-email" href="mailto:toolshed@redquadrant.com">toolshed@redquadrant.com</a>
             </div>
           </div>
@@ -41,54 +34,36 @@ export default function Home() {
       </section>
 
       <section className="home-main site-frame">
-        <BuyerOffers />
-<StartWithTheWork />
-        <div className="home-card-grid">
-          <article>
-            <img src={homeImages.justice.src} alt="Green landscape representing environmental and social justice" />
-            <h2>Environmental<br />and social justice</h2>
-            <p>The purpose of public service is to enable better citizen and community outcomes. Equality, diversity, and inclusion must be at the heart of transformation. And we must safeguard our environment.</p>
-            <Link href="/carbonreductionplan">Our carbon reduction plan.</Link>
-          </article>
-          <article>
-            <img src={homeImages.delivery.src} alt="People working together" />
-            <h2>Experienced, authentic delivery together</h2>
-            <p>With hundreds of projects across all key public services, we put partnering into practice. We’re focused on working with you as one team, and we specialise in being honest, grown-up, and getting the real work done.</p>
-          </article>
-          <article>
-            <img src={homeImages.clients.src} alt="A group enjoying a beach trip" />
-            <h2>Satisfied clients</h2>
-            <ReturnRateStat />
-            <p className="return-copy">of our clients return to us for more. We stick around until the job is done, and deliver the value-adding outcomes as well as the initial requirement. And we build your skills and capacity, so we do ourselves out of a job.</p>
-          </article>
-          <article>
-            <img src={homeImages.methods.src} alt="A climber going over an edge" />
-            <h2>Cutting edge methods</h2>
-            <p>We select the best points of intervention and tailor our approach every time. We live the world of digital, and we take agile, adaptive work in complexity seriously. We help you lead systems and generate powerful learning as well as direct results.</p>
-          </article>
-        </div>
+        <section className="home-commission">
+          <figure>
+            <a href={birminghamDrawing}><img src={birminghamDrawing} alt="Five illustrated routes through prevention services in Birmingham, covering homelessness, domestic abuse, neighbourhood networks, disability and mental health, and support after prison." loading="lazy" /></a>
+            <figcaption>Nataša Sears for Birmingham City Council, 2021. <a href={birminghamDrawing}>Open the full-size drawing</a></figcaption>
+          </figure>
+          <div>
+            <h2>What does prevention look like in Birmingham?</h2>
+            <p>Find the domestic abuse hub near the middle of this drawing. Follow the blue line up to the refuge. Who helps someone live safely in their own home after they leave?</p>
+            <p>Nataša Sears drew five routes through adult social care and community support for Birmingham City Council. People looking at the same picture can point to a missing connection, or disagree about what happens next.</p>
+            <Link href="/design/visual-inquiry/">Work with this picture</Link>
+          </div>
+        </section>
 
-        <div className="home-lower-grid">
-          <article className="psta-block">
-            <h2>The Public Service Transformation Academy</h2>
-            <p>We lead and support the Public Service Transformation Academy, a not-for-profit social enterprise partnership. Its mission is to drive better outcomes for people and communities by developing the capability of local, civil, social and health services to collaborate, innovate and lead.</p>
-            <a href="https://www.publicservicetransformation.org/" target="_blank" rel="noreferrer"><img src={brandAssets.pstaLogo} alt="Public Service Transformation Academy" /></a>
-          </article>
-          <article className="lgr-block">
-            <img src={homeImages.lgr.src} alt={homeImages.lgr.alt} />
-            <h2>Local government reorganisation</h2>
-            <p>From business case to Day One and beyond, we help councils turn reorganisation into stronger organisations and better outcomes for communities.</p>
-            <Link className="home-feature-link" href="/lgrhub">Explore the LGR &amp; Devolution Hub</Link>
-          </article>
-          <article className="training-block">
-            <h2><Link href="/training-and-development">Dynamic training and development</Link></h2>
-            <p className="training-lede">Build the capability to make change work in your own organisation.</p>
-            <p>Leadership, systems thinking, commissioning, transformation, coaching, mentoring, and practical learning through live work.</p>
-            <Link className="home-feature-link" href="/training-and-development">Explore training and development</Link>
-            <img src={homeImages.learning.src} alt="People holding hands" />
-          </article>
+        <section className="home-directory">
+          <div><h2>Consultancy for public services</h2>
+            <p>We help councils, the NHS, and their partners find out where a service is falling short. We work with staff and residents on what to change, and stay involved while teams try it.</p>
+            <p><Link href="/services">Our services and previous commissions</Link></p>
+          </div>
+          <ul>
+            <li><Link href="/lgrhub">Local government reorganisation</Link></li>
+            <li><Link href="/resource-optimisation/">Workload, cost, and capacity</Link></li>
+            <li><Link href="/commissioning/">Commissioning public services</Link></li>
+            <li><Link href="/training-and-development">Training and development</Link></li>
+            <li><Link href="/equality-diversity-inclusion/">Equality, diversity, and inclusion</Link></li>
+            <li><Link href="/carbonreductionplan/">RedQuadrant’s carbon reduction plan</Link></li>
+          </ul>
+        </section>
+        <div className="home-record"><p className="home-return"><ReturnRateStat /> of our clients have commissioned us again.</p>
+          <p>The Financial Times and Statista have listed RedQuadrant among the UK’s leading management consultants every year since 2018.</p>
         </div>
-
         <LatestPanel />
       </section>
     </>
