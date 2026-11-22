@@ -24,11 +24,11 @@ jobs:
           import time
           import urllib.request
           checks = {
-              '/': ['Four ways into practical service change', '/service-change/'],
-              '/service-change/': ['Public service change that works in practice', 'AI-enabled service change', 'mailto:benjamin.taylor@redquadrant.com'],
-              '/service-change/service-pressure-diagnostic/': ['Service pressure diagnostic', 'Discuss a first step', 'mailto:benjamin.taylor@redquadrant.com'],
-              '/service-change/joined-up-service-redesign/': ['Joined-up service redesign', 'Discuss a first step', 'mailto:benjamin.taylor@redquadrant.com'],
-              '/service-change/ai-enabled-service-change/': ['AI-enabled service change', 'Discuss a first step', 'mailto:benjamin.taylor@redquadrant.com'],
+              '/': ['What does prevention look like in Birmingham?', '/service-change/'],
+              '/service-change/': ['Public service change projects', 'AI-enabled service change', 'mailto:benjamin.taylor@redquadrant.com'],
+              '/service-change/service-pressure-diagnostic/': ['Service pressure diagnostic', 'Email us about this offer', 'mailto:benjamin.taylor@redquadrant.com'],
+              '/service-change/joined-up-service-redesign/': ['Joined-up service redesign', 'Email us about this offer', 'mailto:benjamin.taylor@redquadrant.com'],
+              '/service-change/ai-enabled-service-change/': ['AI-enabled service change', 'Email us about this offer', 'mailto:benjamin.taylor@redquadrant.com'],
               '/service-change/learning-and-capability-partner/': ['Learning and capability partner', 'mailto:david.mason@publicservicetransformation.org'],
               '/sitemap.xml': ['/service-change/service-pressure-diagnostic/', '/service-change/learning-and-capability-partner/']
           }
