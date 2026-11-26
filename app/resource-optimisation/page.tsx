@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { ResourceLenses, ResourceSevenWays, ResourceWorkPackage } from "./ResourceDiagrams";
+import "./diagrams.css";
 
 const choices = [
   ["Tolerate but tweak", "Keep doing the work and make a small adjustment."],
@@ -47,6 +49,13 @@ export default function ResourceOptimisation() {
         <a href="#method">How the review works</a>
       </header>
 
+      <section aria-labelledby="resource-positioning-title">
+        <h2 id="resource-positioning-title">An inside-out view of the work</h2>
+        <p>Resource Optimisation starts inside the organisation: the actual work, its resource, cost, value, dependencies, and capability. It tests that picture against purpose, demand, outcomes, and the experience of people who use the service. Staff bring the practical knowledge needed to challenge the inventory and make useful choices together.</p>
+        <figure className="rq-resource-image"><img src="/assets/resource-optimisation/resource-maze.webp" alt="A wooden maze, representing the paths and choices hidden within organisational work" width="1232" height="928" /><figcaption>Make the paths, constraints, and choices visible before changing the structure.</figcaption></figure>
+        <ResourceLenses />
+      </section>
+
       <section aria-labelledby="positioning-title">
         <h2 id="positioning-title">A housing allocations example</h2>
         <p>A council is considering spending less time on shortlists for vacant homes. First it needs to know why an officer returns to a list that somebody has already checked.</p>
@@ -62,6 +71,7 @@ export default function ResourceOptimisation() {
 
       <section id="method"><h2 id="method-title">How the review works</h2>
         <p>A work package is an activity the team can recognise and make a decision about, such as revisiting a housing shortlist. One keystroke is too small. The whole allocations service is too large.</p>
+        <ResourceWorkPackage />
         <ol>
           <li>Agree five to seven priorities and their relative weight. What would a better service look like to the people using it?</li>
           <li>List enough work packages to account for 100% of the team’s available time. Compare what the organisation thinks it pays for with the work staff describe. Include cover, handovers, and seasonal peaks.</li>
@@ -77,10 +87,13 @@ export default function ResourceOptimisation() {
       </section>
       <section aria-labelledby="system-title"><h2 id="system-title">When the cause lies elsewhere</h2>
         <p id="ways-caption">Resource Optimisation is the fourth of RedQuadrant’s Seven Ways to Save and Improve. The others examine demand, how work flows, waste, how services are organised, procurement, and policy. In the housing example, changing when the provider sends a viewing result addresses how work passes between organisations.</p>
+        <ResourceSevenWays />
       </section>
       <section id="outcomes"><h2 id="outcomes-title">What you can use afterwards</h2>
         <p>The team keeps the inventory, its estimates, and a record of the decisions. Managers can use them to plan cover, check workloads, and compare expected changes with what staff and residents experience.</p>
         <h3 id="team-title">Who does the work?</h3><p>RedQuadrant can run the review, coach an internal team, or work alongside your staff. People who do the work check the estimates and identify duties or risks that a time sheet cannot show.</p>
+        <p>Workshops, interviews, and practical data capture draw on the team’s knowledge, enthusiasm, and judgement. The people closest to the work know about handovers, seasonal peaks, duplicate checks, unofficial fixes, and capability gaps. They need to recognise the picture, challenge it, and own what happens next.</p>
+        <figure className="rq-resource-image"><img src="/assets/resource-optimisation/team-working.webp" alt="Colleagues working together around a table" width="1800" height="1161" loading="lazy" /></figure>
         <h3 id="routes-title">From one team to several services</h3><p>One team can start with a decision about its workload. A directorate can compare the effects on neighbouring teams. From 2010 to 2015, the London Borough of Hillingdon used Resource Optimisation as part of a wider RedQuadrant programme across more than 40 services.</p>
       </section>
       <section id="range"><h2 id="range-title">Related work</h2><ul>

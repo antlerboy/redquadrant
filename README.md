@@ -28,6 +28,8 @@ A code-controlled RedQuadrant website, published through GitHub Pages at `redqua
 
 ## Update discipline
 
+The homepage must never display background play, pause, or animation-control buttons, including native video controls. Keep the licensed decorative video as a brief, non-looping introduction lasting less than five seconds, then show the existing still image. Honour reduced-motion preferences with the still image from the outset. Do not reintroduce playback controls in later accessibility or design changes.
+
 Every website iteration must include a quick stale-content review rather than simply adding the new change. Check at least:
 
 - frameworks and procurement routes, including expired framework versions;

@@ -39,6 +39,24 @@ jobs:
           GITHUB_PAGES: "true"
           GITHUB_PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
         run: npx next build
+      - name: Install browser regression runner
+        run: |
+          npm install --prefix /tmp/rq-browser --no-save playwright@1.64.1
+          /tmp/rq-browser/node_modules/.bin/playwright install chromium
+      - name: Reject background buttons and check motion preferences
+        env:
+          NODE_PATH: /tmp/rq-browser/node_modules
+          GITHUB_PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: node tests/home-background.browser.cjs
+      - name: Record publication identity
+        env:
+          RELEASE_SHA: ${{ github.sha }}
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          Path('out/website-publication.json').write_text(json.dumps({'commit': os.environ['RELEASE_SHA'], 'background_controls': 'none'}, indent=2) + '\n')
+          PY
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:

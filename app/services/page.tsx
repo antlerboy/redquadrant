@@ -47,7 +47,10 @@ export default function ServicesPage() {
       <h1>Public service consultancy</h1>
       <p className="offer-lead">RedQuadrant works with councils, the NHS, civil servants, and voluntary organisations. Some commissions start with a decision about a service. Others need a team to carry out a change or someone independent to review a proposal.</p>
       <BuyerOffers />
-
+      <section className="offer-page" aria-labelledby="resource-optimisation-title">
+        <h2 id="resource-optimisation-title"><Link href="/resource-optimisation/">Resource Optimisation</Link></h2>
+        <p>Work with the people who do the work to account for staff time, understand dependencies, and decide which activities to keep, change, or stop.</p>
+      </section>
 
       <section className="service-modes" aria-label="Ways we work">
         <article><h2>Consulting</h2><ul><li>Reviews and strategy</li><li>Set strategic direction or solve a problem</li></ul></article>
