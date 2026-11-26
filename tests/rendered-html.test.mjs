@@ -52,6 +52,18 @@ test("homepage links to LGR and training without the old IR35 feature", async ()
   assert.doesNotMatch(html, /Dealing with IR35/i);
 });
 
+test("homepage has a decorative background without playback controls", async () => {
+  const { response, html } = await render("/");
+  assert.equal(response.status, 200);
+  assert.doesNotMatch(html, /(?:play|pause) (?:background|animation)/i);
+  assert.doesNotMatch(html, /home-motion-toggle/i);
+  const video = html.match(/<video\b[^>]*\bid=["']home-landscape["'][^>]*>/i)?.[0];
+  assert.ok(video, "The licensed landscape video remains available");
+  assert.doesNotMatch(video, /\b(?:controls|loop)(?:\s|=|>)/i);
+  assert.match(video, /\bposter=/i);
+  assert.match(video, /\baria-hidden=["']true["']/i);
+});
+
 test("renders the new training and development page", async () => {
   const { response, html } = await render("/training-and-development");
 
@@ -59,6 +71,25 @@ test("renders the new training and development page", async () => {
   assert.match(html, /Build the capability to transform your own services/i);
   assert.match(html, /Level 7 systems thinking practitioner apprenticeship/i);
   assert.match(html, /Public Service Transformation Academy/i);
+});
+
+test("Resource Optimisation is a native brochure with local media and entry routes", async () => {
+  const page = await render("/resource-optimisation");
+  assert.equal(page.response.status, 200);
+  assert.match(page.html, /<h1>Resource Optimisation<\/h1>/i);
+  assert.doesNotMatch(page.html, /<iframe\b/i);
+  assert.match(page.html, /<link(?=[^>]*rel=["']canonical["'])(?=[^>]*href=["']https:\/\/redquadrant\.com\/resource-optimisation\/?["'])[^>]*>/i);
+  for (const diagram of ['lens-diagram', 'package-scale', 'seven-ways']) {
+    assert.match(page.html, new RegExp(`class=["'][^"']*\\b${diagram}\\b`, 'i'));
+  }
+  for (const image of ['resource-maze.webp', 'team-working.webp']) {
+    assert.ok(page.html.includes(`/assets/resource-optimisation/${image}`));
+  }
+  for (const route of ['/services', '/transformation-and-change']) {
+    const entry = await render(route);
+    assert.equal(entry.response.status, 200);
+    assert.match(entry.html, /href=["']\/resource-optimisation\/["']/i, `${route} must link to the native offer`);
+  }
 });
 
 test("LGR hub includes the current four-video selection", async () => {

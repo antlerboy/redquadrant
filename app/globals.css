@@ -63,7 +63,8 @@ li+li{margin-top:.35em}
 
 /* Home page — follows the current Wix composition */
 .home-stage{position:relative;height:752px;overflow:hidden;background-position:center;background-size:cover;color:#fff}
-.home-stage-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.home-stage-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0}
+.home-stage-video.is-playing{opacity:1}
 .home-stage-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(25,10,8,.22),rgba(25,10,8,.08) 55%,rgba(25,10,8,.2))}
 .home-stage-inner{position:relative;z-index:1;height:100%}
 .ft-recognition{position:absolute;top:31px;left:30px;width:240px;color:#fff;font-family:"RQ Helvetica",Helvetica,Arial,sans-serif;font-size:16px;font-weight:700;line-height:1.38;text-shadow:0 1px 4px rgba(0,0,0,.35)}
@@ -194,7 +195,7 @@ li+li{margin-top:.35em}
   .logo,.logo img{width:190px}.logo{flex-basis:190px}.home-card-grid{grid-template-columns:1fr}.home-card-grid article img{height:190px}.service-modes{grid-template-columns:1fr}.people-list{grid-template-columns:1fr}.people-operations{grid-template-columns:1fr}.people-operations>img{grid-column:1}.related-services{grid-template-columns:1fr}.lgr-difference-grid{grid-template-columns:1fr}
 }
 
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.home-stage-video:not(.is-playing){display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.home-stage-video{display:none}}
 
 /* Buyer routes and practical learning */
 .buyer-offers{padding:38px 0 28px;border-bottom:1px solid var(--soft-grey);margin-bottom:35px}.buyer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.buyer-grid article,.buyer-grid>section{border-top:4px solid var(--rq-red);padding:20px 0}.buyer-grid h3{font-size:24px}.buyer-grid h2{font-size:22px}.buyer-grid a{text-decoration-thickness:1px}.buyer-next{display:flex;gap:25px;flex-wrap:wrap;margin:15px 0 0}.offer-page{padding-block:38px 64px}.offer-page>h1{max-width:850px;font-size:42px}.offer-lead{font-size:22px;line-height:1.55;max-width:850px}.offer-columns{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin:30px 0}.offer-page>section{margin-top:35px}.rq-button{display:inline-block;padding:12px 20px;background:var(--rq-red);color:#fff;font-weight:bold;text-decoration:none}.rq-button:hover{background:var(--brown)}.practice-note{border-left:4px solid var(--rq-gold);padding:8px 22px}.desktop-nav{gap:13px}@media(max-width:760px){.buyer-grid,.offer-columns{grid-template-columns:1fr;gap:12px}.offer-page>h1{font-size:32px}.offer-lead{font-size:20px}}
@@ -263,6 +264,4 @@ li+li{margin-top:.35em}
 .home-record{padding:1.25rem 0;color:#4d4240}.home-record p{margin:0}.home-record .home-return{padding:0 0 .45rem}
 @media(max-width:760px){.home-stage{height:auto;min-height:0}.home-stage-inner{min-height:0;padding:2.25rem 0 1.5rem;gap:1.75rem}.home-mission,.home-paths{position:static}.home-mission{width:auto;max-width:100%;margin:0}.home-paths{margin:0;align-items:start;gap:1.2rem}.home-paths .tool-shed p{margin-top:.4rem}.home-paths .tool-email{overflow-wrap:anywhere}}
 
-.home-motion-toggle{position:absolute;z-index:2;right:1rem;top:1rem;min-height:32px;padding:.25rem .65rem;color:white;background:#35232a;border:1px solid #fff9;border-radius:2px;font:inherit;font-size:.85rem;cursor:pointer}
-.home-motion-toggle:focus-visible{outline:3px solid white;outline-offset:3px}
-@media(max-width:760px){.home-motion-toggle{top:auto;bottom:.6rem}.home-stage-inner{padding-bottom:3.4rem}}
+.footer-shed-wrap button,.footer-practice-row button{text-align:left}

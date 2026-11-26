@@ -22,7 +22,7 @@ export function ServiceIndex({ title, items, introduction }: { title: string; it
     <div className="service-index-page site-frame">
       <section className="service-index-main">
         <div><h1>{title}</h1>{introduction && <p>{introduction}</p>}</div>
-        <ul>{items.map(item => <li key={item}>{item}</li>)}</ul>
+        <ul>{items.map(item => <li key={item}>{item === "Resource optimisation" ? <Link href="/resource-optimisation/">{item}</Link> : item}</li>)}</ul>
       </section>
       <nav className="related-services" aria-label="Related services">
         {related.map(([href, label]) => <Link href={href} key={`${href}-${label}`}>{label}</Link>)}

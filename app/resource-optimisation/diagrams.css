@@ -1,0 +1,35 @@
+.rq-resource-diagrams{margin:1.5rem 0;color:var(--brown);font-family:"RQ Avenir",Avenir,"Century Gothic",sans-serif;font-size:1rem;line-height:1.5;text-align:left}
+.rq-resource-diagrams *{min-width:0;font-style:normal;text-align:left}
+.rq-resource-diagrams figure{margin:0}
+.rq-resource-diagrams :is(p,li,small,span,strong,figcaption){font-size:1rem;line-height:1.5}
+.rq-resource-diagrams h3{font-size:1.25rem;margin:1rem 0;line-height:1.3}
+.rq-resource-diagrams .lens-diagram{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr) minmax(0,1fr)}
+.rq-resource-diagrams :is(.lens-panel,.lens-centre){padding:1.25rem;background:var(--off-white);border:1px solid var(--light-warm-grey)}
+.rq-resource-diagrams .lens-panel ul{margin:0;padding-left:1.1rem}
+.rq-resource-diagrams :is(.lens-inside,.scale-focus,.policy-bar,.flow-featured){background:var(--brown);color:#fff}
+.rq-resource-diagrams .lens-inside h3{color:#fff}
+.rq-resource-diagrams .lens-centre{display:flex;flex-direction:column;gap:.5rem;justify-content:flex-start;background:var(--rq-gold);color:var(--brown)}
+.rq-resource-diagrams .lens-centre strong{font-size:1.35rem}
+.rq-resource-diagrams .diagram-label{display:block;font-weight:700}
+.rq-resource-diagrams figcaption{grid-column:1/-1;padding:1rem 0;border-bottom:1px solid var(--light-warm-grey)}
+.rq-resource-diagrams .package-scale{display:flex;flex-direction:column;align-items:flex-start;gap:0;max-width:36rem}
+.rq-resource-diagrams .scale-block{display:flex;flex-direction:column;gap:.3rem;width:100%;padding:1rem;border:1px solid var(--light-warm-grey)}
+.rq-resource-diagrams .scale-wide{background:var(--off-white)}
+.rq-resource-diagrams .scale-focus{width:80%}
+.rq-resource-diagrams .scale-narrow{width:60%}
+.rq-resource-diagrams .scale-connector{width:3px;height:1.5rem;margin-left:1rem;background:var(--rq-gold)}
+.rq-resource-diagrams .seven-ways{padding:1.25rem;background:var(--soft-grey)}
+.rq-resource-diagrams .policy-bar{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.25rem 1rem;padding:1rem}
+.rq-resource-diagrams .policy-bar small{grid-column:2}
+.rq-resource-diagrams .service-flow{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1.25fr) auto minmax(0,1fr);gap:.5rem;margin-top:1rem;align-items:stretch}
+.rq-resource-diagrams .service-flow>div{display:flex;flex-direction:column;gap:.3rem;padding:.8rem;background:#fff}
+.rq-resource-diagrams .service-flow>.flow-featured{background:var(--brown);color:#fff}
+.rq-resource-diagrams .service-flow i{align-self:flex-start;font-size:1.5rem;font-style:normal}
+.rq-resource-diagrams :is(.flow-levers,.system-levers){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;margin-top:.75rem}
+.rq-resource-diagrams :is(.flow-levers,.system-levers)>div{display:flex;flex-direction:column;gap:.25rem;padding:1rem;background:#fff;border-top:3px solid var(--bronze)}
+.rq-resource-diagrams .flow-levers>.lever-featured{background:var(--rq-gold);color:var(--brown);border-color:var(--brown)}
+.rq-resource-diagrams .seven-ways figcaption{border:0;padding-bottom:0}
+.rq-resource-image{margin:1.5rem 0}
+.rq-resource-image img{display:block;width:100%;max-height:30rem;object-fit:cover}
+.rq-resource-image figcaption{margin-top:.5rem;font-size:1rem;text-align:left}
+@media(max-width:700px){.rq-resource-diagrams .lens-diagram,.rq-resource-diagrams .service-flow,.rq-resource-diagrams .flow-levers,.rq-resource-diagrams .system-levers{grid-template-columns:1fr}.rq-resource-diagrams .service-flow i{transform:rotate(90deg);transform-origin:center;width:1.5rem;height:1.5rem}.rq-resource-diagrams :is(.lens-panel,.lens-centre,.seven-ways){padding:1rem}.rq-resource-diagrams .scale-narrow{width:80%}.rq-resource-diagrams .scale-focus{width:90%}}
